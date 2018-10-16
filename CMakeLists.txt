@@ -3,4 +3,4 @@ project(HONS_Project C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_library(HONS_Project src/heartbeatClient.c src/heartbeatServer.c)
+add_library(HONS_Project src/heartbeatClient.c src/heartbeatServer.c src/client.c src/testOrchestrator.c src/client.c)
