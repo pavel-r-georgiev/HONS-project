@@ -4,6 +4,24 @@
 #define PING_MSG_SIZE    1
 #define PING_INTERVAL    1000  //  Once per second
 
+volatile sig_atomic_t stop_monitoring_loop;
+
+void stopMonitoringLoop(int signum) {
+    stop_monitoring_loop = 1;
+}
+
+void monitorTraffic(zactor_t *listener){
+    signal(SIGINT, stopMonitoringLoop);
+
+    while (!stop_monitoring_loop) {
+        char *ipaddress, *received;
+        zstr_recvx (listener, &ipaddress, &received, NULL);
+        printf("IP Address: %s, Data: %s \n", ipaddress, received);
+        zstr_free (&ipaddress);
+        zstr_free (&received);
+    }
+}
+
 int main(void)
 {
     //  Create new beacon
@@ -38,8 +56,11 @@ int main(void)
             zstr_sendx (speaker, "SILENCE", NULL);
         }
 
-    // Wait for at most 1/2 second if there's no broadcasting
-    zsock_set_rcvtimeo (listener, 5*PING_INTERVAL);
+        if(streq(action, "MONITOR")) {
+            stop_monitoring_loop = 0;
+            monitorTraffic(listener);
+        }
+    }
 
     zactor_destroy (&listener);
     zactor_destroy (&speaker);
