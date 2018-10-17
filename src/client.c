@@ -4,6 +4,7 @@
 #define PING_MSG_SIZE    1
 #define PING_INTERVAL    1000  //  Once per second
 
+bool silenced = false;
 int main(void)
 {
     //  Create new beacon
@@ -21,6 +22,7 @@ int main(void)
 
 //    zstr_sendx (speaker, "PUBLISH", "STOP", "1000", NULL);
     zsock_send (speaker, "sbi", "PUBLISH", "!", PING_MSG_SIZE, PING_INTERVAL);
+    silenced = false;
     // We will listen to anything (empty subscription)
     zsock_send (listener, "sb", "SUBSCRIBE", "", 0);
 
@@ -31,10 +33,15 @@ int main(void)
         if(!streq(hostname, ipaddress)){
             printf("IP Address: %s, Data: %s \n", ipaddress, received);
 
-            if(streq(hostname, received)) {
+            if(streq(hostname, received) && !silenced) {
                 printf("Silencing.....\n");
+                silenced = true;
                 zstr_sendx (speaker, "SILENCE", NULL);
+            } else if(streq(hostname, received) && silenced) {
+                printf("Restarting....\n");
+                zsock_send (speaker, "sbi", "PUBLISH", "!", PING_MSG_SIZE, PING_INTERVAL);
             }
+            zstr_free (&received);
         }
         zstr_free (&ipaddress);
         zstr_free (&received);

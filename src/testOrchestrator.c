@@ -16,22 +16,27 @@ int main(void)
 
     zsock_send (speaker, "si", "CONFIGURE", PING_PORT_NUMBER);
     zsock_send (listener, "si", "CONFIGURE", PING_PORT_NUMBER);
-
-
-
-//    zsock_send (speaker, "sbi", "PUBLISH", "!", PING_MSG_SIZE, PING_INTERVAL);
     // We will listen to anything (empty subscription)
-//    zsock_send (listener, "sb", "SUBSCRIBE", "", 0);
-    zsock_send (speaker, "sbi", "PUBLISH", "172.17.0.2", sizeof("172.17.0.2"));
+    zsock_send (listener, "sb", "SUBSCRIBE", "", 0);
 
-//    while (!zctx_interrupted) {
-////        zframe_t *content = zframe_recv (listener);
-//        char *ipaddress, *received;
-//        zstr_recvx (listener, &ipaddress, &received, NULL);
-//        printf("IP Address: %s, Data: %s \n", ipaddress, received);
-//        zstr_free (&ipaddress);
-//        zstr_free (&received);
-//    }
+    char address[10];
+    char action[10];
+
+    while(!zctx_interrupted){
+        printf("Enter command: ");
+        scanf ("%[^\n]%*c", action);
+
+        if(strcmp(action, "ABORT") == 0){
+            break;
+        }
+
+        if(strcmp(action, "TOGGLE") == 0){
+            printf("Enter address: ");
+            scanf ("%[^\n]%*c", address);
+            printf("Silencing: %s", address);
+            zsock_send (speaker, "sbi", "PUBLISH", address, sizeof(address) + 2);
+            zstr_sendx (speaker, "SILENCE", NULL);
+        }
 
     // Wait for at most 1/2 second if there's no broadcasting
     zsock_set_rcvtimeo (listener, 5*PING_INTERVAL);
@@ -40,3 +45,4 @@ int main(void)
     zactor_destroy (&speaker);
     printf("Destroyed");
 }
+
