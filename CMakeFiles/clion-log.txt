@@ -1,4 +1,0 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/d/Workspace/University/HONS-Project
-zsh:cd:1: no such file or directory: /mnt/d/Workspace/University/HONS-Project
-CMake Error: The source directory "/mnt/d/Workspace/University/HONS-Project" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.

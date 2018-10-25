@@ -36,10 +36,10 @@
 # .idea/*.iml
 # .idea/modules
 
-bin/
 
 # CMake
 cmake-build-*/
+CMakeFiles/
 
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
@@ -82,5 +82,13 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
-
 # End of https://www.gitignore.io/api/clion
+
+# build folder
+build/
+
+# bin folder
+bin/
+
+# VSCode
+.vscode/
