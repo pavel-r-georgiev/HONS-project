@@ -20,7 +20,15 @@ One type of completess can emulate the other
 ## Accrual vs binary failure detectors
 
 ## Implementatation details 
-Push | Adaptive | Binary | Distributed | Sharing | Coarse-grained | Homogeneous | All-to-all | one-to-all propagation
+
+ * Heartbeat messages: Push  style - every node broadcasts heartbeats
+ * Timeout: Adaptive - with a back-off strategy similar to the one in TCP
+ * Interpretation: Binary - node is either alive or not. Don't think we can benefit much from levels of certainty. Maybe I'm wrong here feel free to correct me.
+ * Isolation: Sharing(consensus algorithm) 
+ * Speciliazitaion: Homogeneous(same failure detector on all nodes)
+ * Monitoring type: All-to-all. Given the number of nodes, we will the volume of messages shouldn't be a problem. Maybe will look into neighbourhood-based if needed.
+ * Propagation: one-to-all(needs broadcast hardware functionality. If an ability to broadcast is not available I will look into gossip-based propagation.
+
 ## Glossary:
 
 **failure** - the event in which a process halts without prior notice
