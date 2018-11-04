@@ -23,11 +23,13 @@ double time_diff;
 struct timeval  current_time;
 // Nodes hashmap
 struct node_struct *nodes = NULL;
+pthread_rwlock_t hashmap_lock;
 
 double get_current_time_ms(){
     gettimeofday(&current_time, NULL);
     return (current_time.tv_sec + (current_time.tv_usec / 1e6))* 1e3;
 }
+
 
 void print_hash() {
     struct node_struct *n;
@@ -36,7 +38,48 @@ void print_hash() {
     }
 }
 
-int main(void) {
+void handle_timeout(size_t timer_id, void * user_data) {
+    struct node_struct *node = NULL;
+    char *ip_address = (char *) user_data;
+
+    //        Check if node in map
+    if (pthread_rwlock_rdlock(&hashmap_lock) != 0) {
+        printf("ERROR: can't get rdlock \n");
+        return;
+    }
+    HASH_FIND_STR(nodes, ip_address, node);
+    pthread_rwlock_unlock(&hashmap_lock);
+
+    if(node != NULL){
+        if (pthread_rwlock_wrlock(&hashmap_lock) != 0){
+            printf("ERROR: can't get wrlock \n");
+        }
+        HASH_DEL(nodes, node);
+        pthread_rwlock_unlock(&hashmap_lock);
+    }
+
+    printf("Timer %d expired, ip: %s\n", (int)timer_id, (char *)user_data);
+}
+
+
+void clean_up_hashmap() {
+    //    Clean up hashmap
+    node_struct *current_node, *tmp;
+    HASH_ITER(hh, nodes, current_node, tmp) {
+        if (pthread_rwlock_wrlock(&hashmap_lock) != 0){
+            printf("ERROR: can't get wrlock \n");
+        }
+        HASH_DEL(nodes, current_node);
+        pthread_rwlock_unlock(&hashmap_lock);
+        free(current_node);
+    }
+}
+
+int main(int argc, char **argv) {
+    bool DEBUG = false;
+    if(argc > 0 && streq(argv[1], "debug")){
+        DEBUG = true;
+    }
     //  Create new beacon
     zactor_t *speaker = zactor_new (zbeacon, NULL);
     zactor_t *listener = zactor_new (zbeacon, NULL);
@@ -56,27 +99,52 @@ int main(void) {
     // We will listen to anything (empty subscription)
     zsock_send (listener, "sb", "SUBSCRIBE", "", 0);
 
+// Start timer management thread
+    create_timer_manager();
+//    Initialize hashmap lock
+    if (pthread_rwlock_init(&hashmap_lock,NULL) != 0) {
+        printf("ERROR: can't create rwlock \n");
+        exit(-1);
+    }
+
     while (!zctx_interrupted) {
 //        zframe_t *content = zframe_recv (listener);
-        struct node_struct *node = NULL;
+        node_struct *node = NULL;
+        adaptive_timeout_struct *timeout_metadata = NULL;
+
         char *ipaddress, *received;
         zstr_recvx (listener, &ipaddress, &received, NULL);
 
-        if(!streq(hostname, ipaddress)){
+        if(!streq(hostname, ipaddress) || DEBUG){
             printf("IP Address: %s, Data: %s \n", ipaddress, received);
 
             double current_time_ms = get_current_time_ms();
             //        Check if node in map
+            if (pthread_rwlock_rdlock(&hashmap_lock) != 0) {
+                printf("ERROR: can't get rdlock \n");
+                break;
+            }
             HASH_FIND_STR(nodes, ipaddress, node);
+            pthread_rwlock_unlock(&hashmap_lock);
 
             if(node == NULL){
                 node = (struct node_struct *)malloc(sizeof *node);
                 node->ipaddress = (char*) malloc(strlen(ipaddress));
                 strcpy(node->ipaddress,ipaddress);
                 node->last_heartbeat_ms = current_time_ms;
+                node->timeout_metadata = init_adaptive_timeout_struct(current_time_ms);
+
+                if (pthread_rwlock_wrlock(&hashmap_lock) != 0) {
+                    printf("ERROR: can't get wrlock \n");
+                    break;
+                }
                 HASH_ADD_KEYPTR(hh, nodes, node->ipaddress, strlen(node->ipaddress), node);
+                pthread_rwlock_unlock(&hashmap_lock);
+
+                node->timer_id = start_timer(TIMEOUT, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
             } else {
-                print_hash();
+                stop_timer(node->timer_id);
+                node->timer_id = start_timer(TIMEOUT, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
                 time_diff = (current_time_ms - node->last_heartbeat_ms);
                 printf("Time since last heartbeat  %2fms\n", time_diff);
                 node->last_heartbeat_ms= current_time_ms;
@@ -96,15 +164,13 @@ int main(void) {
         zstr_free (&received);
     }
 
+//    Stop timer management thread
+    terminate_timer_manager();
+
     // Wait for at most 1/2 second if there's no broadcasting
     zsock_set_rcvtimeo (listener, 5*PING_INTERVAL);;
     zactor_destroy (&listener);
     zactor_destroy (&speaker);
 
-//    Clean up hashmap
-    struct node_struct *current_node, *tmp;
-    HASH_ITER(hh, nodes, current_node, tmp) {
-        HASH_DEL(nodes, current_node);
-        free(current_node);
-    }
+    clean_up_hashmap();
 }
