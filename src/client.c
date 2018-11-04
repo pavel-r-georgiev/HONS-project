@@ -4,15 +4,18 @@
 #include <time.h>
 #include <stdlib.h>
 #include "timer.h"
+#include "adaptive_delay_model.h"
 #include "uthash.h"
 #define PING_PORT_NUMBER 1500
 #define PING_MSG_SIZE    1
 #define PING_INTERVAL    1000  //  Once per second
-#define TIMEOUT 1200
+#define TIMEOUT 2000000
 
 typedef struct node_struct {
     char *ipaddress; /* key */
     double last_heartbeat_ms;
+    size_t timer_id;
+    adaptive_timeout_struct *timeout_metadata;
     UT_hash_handle hh;  /* makes this structure hashable */
 } node_struct;
 
@@ -119,6 +122,7 @@ int main(int argc, char **argv) {
             printf("IP Address: %s, Data: %s \n", ipaddress, received);
 
             double current_time_ms = get_current_time_ms();
+           
             //        Check if node in map
             if (pthread_rwlock_rdlock(&hashmap_lock) != 0) {
                 printf("ERROR: can't get rdlock \n");
@@ -149,6 +153,8 @@ int main(int argc, char **argv) {
                 printf("Time since last heartbeat  %2fms\n", time_diff);
                 node->last_heartbeat_ms= current_time_ms;
             }
+
+            estimate_next_delay(node->timeout_metadata, current_time_ms);
 
             if(streq(hostname, received) && !silenced) {
                 printf("Silencing.....\n");

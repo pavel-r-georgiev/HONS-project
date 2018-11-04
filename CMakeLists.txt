@@ -10,11 +10,13 @@ set(CMAKE_USE_PTHREADS_INIT ON)
 
 find_package(Threads REQUIRED)
 
-# Hashmap implementation
+# Multithreaded timer manager
 add_library(TIMER_LIBRARY STATIC src/timer.c)
+# Adaptive timeout model
+add_library(ADAPTIVE_DELAY_LIBRARY STATIC src/adaptive_delay_model.c src/adaptive_delay_model.h)
 
 add_executable(client src/client.c)
-TARGET_LINK_LIBRARIES(client ${ZMQ_LIB} ${CZMQ_LIB} TIMER_LIBRARY Threads::Threads)
+TARGET_LINK_LIBRARIES(client ${ZMQ_LIB} ${CZMQ_LIB} TIMER_LIBRARY ADAPTIVE_DELAY_LIBRARY Threads::Threads)
 
 add_executable(orchestrator src/test_orchestrator.c)
 TARGET_LINK_LIBRARIES(orchestrator ${ZMQ_LIB} ${CZMQ_LIB})
