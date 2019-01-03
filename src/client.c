@@ -74,15 +74,23 @@ void clean_up_hashmap() {
         }
         HASH_DEL(nodes, current_node);
         pthread_rwlock_unlock(&hashmap_lock);
+        free(current_node->timeout_metadata->past_arrival_time_differences_w1_ms);
+        free(current_node->timeout_metadata->past_arrival_time_differences_w2_ms);
+        free(current_node->timeout_metadata);
         free(current_node);
     }
 }
 
 int main(int argc, char **argv) {
     bool DEBUG = false;
-    if(argc > 0 && streq(argv[1], "debug")){
+    if(argc > 1 && streq(argv[1], "debug")){
         DEBUG = true;
     }
+
+//    File to save adaptive delay results
+    FILE *fp;
+    fp=fopen("file.csv","w+");
+
     //  Create new beacon
     zactor_t *speaker = zactor_new (zbeacon, NULL);
     zactor_t *listener = zactor_new (zbeacon, NULL);
@@ -154,7 +162,7 @@ int main(int argc, char **argv) {
                 node->last_heartbeat_ms= current_time_ms;
             }
 
-            estimate_next_delay(node->timeout_metadata, current_time_ms);
+            estimate_next_delay(node->timeout_metadata, current_time_ms, fp);
 
             if(streq(hostname, received) && !silenced) {
                 printf("Silencing.....\n");
@@ -172,7 +180,8 @@ int main(int argc, char **argv) {
 
 //    Stop timer management thread
     terminate_timer_manager();
-
+//    Close opened file
+    fclose(fp);
     // Wait for at most 1/2 second if there's no broadcasting
     zsock_set_rcvtimeo (listener, 5*PING_INTERVAL);;
     zactor_destroy (&listener);
