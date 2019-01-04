@@ -21,16 +21,21 @@ adaptive_timeout_struct* init_adaptive_timeout_struct(double first_heartbeat_ms)
     metadata_struct -> error = 0;
     metadata_struct -> seq_num = -1;
     metadata_struct -> sum_w1 = 0L;
-    metadata_struct->past_arrival_time_differences_w1_ms = malloc(W1_WINDOW_SIZE* sizeof(double));
-    metadata_struct->past_arrival_time_differences_w2_ms = malloc(W2_WINDOW_SIZE* sizeof(double));
+    metadata_struct -> sum_w2 = 0L;
+    metadata_struct -> sum_time_deltas = 0L;
+    metadata_struct -> past_arrival_time_differences_w1_ms = malloc(W1_WINDOW_SIZE* sizeof(double));
+    metadata_struct -> past_arrival_time_differences_w2_ms = malloc(W2_WINDOW_SIZE* sizeof(double));
+    metadata_struct -> deltas_between_messages = malloc(W2_WINDOW_SIZE * sizeof(double));
     return metadata_struct;
 }
 
-void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_arrival_time, FILE *fp) {
-    double estimated_arrival_w1, estimated_arrival_w2;
+void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_arrival_time, bool DEBUG, FILE *fp) {
+    double estimated_arrival_w1, estimated_arrival_w2, average_heartbeat_time;
     timeout_model->seq_num++;
-    timeout_model->arrival_time_ms = current_arrival_time - timeout_model->first_heartbeat_arrival_ms;
     long k = timeout_model->seq_num;
+    current_arrival_time = current_arrival_time - timeout_model->first_heartbeat_arrival_ms;
+    double time_from_last_heartbeat = current_arrival_time - timeout_model->arrival_time_ms;
+    timeout_model->arrival_time_ms = current_arrival_time;
     double t = timeout_model->arrival_time_ms;
 
 //    Compute alpha using Jacobson algorithm variables
@@ -51,28 +56,36 @@ void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_
 //    Calculate sum within sliding window w2 depending on sequence number
     if(k < W2_WINDOW_SIZE){
         timeout_model->sum_w2 += t - k*HEARTBEAT_INTERVAL;
+        timeout_model->sum_time_deltas += time_from_last_heartbeat;
     } else {
         long past_time_index = (k - W2_WINDOW_SIZE) % W2_WINDOW_SIZE;
         double past_time_difference =  timeout_model->past_arrival_time_differences_w2_ms[past_time_index];
+
         timeout_model->sum_w2 -= past_time_difference;
         timeout_model->sum_w2 += t - k*HEARTBEAT_INTERVAL;
+
+        timeout_model->sum_time_deltas -= timeout_model->deltas_between_messages[past_time_index];
+        timeout_model->sum_time_deltas += time_from_last_heartbeat;
     }
+
+    average_heartbeat_time = timeout_model->sum_time_deltas / k;
 
     if(k == 0){
         timeout_model->estimated_arrival_ms = HEARTBEAT_INTERVAL;
     } else {
-        estimated_arrival_w1 = (1.0/k)*timeout_model->sum_w1 + (k+1)*HEARTBEAT_INTERVAL;
-        estimated_arrival_w2 = (1.0/k)*timeout_model->sum_w2 + (k+1)*HEARTBEAT_INTERVAL;
+        estimated_arrival_w1 = (1.0/k)*timeout_model->sum_w1 + (k+1)*average_heartbeat_time;
+        estimated_arrival_w2 = (1.0/k)*timeout_model->sum_w2 + (k+1)*average_heartbeat_time;
         timeout_model->estimated_arrival_ms =  (estimated_arrival_w1 > estimated_arrival_w2 ) ? estimated_arrival_w1 : estimated_arrival_w2;
     }
 
+    timeout_model->deltas_between_messages[k % W2_WINDOW_SIZE] = time_from_last_heartbeat;
     timeout_model->past_arrival_time_differences_w1_ms[k % W1_WINDOW_SIZE] = t - k*HEARTBEAT_INTERVAL;
+    timeout_model->past_arrival_time_differences_w2_ms[k % W2_WINDOW_SIZE] = t - k*HEARTBEAT_INTERVAL;
     timeout_model->freshness_point = timeout_model->estimated_arrival_ms + timeout_model->alpha;
+    timeout_model->next_timeout = timeout_model->freshness_point - current_arrival_time;
 
-    printf("%f %f %f \n", timeout_model->arrival_time_ms, timeout_model->freshness_point, timeout_model->estimated_arrival_ms);
-    fprintf(fp,"%f,%f,%f \n", timeout_model->arrival_time_ms, timeout_model->freshness_point, timeout_model->estimated_arrival_ms);
-//    TODO: IF NODE IS SUSPECT --> MOVE TO SUSPECTS LIST AND HANDLE REMOVAL FROM MEMBERSHIP
-    if(0){
-        timeout_model->freshness_delta++;
+    if(DEBUG){
+        printf("A:%f EA:%f FP:%f Timeout:%f \n", timeout_model->arrival_time_ms,  timeout_model-> estimated_arrival_ms, timeout_model->freshness_point, timeout_model->next_timeout);
+        fprintf(fp,"%f,%f,%f \n", timeout_model->arrival_time_ms, timeout_model->freshness_point, timeout_model->estimated_arrival_ms);
     }
 }

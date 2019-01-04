@@ -9,7 +9,7 @@
 #define PING_PORT_NUMBER 1500
 #define PING_MSG_SIZE    1
 #define PING_INTERVAL    1000  //  Once per second
-#define TIMEOUT 2000000
+#define TIMEOUT 1500
 
 typedef struct node_struct {
     char *ipaddress; /* key */
@@ -76,6 +76,7 @@ void clean_up_hashmap() {
         pthread_rwlock_unlock(&hashmap_lock);
         free(current_node->timeout_metadata->past_arrival_time_differences_w1_ms);
         free(current_node->timeout_metadata->past_arrival_time_differences_w2_ms);
+        free(current_node->timeout_metadata->deltas_between_messages);
         free(current_node->timeout_metadata);
         free(current_node);
     }
@@ -152,17 +153,18 @@ int main(int argc, char **argv) {
                 }
                 HASH_ADD_KEYPTR(hh, nodes, node->ipaddress, strlen(node->ipaddress), node);
                 pthread_rwlock_unlock(&hashmap_lock);
-
-                node->timer_id = start_timer(TIMEOUT, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
+                estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG, fp);
+                unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
+                node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
             } else {
                 stop_timer(node->timer_id);
-                node->timer_id = start_timer(TIMEOUT, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
+                estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG, fp);
+                unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
+                node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
                 time_diff = (current_time_ms - node->last_heartbeat_ms);
                 printf("Time since last heartbeat  %2fms\n", time_diff);
                 node->last_heartbeat_ms= current_time_ms;
             }
-
-            estimate_next_delay(node->timeout_metadata, current_time_ms, fp);
 
             if(streq(hostname, received) && !silenced) {
                 printf("Silencing.....\n");
