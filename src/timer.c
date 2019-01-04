@@ -53,12 +53,10 @@ size_t start_timer(unsigned int interval_ms, time_handler handler, t_timer type,
     }
 
     __time_t interval_sec =  (__time_t) (interval_ms / 1e3);
-    __syscall_slong_t interval_nsec = (__syscall_slong_t) ( (uint64_t )(interval_ms * 1e3) % (uint64_t )1e6);
+    __syscall_slong_t interval_nsec = (__syscall_slong_t) ((uint64_t )(interval_ms % (uint64_t)1e3) * (uint64_t )1e6);
 
     new_value.it_value.tv_sec  = interval_sec;
     new_value.it_value.tv_nsec = interval_nsec;
-
-    new_value.it_interval.tv_sec= 0;
 
     if (type == TIMER_PERIODIC) {
         new_value.it_interval.tv_sec = interval_sec;
