@@ -4,6 +4,10 @@
   <component name="CidrRootsConfiguration">
     <sourceRoots>
       <file path="$PROJECT_DIR$/src" />
+      <file path="$PROJECT_DIR$/src/lib" />
+      <file path="$PROJECT_DIR$/src/lib/libpaxos" />
+      <file path="$PROJECT_DIR$/src/lib/libpaxos/evpaxos" />
+      <file path="$PROJECT_DIR$/src/lib/libpaxos/paxos" />
     </sourceRoots>
   </component>
   <component name="JavaScriptSettings">
