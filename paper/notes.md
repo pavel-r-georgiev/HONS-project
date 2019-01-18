@@ -22,16 +22,29 @@ One type of completess can emulate the other
 ## Implementatation details 
 
  * Heartbeat messages: Push  style - every node broadcasts heartbeats
- * Timeout: Adaptive - with a back-off strategy similar to the one in TCP
+ * Timeout: Adaptive - with a back-off strategy similar to the one in TCP- actually did 2W-FD. QOS
  * Interpretation: Binary - node is either alive or not. Don't think we can benefit much from levels of certainty. Maybe I'm wrong here feel free to correct me.
  * Isolation: Sharing(consensus algorithm) 
  * Speciliazitaion: Homogeneous(same failure detector on all nodes)
  * Monitoring type: All-to-all. Given the number of nodes, we will the volume of messages shouldn't be a problem. Maybe will look into neighbourhood-based if needed.
  * Propagation: one-to-all(needs broadcast hardware functionality. If an ability to broadcast is not available I will look into gossip-based propagation.
 
+
+### Consensus Algorithm
+
+FPL (Fischer, Lynch and Peterson 1985) : consensus is impossible in the fail-silent model with deterministic processes, even if only one process crashes
+
+Enter PAXOS:
+
+Leader - first process to detect node as dead
+
+
 ## Glossary:
 
 **failure** - the event in which a process halts without prior notice
 
 **failure detection** - the event in which a failed process is marked as suspected of failure
+
+
+
 
