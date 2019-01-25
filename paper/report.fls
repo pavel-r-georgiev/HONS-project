@@ -62,6 +62,15 @@ INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolb
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-english\english.ldf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-english\english.ldf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.def
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
@@ -81,8 +90,8 @@ INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdfte
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
-INPUT report.aux
-INPUT report.aux
+INPUT d:\Workspace\University\HONS-Project\paper\report.aux
+INPUT d:\Workspace\University\HONS-Project\paper\report.aux
 OUTPUT d:\Workspace\University\HONS-Project\paper\report.aux
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omspzccm.fd
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omspzccm.fd
@@ -96,13 +105,13 @@ INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\namere
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
-INPUT report.out
-INPUT report.out
-INPUT report.out
-INPUT report.out
+INPUT d:\Workspace\University\HONS-Project\paper\report.out
+INPUT d:\Workspace\University\HONS-Project\paper\report.out
+INPUT d:\Workspace\University\HONS-Project\paper\report.out
+INPUT d:\Workspace\University\HONS-Project\paper\report.out
 OUTPUT d:\Workspace\University\HONS-Project\paper\report.pdf
-INPUT .\report.out
-INPUT .\report.out
+INPUT d:\Workspace\University\HONS-Project\paper\report.out
+INPUT d:\Workspace\University\HONS-Project\paper\report.out
 OUTPUT d:\Workspace\University\HONS-Project\paper\report.out
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
@@ -110,11 +119,11 @@ INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
-INPUT logo.png
-INPUT .\logo.png
-INPUT .\logo.png
-INPUT .\logo.png
-INPUT .\logo.png
+INPUT d:\Workspace\University\HONS-Project\paper\logo.png
+INPUT d:\Workspace\University\HONS-Project\paper\logo.png
+INPUT d:\Workspace\University\HONS-Project\paper\logo.png
+INPUT d:\Workspace\University\HONS-Project\paper\logo.png
+INPUT d:\Workspace\University\HONS-Project\paper\logo.png
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvb7t.vf
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvb8r.tfm
 INPUT C:\Users\Pavel\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
@@ -136,8 +145,8 @@ INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvb7t.tfm
-INPUT report.toc
-INPUT report.toc
+INPUT d:\Workspace\University\HONS-Project\paper\report.toc
+INPUT d:\Workspace\University\HONS-Project\paper\report.toc
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptmcm.fd
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptmcm.fd
@@ -167,22 +176,81 @@ INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\p
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvb8r.tfm
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zptmcmr.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zptmcmr.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zptmcmr.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zptmcmrm.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zptmcmrm.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zptmcmrm.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zpzccmry.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zpzccmry.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zpzccmry.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zpsycmrv.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zpsycmrv.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\zpsycmrv.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr7t.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\pslatex\pcrr7tn.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvro7t.vf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvro8r.tfm
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zpzccmry.vf
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\zapfchan\pzcmi8r.tfm
-INPUT report.bbl
-INPUT report.bbl
-INPUT report.aux
-INPUT .\report.out
-INPUT .\report.out
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmr7t.vf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\public\pslatex\pcrr7tn.vf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\pslatex\pcrr8rn.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvb7t.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcmrm.vf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcmr.vf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcmr.vf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\zptmcmrm.vf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvb7t.vf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvb8r.tfm
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri7t.vf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\helvetic\phvb7t.vf
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\helvetic\phvb8r.tfm
+INPUT d:\Workspace\University\HONS-Project\paper\report.bbl
+INPUT d:\Workspace\University\HONS-Project\paper\report.bbl
+INPUT d:\Workspace\University\HONS-Project\paper\report.aux
+INPUT d:\Workspace\University\HONS-Project\paper\report.out
+INPUT d:\Workspace\University\HONS-Project\paper\report.out
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\base\8r.enc
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\courier\ucrr8a.pfb
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\courier\ucrr8a.pfb
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\helvetic\uhvb8a.pfb
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\helvetic\uhvb8a.pfb
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\helvetic\uhvr8a.pfb
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\helvetic\uhvr8a.pfb
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\helvetic\uhvro8a.pfb
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\helvetic\uhvro8a.pfb
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\symbol\usyr.pfb
+INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\symbol\usyr.pfb
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmr8a.pfb

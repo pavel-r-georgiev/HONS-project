@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.18)  19 JAN 2019 18:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.18)  25 JAN 2019 20:14
 entering extended mode
 **d:/Workspace/University/HONS-Project/paper/report.tex
 (d:/Workspace/University/HONS-Project/paper/report.tex
@@ -136,7 +136,29 @@ Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen118
 \Gin@req@width=\dimen119
-) ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
+) ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
+Package: babel 2018/11/13 3.27 The Babel package
+ ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def"
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\english.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+ ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count95
+\U@D=\dimen120
+ ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
+\bbl@dirlevel=\count96
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)) ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -173,15 +195,15 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 ) ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen120
-\Hy@linkcounter=\count95
-\Hy@pagecounter=\count96
+\@linkdim=\dimen121
+\Hy@linkcounter=\count97
+\Hy@pagecounter=\count98
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count97
+\Hy@SavedSpaceFactor=\count99
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -192,16 +214,16 @@ Package hyperref Info: Plain pages OFF on input line 4534.
 Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count98
+\c@Hy@tempcnt=\count100
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5125.
-\XeTeXLinkMargin=\dimen121
-\Fld@menulength=\count99
-\Field@Width=\dimen122
-\Fld@charsize=\dimen123
+\XeTeXLinkMargin=\dimen122
+\Fld@menulength=\count101
+\Field@Width=\dimen123
+\Fld@charsize=\dimen124
 Package hyperref Info: Hyper figures OFF on input line 6380.
 Package hyperref Info: Link nesting OFF on input line 6385.
 Package hyperref Info: Hyper index ON on input line 6388.
@@ -211,15 +233,15 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6405.
 Package hyperref Info: PDF/A mode OFF on input line 6410.
 LaTeX Info: Redefining \ref on input line 6450.
 LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count100
-\c@Item=\count101
-\c@Hfootnote=\count102
+\Hy@abspage=\count102
+\c@Item=\count103
+\c@Hfootnote=\count104
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count103
-\c@bookmark@seq@number=\count104
+\Fld@listcount=\count105
+\c@bookmark@seq@number=\count106
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
@@ -230,27 +252,27 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 LaTeX Warning: Unused global option(s):
     [hidel].
 
-(report.aux)
+(d:/Workspace\University\HONS-Project\paper\report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 5.
-LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 12.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 12.
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omspzccm.fd"
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -288,16 +310,16 @@ LaTeX Font Info:    ... okay on input line 5.
 
 ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen124
+\scratchcounter=\count107
+\scratchdimen=\dimen125
 \scratchbox=\box27
-\nofMPsegments=\count106
-\nofMParguments=\count107
+\nofMPsegments=\count108
+\nofMParguments=\count109
 \everyMPshowfont=\toks16
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen125
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen126
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
 \everyMPtoPDFconversion=\toks17
 ) ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -313,80 +335,80 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 5.
+Package hyperref Info: Link coloring OFF on input line 12.
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count111
+\c@section@level=\count113
 )
-LaTeX Info: Redefining \ref on input line 5.
-LaTeX Info: Redefining \pageref on input line 5.
-LaTeX Info: Redefining \nameref on input line 5.
- (report.out) (report.out)
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
+ (d:/Workspace\University\HONS-Project\paper\report.out) (d:/Workspace\University\HONS-Project\paper\report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 38.
-<logo.png, id=67, 246.6816pt x 246.6816pt>
+(Font)              scaled to size 18.66588pt on input line 40.
+<logo.png, id=91, 246.6816pt x 246.6816pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 38.
+Package pdftex.def Info: logo.png  used on input line 40.
 (pdftex.def)             Requested size: 111.00568pt x 111.00568pt.
  [1
 
-{C:/Users/Pavel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo.png>] [2
+{C:/Users/Pavel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <d:/Workspace/University/HONS-Project/paper/logo.png>] [2
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 38.
+(Font)              scaled to size 10.79993pt on input line 40.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 38.
+(Font)              scaled to size 10.79993pt on input line 40.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 38.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
-(Font)              scaled to size 10.79993pt on input line 38.
+(Font)              scaled to size 10.79993pt on input line 40.
  [3]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 15.55188pt on input line 39.
+(Font)              scaled to size 15.55188pt on input line 41.
  [4]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 42.
- (report.toc
+(Font)              scaled to size 22.39185pt on input line 44.
+ (d:/Workspace\University\HONS-Project\paper\report.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 2.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 3.
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptmcm.fd"
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 2.
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 3.
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omlptmcm.fd"
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 2.
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 3.
  ("C:\Users\Pavel\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omxpsycm.fd"
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 )
 \tf@toc=\write4
 \openout4 = `report.toc'.
@@ -397,56 +419,74 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 ]
 Chapter 1.
+[7]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 61.
-[7] [8
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 72.
+
+Overfull \hbox (3.96172pt too wide) in paragraph at lines 87--88
+[]\OT1/ptm/b/n/12 Chapter 4\OT1/ptm/m/n/12 : De-scribes the way the im-ple-men-ta-tion is al-tered to work with RDMA. 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+[8] [9] [10
 
 ]
 Chapter 2.
-[9] [10
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 120.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 120.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 120.
+[11] [12] [13] [14
 
 ]
 Chapter 3.
-[11] [12
-
-]
-Chapter 4.
-[13] [14
-
-]
-Chapter 5.
 [15] [16
 
 ]
+Chapter 4.
+[17] [18
+
+]
+Chapter 5.
+[19] [20
+
+]
 Chapter 6.
-(report.bbl [17] [18
+(d:/Workspace\University\HONS-Project\paper\report.bbl [21] [22
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
- [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
- (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
+ [23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
+ (d:/Workspace\University\HONS-Project\paper\report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 5B4C40C0311DB565F4C5D7CD2E7BE90D;913.
+(rerunfilecheck)             Checksum: 261A55EEDD3266ABA2E836A07D123B9D;1316.
  ) 
 Here is how much of TeX's memory you used:
- 7527 strings out of 492946
- 116722 string characters out of 3126266
- 210376 words of memory out of 3000000
- 11284 multiletter control sequences out of 15000+200000
- 30306 words of font info for 59 fonts, out of 3000000 for 9000
+ 8115 strings out of 492946
+ 125220 string characters out of 3126266
+ 229720 words of memory out of 3000000
+ 11818 multiletter control sequences out of 15000+200000
+ 51244 words of font info for 97 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,5n,40p,857b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on d:\Workspace\University\HONS-Project\paper\report.pdf (19 pages, 140955 bytes).
+ 43i,8n,40p,1714b,390s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Pavel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on d:/Workspace\University\HONS-Project\paper\report.pdf (23 pages, 202737 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 
