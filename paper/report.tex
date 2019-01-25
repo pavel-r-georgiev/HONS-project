@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage[english]{babel}
 \usepackage[hidelinks]{hyperref}
+\usepackage{multirow, latexsym}
 \addto\extrasenglish{%
   \def\chapterautorefname{Chapter}%
   \def\sectionautorefname{Section}%
@@ -50,13 +51,13 @@ Acknowledgements go here.
 % --------------------------------------------------
 \chapter{Introduction}
 
-Big Data market revenues are continuously growing with a projected increase of \$42B in 2018 to \$103B in 2027 [17] (see Appendix A, Figure A-1). Because of the amount of data companies collect and exploit, they strive for the most optimal data transfer and computation speeds they can achieve. The amount of data they work with not only directly ties with an increase in their revenue but also helps them scale their solutions to a global level. 
+Big Data market revenues are continuously growing with a projected increase of \$42B in 2018 to \$103B in 2027 \cite{statista_market_forecast:online} (see Appendix A, Figure A-1). Because of the amount of data companies collect and exploit, they strive for the most optimal data transfer and computation speeds they can achieve. The amount of data they work with not only directly ties with an increase in their revenue but also helps them scale their solutions to a global level. 
 
-It has been confirmed that Moore’s law is coming to its natural end [19,20] so we can no longer rely on big improvements in performance by vertical scaling a machine by upgrading its hardware. However, the shift towards distributed computing allowed for the increase in computational power to continue. Gone are the days of a single server within a data centre. By following the trends on Top500.org [8] we can see that it has been the case for a long time that the work of a single logical service is done over many machines grouped in physical clusters. From data storage [11] to batch or stream data processing [12], the number of problems that could be solved in a distributed manner is countless. In order to reach peak throughput and minimal latency, companies are placing their focus on optimizing the intra-cluster and inter-cluster data transfer process.  Regular TCP/IP connections, without any optimizations or specialized hardware, can become a bottleneck for the efficiency of a distributed system. With Remote Direct Memory Access (RDMA) implementations having the potential for better throughput, lower latency and less CPU interrupts [1] it is becoming clear why the use of RDMA methods is getting more and more prevalent.  Wider adoption is enabled by the development of the technology and vendors releasing RDMA-compliant interconnecting hardware [6]. From network architecture standards like InfiniBand [3] to using RDMA over Converged Ethernet (RoCE) [4] to Internet-wide RDMA protocols like iWARP [5], there are an increasing number of ways of integrating RDMA into data centres with different fabrics and protocols.
+It has been confirmed that Moore's law is coming to its natural end \cite{MooresLaw_techworld:online,MooresLaw_mit_techreview:online} so we can no longer rely on big improvements in performance by vertical scaling a machine by upgrading its hardware. However, the shift towards distributed computing allowed for the increase in computational power to continue. Gone are the days of a single server within a data centre. By following the trends on Top500.org \cite{top500:online} we can see that it has been the case for a long time that the work of a single logical service is done over many machines grouped in physical clusters. From data storage \cite{corbett2013spanner} to batch or stream data processing \cite{lambdaws:online}, the number of problems that could be solved in a distributed manner is countless. In order to reach peak throughput and minimal latency, companies are placing their focus on optimizing the intra-cluster and inter-cluster data transfer process.  Regular TCP/IP connections, without any optimizations or specialized hardware, can become a bottleneck for the efficiency of a distributed system. With Remote Direct Memory Access (RDMA) implementations having the potential for better throughput, lower latency and less CPU interrupts \cite{oberg2006evaluation} it is becoming clear why the use of RDMA methods is getting more and more prevalent.  Wider adoption is enabled by the development of the technology and vendors releasing RDMA-compliant interconnecting hardware \cite{cisco2018RoCE}. From network architecture standards like InfiniBand \cite{pfister2001infiniband} to using RDMA over Converged Ethernet (RoCE) \cite{mellanox2016roce} to Internet-wide RDMA protocols like iWARP \cite{intel2015iwarp}, there are an increasing number of ways of integrating RDMA into data centres with different fabrics and protocols.
 
-Because of the shift toward distributed computing, the number of components within a system has substantially grown, which further increases the rate of expected failure. After analysis on data of 22 high-performance computing (HPC) systems, Gibson and Schroeder [7] suggest that the failure rate grows in a rate proportional to the number of processor chips in the system. With some systems in their data showing a rate of 1100 failures per year, it is almost expected that a node will fail during execution of a process. In order to maintain the expected performance of the system, there should be measures in place to make sure the system is fault tolerant and that a failure of one node won’t bring the whole service down.
+Because of the shift toward distributed computing, the number of components within a system has substantially grown, which further increases the rate of expected failure. After analysis on data of 22 high-performance computing (HPC) systems, Gibson and Schroeder \cite{schroeder2007understanding} suggest that the failure rate grows in a rate proportional to the number of processor chips in the system. With some systems in their data showing a rate of 1100 failures per year, it is almost expected that a node will fail during execution of a process. In order to maintain the expected performance of the system, there should be measures in place to make sure the system is fault tolerant and that a failure of one node won't bring the whole service down.
 
-Similarly, the same principles hold on comparable systems that employ RDMA methods for their data transfer. Failure detection mechanisms and properties have been studied before [13, 14, 15, 16] but little work has been done on implementing one over RDMA with most of the work being done focusing on Replicated State Machines (RSM) [10].
+Similarly, the same principles hold on comparable systems that employ RDMA methods for their data transfer. Failure detection mechanisms and properties have been studied before [13, 14, 15, 16] but little work has been done on implementing one over RDMA with most of the work being done focusing on Replicated State Machines (RSM) \cite{poke2015dare}.
 
 % --------------------------------------------------
 %   Goals
@@ -82,17 +83,17 @@ In order to achieve this and evaluate the results the following contributions ha
 % --------------------------------------------------
 \section{Report outline}
 \begin{itemize}
-  \item \textbf{Chapter 2}: Gives the necessary background needed to understand the nature of the work presented in the paper. Specifically, it introduces important concepts about failure detection (2.1) and RDMA (2.2).
-  \item \textbf{Chapter 3}: Describes the implementation of a failure detector. It goes into details about the class of failure detector needed, implementation of dynamic timeout and choice of consensus protocol.
-  \item \textbf{Chapter 4}: Describes the way the implementation is altered to work with RDMA. 
-  \item \textbf{Chapter 5}: Analyses the performance of the difference in performance of the failure detector when communication is done over RDMA versus when it is done over TCP/IP.
-  \item \textbf{Chapter 6}: Summarizes the work that is done and observations have been made in the process of researching and implementing the desired outcomes. It also outlines possible ways the implementation could be improved or expanded upon.
+  \item \textbf{\autoref{chap:background}}: Gives the necessary background needed to understand the nature of the work presented in the paper. Specifically, it introduces important concepts about failure detection (\autoref{sec:failure_detection}) and RDMA (\autoref{sec:rdma}).
+  \item \textbf{\autoref{chap:failure_detector_impl}}: Describes the implementation of a failure detector. It goes into details about the class of failure detector needed, implementation of dynamic timeout and choice of consensus protocol.
+  \item \textbf{\autoref{chap:rdma_impl}}: Describes the way the implementation is altered to work with RDMA. 
+  \item \textbf{\autoref{chap:analysis}}: Analyses the performance of the difference in performance of the failure detector when communication is done over RDMA versus when it is done over TCP/IP.
+  \item \textbf{\autoref{chap:conclusion}}: Summarizes the work that is done and observations have been made in the process of researching and implementing the desired outcomes. It also outlines possible ways the implementation could be improved or expanded upon.
 \end{itemize}
 
 % --------------------------------------------------
 %   Tools
 % --------------------------------------------------
-\section{Tools/}
+\section{Tools}
 
 The source code for the failure detector has been written in C\footnote{\url{https://en.wikipedia.org/wiki/C_(programming_language)}} language. In order to streamline the development workflow, the open-source build process management software CMake\footnote{\url{https://cmake.org/}} language has been used. The library ZeroMQ\footnote{\url{http://zeromq.org/}} has been utilised for the initial development of the failure detector over TCP/IP. This is a high-performance messaging library that is aimed at distributed applications. Another tool that helped in the development was Docker\footnote{\url{https://www.docker.com}}. It allowed for an easy way to simulate a distributed network.
 
@@ -101,17 +102,17 @@ The source code for the failure detector has been written in C\footnote{\url{htt
 %   CHAPTER: BACKGROUND
 % --------------------------------------------------
 \chapter{Background}
-
+\label{chap:background}
 For the rest of the paper, if not mentioned otherwise, every system discussed would be a distributed system that consists of a finite set of nodes n. For simplicity would assume that every node runs a single process. Therefore, we have a set of processes $\pi = \{p_1, p_2, p_3 \dots p_n\}$. Also, we would assume that every node in the system is interconnected with the rest of the nodes by a reliable channel and can communicate with them by sending messages. 
 
-We would assume an asynchronous model of distributed computing for the systems we are discussing, which means that no timing assumptions are made. This allows for a great general model because we need not concern ourselves with delays caused by computations, network congestion, scheduled delays etc. Although we don’t measure physical time, for convenience we would use a monotonically increasing virtual clock $\tau$ that increases at every event occurrence.
+We would assume an asynchronous model of distributed computing for the systems we are discussing, which means that no timing assumptions are made. This allows for a great general model because we need not concern ourselves with delays caused by computations, network congestion, scheduled delays etc. Although we don't measure physical time, for convenience we would use a monotonically increasing virtual clock $\tau$ that increases at every event occurrence.
 
 
 % --------------------------------------------------
 %   Failure Detection
 % --------------------------------------------------
 \section{Failure Detection}
-
+\label{sec:failure_detection}
 In this section we are not concerned with the software implementation of a failure detector or the hardware that is running underneath; for implementation details refer to \autoref{chap:failure_detector_impl}. Instead, we focus on the properties a failure detector has and discuss ways to detect failures in an asynchronous system.
 
 % --------------------------------------------------
@@ -119,7 +120,7 @@ In this section we are not concerned with the software implementation of a failu
 % --------------------------------------------------
 \subsection{Consensus Problem}
 
-In distributed computing, it is important to be able to achieve system reliability even in a presence of a failed component. This requires processes to agree on a certain aspect – computed value, elected leader, clock synchronization etc. Different approaches decide the consensus value differently, but all consensus protocols end with a unanimous decision at the end of their run.  The consensus problem is bounded by the following properties [13]:
+In distributed computing, it is important to be able to achieve system reliability even in a presence of a failed component. This requires processes to agree on a certain aspect – computed value, elected leader, clock synchronization etc. Different approaches decide the consensus value differently, but all consensus protocols end with a unanimous decision at the end of their run.  The consensus problem is bounded by the following properties \cite{chandra1996unreliable}:
 
 \begin{itemize}
   \item \textbf{Termination}: every correct process eventually decides upon a value
@@ -135,7 +136,7 @@ There is also an extension of the general consensus problem called the \textit{U
 % --------------------------------------------------
 \subsection{Impossibility Result}
 \label{subsection:imposs_result}
-An important thing to note is the proof by Fischer et al. [16], which states that in an asynchronous distributed system, even a single failed process can render the reach of consensus \textit{impossible}. Simply put, this stems from the fact that in an asynchronous system we have no way of knowing whether a process has crashed or it is taking a long time to communicate with the rest of the nodes.
+An important thing to note is the proof by Fischer et al. \cite{fischer1982impossibility}, which states that in an asynchronous distributed system, even a single failed process can render the reach of consensus \textit{impossible}. Simply put, this stems from the fact that in an asynchronous system we have no way of knowing whether a process has crashed or it is taking a long time to communicate with the rest of the nodes.
 
 
 % --------------------------------------------------
@@ -143,7 +144,7 @@ An important thing to note is the proof by Fischer et al. [16], which states tha
 % --------------------------------------------------
 \subsection{Unreliable Failure Detectors}
 
-There are several ways to remedy the impossibility of reaching consensus, explained in \autoref{subsection:imposs_result}, by making a minimal set of assumptions on top of the asynchronous model. We would focus on the unreliable failure detector abstraction described by Chandra and Toueg [13], which allows us to build reliable distributed systems. To combat the difficulty of determining if a process has crashed or just behaving abnormally slow, the authors propose the introduction of failure detectors that can make mistakes. 
+There are several ways to remedy the impossibility of reaching consensus, explained in \autoref{subsection:imposs_result}, by making a minimal set of assumptions on top of the asynchronous model. We would focus on the unreliable failure detector abstraction described by Chandra and Toueg \cite{chandra1996unreliable}, which allows us to build reliable distributed systems. To combat the difficulty of determining if a process has crashed or just behaving abnormally slow, the authors propose the introduction of failure detectors that can make mistakes. 
 
 In this abstraction, we have a set of distributed failure detectors. That set consists of local failure detector modules attached to every process in our system, which monitors the status of the rest of the processes in the system. Every failure detector module maintains a list of suspected crashes and can append or delete suspected processes from that list. For example, node $p_i$ can suspect that node $p_j$ has crashed and put it in its list of suspects. If later $p_i$ decides that a mistake has been made it can remove $p_j$ from the list. Also, two processes can have different lists of suspected failures.
 
@@ -158,7 +159,7 @@ Failure detectors can make mistakes so we should expect live processes to be sus
 %   Completeness
 % --------------------------------------------------
 \subsubsection*{Completeness}
-Failure detectors are classified into two groups based on their completeness [13]:
+Failure detectors are classified into two groups based on their completeness \cite{chandra1996unreliable}:
 
 \begin{itemize}
   \item \textbf{Strong completeness}: eventually \textit{every} crashed process is permanently suspected by \textit{every} correct process
@@ -174,12 +175,30 @@ By introducing the accuracy property, we have a way of classifying the number of
 
 \begin{itemize}
   \item \textbf{Strong accuracy}: no process is suspected before it crashes
-  \item \textbf{Weak completeness}: : at least one correct process is never suspected
+  \item \textbf{Weak completeness}: at least one correct process is never suspected
 \end{itemize}
 
-Strong accuracy and even weak accuracy properties are hard to satisfy since there must be at least one alive process that is never suspected.  Because of this Chandra and Toueg [13] introduce the concept of \textit{eventual} satisfiability.  The resulting \textit{eventual strong accuracy} and \textit{eventual weak accuracy} properties are much like their non-eventual, or often called perpetual, counterparts but only require the accuracy constraint to be satisfied after a certain point in time.
+Strong accuracy and even weak accuracy properties are hard to satisfy since there must be at least one alive process that is never suspected.  Because of this Chandra and Toueg \cite{chandra1996unreliable} introduce the concept of \textit{eventual} satisfiability.  The resulting \textit{eventual strong accuracy} and \textit{eventual weak accuracy} properties are much like their non-eventual, or often called perpetual, counterparts but only require the accuracy constraint to be satisfied after a certain point in time.
 
 Combination of the completeness and accuracy properties give us 8 types of failure detectors.
+
+
+% --------------------------------------------------
+%   Failure detector classes table
+% --------------------------------------------------
+
+\begin{table}[]
+  \centering
+  \begin{tabular}{|c|c|c|c|c|}
+  \hline
+  \multicolumn{1}{|r|}{\multirow{2}{*}{\textbf{Completeness}}} & \multicolumn{4}{c|}{\textbf{Accuracy}} \\ \cline{2-5} 
+  \multicolumn{1}{|r|}{} & Strong & Weak & Eventual Strong & Eventual Weak \\ \hline
+  Strong & \textit{\begin{tabular}[c]{@{}c@{}}Perfect \\ $\mathcal{P}$\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Strong\\ $\mathcal{S}$\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Eventually Perfect\\ $\diamond \mathcal{P}$\end{tabular}} & \begin{tabular}[c]{@{}c@{}}Eventually Strong\\ $\diamond \mathcal{S}$\end{tabular} \\ \hline
+  Weak & $\mathcal{Q}$ & \begin{tabular}[c]{@{}c@{}}Weak\\ $\mathcal{W}$\end{tabular} & $\diamond \mathcal{Q}$ & \begin{tabular}[c]{@{}c@{}}Eventually Weak\\ $\diamond \mathcal{W}$\end{tabular} \\ \hline
+  \end{tabular}
+  \caption{Eight classes of failure detectors defined by the accuracy and completeness properties \cite{chandra1996unreliable}}
+  \label{table:detector_classes}
+  \end{table}
 
 For the rest of the paper, the classes of failure detectors would be referred by the notation given in Figure 1.
 
@@ -187,7 +206,7 @@ For the rest of the paper, the classes of failure detectors would be referred by
 %   RDMA
 % --------------------------------------------------
 \section{RDMA}
-
+\label{sec:rdma}
 Remote Direct Memory Access (RDMA) allows one computer to directly access the memory of another remote computer without involving the operating systems of either of the machines.
 
 Bypassing the operating system (OS) gives the application direct access to the network adapter and allows the CPU to communicate directly with it. Because the need for context switches between user mode and kernel mode is eliminated, transfers can happen in parallel with other operations running on the same machine. RDMA also allows for zero-copy transfers. This means that no copies of data are needed to or from the memory buffer. This enables the data to be read directly from another node's memory. The result is a lower CPU load, higher throughput and lower latency.
@@ -202,16 +221,16 @@ Bypassing the operating system (OS) gives the application direct access to the n
 \section{PAXOS}
 
 \chapter{Failure detection over RDMA}
+\label{chap:rdma_impl}
 
 \chapter{Analysis}
+\label{chap:analysis}
 
 \chapter{Conclusion}
+\label{chap:conclusion}
 \section{Overview}
 \section{Future work}
 
-
-Of course
-you may want to use several chapters and much more text than here.
 
 % use the following and \cite{} as above if you use BibTeX
 % otherwise generate bibtem entries
