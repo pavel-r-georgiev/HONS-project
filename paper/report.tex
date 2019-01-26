@@ -3,12 +3,14 @@
 \usepackage[english]{babel}
 \usepackage[hidelinks]{hyperref}
 \usepackage{multirow, latexsym}
+\usepackage[toc,page]{appendix}
 \addto\extrasenglish{%
   \def\chapterautorefname{Chapter}%
   \def\sectionautorefname{Section}%
   \def\subsectionautorefname{Subsection}%
   \def\paragraphautorefname{Paragraph}%
   \def\subparagraphautorefname{Subparagraph}%
+  \def\subparagraphautorefname{Figure}%
 }
 \begin{document}
 
@@ -51,9 +53,9 @@ Acknowledgements go here.
 % --------------------------------------------------
 \chapter{Introduction}
 
-Big Data market revenues are continuously growing with a projected increase of \$42B in 2018 to \$103B in 2027 \cite{statista_market_forecast:online} (see Appendix A, Figure A-1). Because of the amount of data companies collect and exploit, they strive for the most optimal data transfer and computation speeds they can achieve. The amount of data they work with not only directly ties with an increase in their revenue but also helps them scale their solutions to a global level. 
+Big Data market revenues are continuously growing with a projected increase of \$42B in 2018 to \$103B in 2027 \cite{statista_market_forecast:online} (see \autoref{fig:revenue_forecast}). Because of the amount of data companies collect and exploit, they strive for the most optimal data transfer and computation speeds they can achieve. The amount of data they work with not only directly ties with an increase in their revenue but also helps them scale their solutions to a global level. 
 
-It has been confirmed that Moore's law is coming to its natural end \cite{MooresLaw_techworld:online,MooresLaw_mit_techreview:online} so we can no longer rely on big improvements in performance by vertical scaling a machine by upgrading its hardware. However, the shift towards distributed computing allowed for the increase in computational power to continue. Gone are the days of a single server within a data centre. By following the trends on Top500.org \cite{top500:online} we can see that it has been the case for a long time that the work of a single logical service is done over many machines grouped in physical clusters. From data storage \cite{corbett2013spanner} to batch or stream data processing \cite{lambdaws:online}, the number of problems that could be solved in a distributed manner is countless. In order to reach peak throughput and minimal latency, companies are placing their focus on optimizing the intra-cluster and inter-cluster data transfer process.  Regular TCP/IP connections, without any optimizations or specialized hardware, can become a bottleneck for the efficiency of a distributed system. With Remote Direct Memory Access (RDMA) implementations having the potential for better throughput, lower latency and less CPU interrupts \cite{oberg2006evaluation} it is becoming clear why the use of RDMA methods is getting more and more prevalent.  Wider adoption is enabled by the development of the technology and vendors releasing RDMA-compliant interconnecting hardware \cite{cisco2018RoCE}. From network architecture standards like InfiniBand \cite{pfister2001infiniband} to using RDMA over Converged Ethernet (RoCE) \cite{mellanox2016roce} to Internet-wide RDMA protocols like iWARP \cite{intel2015iwarp}, there are an increasing number of ways of integrating RDMA into data centres with different fabrics and protocols.
+It has been confirmed that Moore's law is coming to its natural end \cite{MooresLaw_techworld:online,MooresLaw_mit_techreview:online} so we can no longer rely on big improvements in performance by vertical scaling a machine by upgrading its hardware. However, the shift towards distributed computing allowed for the increase in computational power to continue. Gone are the days of a single server within a data centre. By following the trends on Top500.org \cite{top500:online} we can see that it has been the case for a long time that the work of a single logical service is done over many machines grouped in physical clusters. From data storage \cite{corbett2013spanner} to batch or stream data processing \cite{lambdaws:online}, the number of problems that could be solved in a distributed manner is countless. In order to reach peak throughput and minimal latency, companies are placing their focus on optimizing the intra-cluster and inter-cluster data transfer process.  Regular TCP/IP connections, without any optimizations or specialized hardware, can become a bottleneck for the efficiency of a distributed system. With Remote Direct Memory Access (RDMA) implementations having the potential for better throughput, lower latency and less central processing unit(CPU) interrupts \cite{oberg2006evaluation} it is becoming clear why the use of RDMA methods is getting more and more prevalent.  Wider adoption is enabled by the development of the technology and vendors releasing RDMA-compliant interconnecting hardware \cite{cisco2018RoCE}. From network architecture standards like InfiniBand \cite{pfister2001infiniband} to using RDMA over Converged Ethernet (RoCE) \cite{mellanox2016roce} to Internet-wide RDMA protocols like iWARP \cite{intel2015iwarp}, there are an increasing number of ways of integrating RDMA into data centres with different fabrics and protocols.
 
 Because of the shift toward distributed computing, the number of components within a system has substantially grown, which further increases the rate of expected failure. After analysis on data of 22 high-performance computing (HPC) systems, Gibson and Schroeder \cite{schroeder2007understanding} suggest that the failure rate grows in a rate proportional to the number of processor chips in the system. With some systems in their data showing a rate of 1100 failures per year, it is almost expected that a node will fail during execution of a process. In order to maintain the expected performance of the system, there should be measures in place to make sure the system is fault tolerant and that a failure of one node won't bring the whole service down.
 
@@ -200,17 +202,37 @@ Combination of the completeness and accuracy properties give us 8 types of failu
   \label{table:detector_classes}
   \end{table}
 
-For the rest of the paper, the classes of failure detectors would be referred by the notation given in Figure 1.
+For the rest of the paper, the classes of failure detectors would be referred by the notation given in \autoref{table:detector_classes}.
 
 % --------------------------------------------------
 %   RDMA
 % --------------------------------------------------
 \section{RDMA}
 \label{sec:rdma}
-Remote Direct Memory Access (RDMA) allows one computer to directly access the memory of another remote computer without involving the operating systems of either of the machines.
 
-Bypassing the operating system (OS) gives the application direct access to the network adapter and allows the CPU to communicate directly with it. Because the need for context switches between user mode and kernel mode is eliminated, transfers can happen in parallel with other operations running on the same machine. RDMA also allows for zero-copy transfers. This means that no copies of data are needed to or from the memory buffer. This enables the data to be read directly from another node's memory. The result is a lower CPU load, higher throughput and lower latency.
+\subsection{Motivation}
+With Moore's law close to the end of its natural path \cite{MooresLaw_mit_techreview:online,MooresLaw_techworld:online}, CPU improvements focus less on clock speed and more on multi-core processors. This has led to a stagnation or even decrease in the clock speeds of modern processors compared to their predecessors. On the other hand, network technology is improving rapidly. With a 10Gbps and above network interconnects available, suddenly, the CPU interrupt that the reception of a network packet triggers do not seem so insignificant.
 
+Advancements in networking have demanded few features from a future-proof network protocol: 
+\begin{itemize}
+  \item Hardware offloading
+  \item Kernel Bypass
+  \item Zero-copy transfers
+  \item One-sided, polling-based processing that would replace the CPU interrupts
+\end{itemize}
+
+\subsection{Benefits}
+
+Remote Direct Memory Access (RDMA) is the answer to those demands. RDMA allows one computer to directly access the memory of another remote computer without involving the operating systems of either of the machines.
+
+Remote Direct Memory Access (RDMA) is the answer to those demands. RDMA allows one computer to directly access the memory of another remote computer without involving the operating systems of either of the machines. 
+
+RDMA also allows for zero-copy transfers. This means that no copies of data are needed to or from the memory buffer. This enables the data to be read directly from another node's memory.  Without RDMA a network transfer would require two traversals on the memory bus – to memory and back. Furthermore, those transfers would compete for memory bandwidth with the rest of the processes running on the machine. This results in lower CPU load, higher throughput and lower latency with RDMA proven to achieve sub $10 \mu$s transfers in a controlled benchmark \cite{kal2016design_guidelines}.
+
+\subsection{Adoption}
+The native RDMA protocol can run only over a lossless network and thus requires the InfiniBand network fabric \cite{pfister2001infiniband}. That means that in order to use the protocol changes to the data centre's network fabrics and NICs would be necessary, such that they are RDMA-enabled.
+
+However, there is also an alternative that is using protocols that describe how RDMA should act in order to emulate lossless network when running over Ethernet \cite{intel2015iwarp, mellanox2016roce, guo2016rdma}. This eliminates the economic and technical aspect of repurchasing the infrastructure of a data centre and allowing for speeds comparable but that can be slower when compared to running over InfiniBand. Regardless, the results of implementing RDMA over Ethernet (RoCEv2) at Bing show us that it is a lot faster than using TCP – 99th percentile latencies being  $90 \mu$s and  $700 \mu$s for RDMA and TCP respectively \cite{guo2016rdma}.
 
 \chapter{Failure detector implementation}
 \label{chap:failure_detector_impl}
@@ -237,4 +259,12 @@ Bypassing the operating system (OS) gives the application direct access to the n
 \bibliographystyle{plain}
 \bibliography{bibliography}
 
+\begin{appendices}
+  \chapter[]{}
+  \begin{figure}
+    \includegraphics[scale=0.5]{revenue_forecast_statista}
+    \caption{Forecast of Big Data market size, based on revenue, from 2011 to 2027 (in billion U.S. dollars) \cite{statista_market_forecast:online}}
+    \label{fig:revenue_forecast}
+  \end{figure}
+  \end{appendices}
 \end{document}
