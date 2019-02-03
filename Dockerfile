@@ -5,7 +5,8 @@ RUN apt-get update
 RUN apt-get install -y \
         git build-essential libtool libssl-dev \
         pkg-config autotools-dev autoconf automake cmake \
-        uuid-dev libpcre3-dev libsodium-dev valgrind
+        uuid-dev libpcre3-dev libsodium-dev valgrind \
+        libffi-dev python-dev python-pip liblmdb-dev
 
 # Install libsodium
 RUN git clone https://github.com/jedisct1/libsodium &&\
