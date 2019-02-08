@@ -9,7 +9,6 @@
 #define PING_PORT_NUMBER 1500
 #define PING_MSG_SIZE    1
 #define PING_INTERVAL    1000  //  Once per second
-#define TIMEOUT 1500
 
 typedef struct node_struct {
     char *ipaddress; /* key */
@@ -23,10 +22,11 @@ bool silenced = false;
 int error;
 double time_diff;
 // Time variables
-struct timeval  current_time;
+struct timeval current_time;
 // Nodes hashmap
 struct node_struct *nodes = NULL;
 pthread_rwlock_t hashmap_lock;
+
 
 double get_current_time_ms(){
     gettimeofday(&current_time, NULL);
@@ -36,9 +36,20 @@ double get_current_time_ms(){
 
 void print_hash() {
     struct node_struct *n;
+    if (pthread_rwlock_rdlock(&hashmap_lock) != 0) {
+        printf("ERROR: can't get rdlock \n");
+        return;
+    }
     for(n=nodes; n != NULL; n=n->hh.next) {
         printf("IP addr %s: Last heartbeat: %f\n", n->ipaddress, n->last_heartbeat_ms);
     }
+    pthread_rwlock_unlock(&hashmap_lock);
+}
+
+
+
+int ip_address_hash_sort_function(struct node_struct *a,struct node_struct *b) {
+    return strcmp(a->ipaddress, b->ipaddress);
 }
 
 void handle_timeout(size_t timer_id, void * user_data) {
@@ -88,7 +99,7 @@ int main(int argc, char **argv) {
         DEBUG = true;
     }
 
-//    File to save adaptive delay results
+//    File to save adaptive delay results. Used for benchmarking
     FILE *fp;
     fp=fopen("file.csv","w+");
 
@@ -132,7 +143,7 @@ int main(int argc, char **argv) {
 
             double current_time_ms = get_current_time_ms();
            
-            //        Check if node in map
+            //        Check if node in hash
             if (pthread_rwlock_rdlock(&hashmap_lock) != 0) {
                 printf("ERROR: can't get rdlock \n");
                 break;
@@ -140,6 +151,7 @@ int main(int argc, char **argv) {
             HASH_FIND_STR(nodes, ipaddress, node);
             pthread_rwlock_unlock(&hashmap_lock);
 
+//            Node not in hash. Create a node struct and start a timeout timer.
             if(node == NULL){
                 node = (struct node_struct *)malloc(sizeof *node);
                 node->ipaddress = (char*) malloc(strlen(ipaddress));
@@ -153,10 +165,12 @@ int main(int argc, char **argv) {
                 }
                 HASH_ADD_KEYPTR(hh, nodes, node->ipaddress, strlen(node->ipaddress), node);
                 pthread_rwlock_unlock(&hashmap_lock);
+//                Adaptive estimation of the expected next delay
                 estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG, fp);
                 unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
                 node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
             } else {
+//                Node in hash. Estimate the next delay based on information so far and restart the timer.
                 stop_timer(node->timer_id);
                 estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG, fp);
                 unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
@@ -166,6 +180,7 @@ int main(int argc, char **argv) {
                 node->last_heartbeat_ms= current_time_ms;
             }
 
+//            Allow orchestrator to silence/restart the node.
             if(streq(hostname, received) && !silenced) {
                 printf("Silencing.....\n");
                 silenced = true;
