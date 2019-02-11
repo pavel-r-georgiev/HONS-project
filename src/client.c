@@ -3,9 +3,13 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include <event.h>
+#include <evpaxos.h>
 #include "timer.h"
 #include "adaptive_delay_model.h"
 #include "uthash.h"
+#include "paxos_replica.h"
+
 #define PING_PORT_NUMBER 1500
 #define PING_MSG_SIZE    1
 #define PING_INTERVAL    1000  //  Once per second
@@ -18,6 +22,11 @@ typedef struct node_struct {
     UT_hash_handle hh;  /* makes this structure hashable */
 } node_struct;
 
+struct args_struct{
+    int id;
+    struct fd_replica* replica;
+};
+
 bool silenced = false;
 int error;
 double time_diff;
@@ -26,6 +35,8 @@ struct timeval current_time;
 // Nodes hashmap
 struct node_struct *nodes = NULL;
 pthread_rwlock_t hashmap_lock;
+// Failure detector PAXOS replica - acceptor, learner, proposer
+struct fd_replica* replica;
 
 
 double get_current_time_ms(){
@@ -72,6 +83,10 @@ void handle_timeout(size_t timer_id, void * user_data) {
         pthread_rwlock_unlock(&hashmap_lock);
     }
 
+    char val[64];
+    snprintf(val, sizeof(val), "REMOVE %d %s", 123, (char *)user_data);
+    evpaxos_replica_submit(replica->paxos_replica, val, (int) (strlen(val) + 1));
+
     printf("Timer %d expired, ip: %s\n", (int)timer_id, (char *)user_data);
 }
 
@@ -103,6 +118,7 @@ int main(int argc, char **argv) {
     FILE *fp;
     fp=fopen("file.csv","w+");
 
+
     //  Create new beacon
     zactor_t *speaker = zactor_new (zbeacon, NULL);
     zactor_t *listener = zactor_new (zbeacon, NULL);
@@ -113,9 +129,21 @@ int main(int argc, char **argv) {
 
     zsock_send (speaker, "si", "CONFIGURE", PING_PORT_NUMBER);
     zsock_send (listener, "si", "CONFIGURE", PING_PORT_NUMBER);
+//    Get IP of current node
     char *hostname = zstr_recv(listener);
 
+    //    Start PAXOS replica
+    int id = atoi(&hostname[strlen(hostname) - 1]);
+    struct args_struct* arg = malloc(sizeof(struct args_struct));
+    arg->id = id;
+    replica = malloc(sizeof(struct fd_replica));
+    arg->replica = replica;
+    start_paxos_replica(id, replica);
+//    sleep(1);
 
+//
+//    struct event *e = event_new(replica->base, -1, EV_TIMEOUT, submit_value, arg);
+//    event_add(e, &count_interval);
 //    zstr_sendx (speaker, "PUBLISH", "STOP", "1000", NULL);
     zsock_send (speaker, "sbi", "PUBLISH", "!", PING_MSG_SIZE, PING_INTERVAL);
     silenced = false;
@@ -139,7 +167,9 @@ int main(int argc, char **argv) {
         zstr_recvx (listener, &ipaddress, &received, NULL);
 
         if(!streq(hostname, ipaddress) || DEBUG){
-            printf("IP Address: %s, Data: %s \n", ipaddress, received);
+            if(DEBUG){
+                printf("IP Address: %s, Data: %s \n", ipaddress, received);
+            }
 
             double current_time_ms = get_current_time_ms();
            
@@ -176,7 +206,9 @@ int main(int argc, char **argv) {
                 unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
                 node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
                 time_diff = (current_time_ms - node->last_heartbeat_ms);
-                printf("Time since last heartbeat  %2fms\n", time_diff);
+                if(DEBUG){
+                    printf("Time since last heartbeat  %2fms\n", time_diff);
+                }
                 node->last_heartbeat_ms= current_time_ms;
             }
 
@@ -197,6 +229,8 @@ int main(int argc, char **argv) {
 
 //    Stop timer management thread
     terminate_timer_manager();
+//    Stop paxos replica thread
+    terminate_paxos_replica();
 //    Close opened file
     fclose(fp);
     // Wait for at most 1/2 second if there's no broadcasting
