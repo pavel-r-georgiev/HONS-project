@@ -9,18 +9,11 @@
 #include "adaptive_delay_model.h"
 #include "uthash.h"
 #include "paxos_replica.h"
+#include "utils.h"
 
 #define PING_PORT_NUMBER 1500
 #define PING_MSG_SIZE    1
 #define PING_INTERVAL    1000  //  Once per second
-
-typedef struct node_struct {
-    char *ipaddress; /* key */
-    double last_heartbeat_ms;
-    size_t timer_id;
-    adaptive_timeout_struct *timeout_metadata;
-    UT_hash_handle hh;  /* makes this structure hashable */
-} node_struct;
 
 struct args_struct{
     int id;
@@ -44,25 +37,6 @@ double get_current_time_ms(){
     return (current_time.tv_sec + (current_time.tv_usec / 1e6))* 1e3;
 }
 
-
-void print_hash() {
-    struct node_struct *n;
-    if (pthread_rwlock_rdlock(&hashmap_lock) != 0) {
-        printf("ERROR: can't get rdlock \n");
-        return;
-    }
-    for(n=nodes; n != NULL; n=n->hh.next) {
-        printf("IP addr %s: Last heartbeat: %f\n", n->ipaddress, n->last_heartbeat_ms);
-    }
-    pthread_rwlock_unlock(&hashmap_lock);
-}
-
-
-
-int ip_address_hash_sort_function(struct node_struct *a,struct node_struct *b) {
-    return strcmp(a->ipaddress, b->ipaddress);
-}
-
 void handle_timeout(size_t timer_id, void * user_data) {
     struct node_struct *node = NULL;
     char *ip_address = (char *) user_data;
@@ -83,11 +57,10 @@ void handle_timeout(size_t timer_id, void * user_data) {
         pthread_rwlock_unlock(&hashmap_lock);
     }
 
-    char val[64];
-    snprintf(val, sizeof(val), "REMOVE %d %s", 123, (char *)user_data);
-    evpaxos_replica_submit(replica->paxos_replica, val, (int) (strlen(val) + 1));
+    paxos_submit_remove(replica, (char *)user_data);
 
     printf("Timer %d expired, ip: %s\n", (int)timer_id, (char *)user_data);
+    print_hash(nodes, hashmap_lock);
 }
 
 
@@ -133,17 +106,13 @@ int main(int argc, char **argv) {
     char *hostname = zstr_recv(listener);
 
     //    Start PAXOS replica
-    int id = atoi(&hostname[strlen(hostname) - 1]);
+    int id = ip_to_id(hostname);
     struct args_struct* arg = malloc(sizeof(struct args_struct));
     arg->id = id;
     replica = malloc(sizeof(struct fd_replica));
     arg->replica = replica;
     start_paxos_replica(id, replica);
-//    sleep(1);
 
-//
-//    struct event *e = event_new(replica->base, -1, EV_TIMEOUT, submit_value, arg);
-//    event_add(e, &count_interval);
 //    zstr_sendx (speaker, "PUBLISH", "STOP", "1000", NULL);
     zsock_send (speaker, "sbi", "PUBLISH", "!", PING_MSG_SIZE, PING_INTERVAL);
     silenced = false;
@@ -199,6 +168,8 @@ int main(int argc, char **argv) {
                 estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG, fp);
                 unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
                 node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
+                paxos_submit_add(replica, node->ipaddress);
+                print_hash(nodes, hashmap_lock);
             } else {
 //                Node in hash. Estimate the next delay based on information so far and restart the timer.
                 stop_timer(node->timer_id);

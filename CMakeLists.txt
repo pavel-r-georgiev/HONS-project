@@ -15,6 +15,8 @@ find_package(Threads REQUIRED)
 add_library(TIMER_LIBRARY STATIC src/timer.c)
 # Adaptive timeout model
 add_library(ADAPTIVE_DELAY_LIBRARY STATIC src/adaptive_delay_model.c src/adaptive_delay_model.h)
+# Utility functions
+add_library(UTILS STATIC src/utils.c src/utils.h)
 
 # PAXOS library
 include_directories(${CMAKE_SOURCE_DIR}/src/lib/libpaxos/paxos/include)
@@ -41,7 +43,7 @@ add_library(PAXOS_REPLICA STATIC src/paxos_replica.c src/paxos_replica.h)
 
 # Link libraries to the client
 add_executable(client src/client.c)
-TARGET_LINK_LIBRARIES(client ${ZMQ_LIB} ${CZMQ_LIB} TIMER_LIBRARY ADAPTIVE_DELAY_LIBRARY PAXOS_REPLICA EVPAXOS PAXOS event_pthreads ${LIBPAXOS_LINKER_LIBS}
+TARGET_LINK_LIBRARIES(client ${ZMQ_LIB} ${CZMQ_LIB} TIMER_LIBRARY ADAPTIVE_DELAY_LIBRARY UTILS PAXOS_REPLICA EVPAXOS PAXOS event_pthreads ${LIBPAXOS_LINKER_LIBS}
         ${LIBEVENT_LIBRARIES} ${MSGPACK_LIBRARIES} Threads::Threads)
 
 IF (LMDB_FOUND)

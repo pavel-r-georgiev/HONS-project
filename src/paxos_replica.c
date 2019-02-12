@@ -34,6 +34,7 @@
 #include <pthread.h>
 #include <event2/event-config.h>
 #include <event2/thread.h>
+#include "utils.h"
 
 struct timeval count_interval = {0, 0};
 pthread_t thread_id;
@@ -129,11 +130,15 @@ static void
 on_deliver(unsigned iid, char* value, size_t size, void* arg)
 {
     int replica_id, trim_id;
-    int first, second;
+    int id;
     struct fd_replica* replica = (struct fd_replica*)arg;
 
-    if (sscanf(value, "REMOVE %d %d", &first, &second) == 2) {
+    if (sscanf(value, "REMOVE %d", &id) == 1) {
         printf("REMOVE Value: %.64s\n", value);
+    }
+
+    if (sscanf(value, "ADD %d", &id) == 1) {
+        printf("ADD Value: %.64s\n", value);
     }
 
     if (sscanf(value, "TRIM %d %d", &replica_id, &trim_id) == 2) {
@@ -149,12 +154,17 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     }
 }
 
-static void
-submit_value(int fd, short ev, void* arg)
-{
-    struct fd_replica* replica = (struct fd_replica*)arg;
+void paxos_submit_remove(struct fd_replica* replica, char* ip){
     char val[64];
-    snprintf(val, sizeof(val), "REMOVE %d.%d", 1, replica->id);
+    int id = ip_to_id(ip);
+    snprintf(val, sizeof(val), "REMOVE %d", id);
+    evpaxos_replica_submit(replica->paxos_replica, val, (int) (strlen(val) + 1));
+}
+
+void paxos_submit_add(struct fd_replica* replica, char* ip){
+    char val[64];
+    int id = ip_to_id(ip);
+    snprintf(val, sizeof(val), "ADD %d", id);
     evpaxos_replica_submit(replica->paxos_replica, val, (int) (strlen(val) + 1));
 }
 
@@ -196,9 +206,6 @@ void *init_replica(void *arg)
 
     sig = evsignal_new(base, SIGINT, handle_sigint, base);
     evsignal_add(sig, NULL);
-
-//    replica->client_ev = event_new(base, -1, EV_TIMEOUT, submit_value, replica);
-//    event_add(replica->client_ev, &count_interval);
 
     event_base_dispatch(base);
     free(arg);
