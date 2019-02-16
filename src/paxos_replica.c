@@ -132,6 +132,9 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     int replica_id, trim_id;
     int id;
     struct fd_replica* replica = (struct fd_replica*)arg;
+    char* result = (char*)malloc(sizeof(char) * MAX_SIZE_IP_ADDRESS_STRING);
+    deserialize_hash(value, size);
+    printf("Value: %.64s, Size: %d \n", value, (int)size);
 
     if (sscanf(value, "REMOVE %d", &id) == 1) {
         printf("REMOVE Value: %.64s\n", value);
@@ -161,11 +164,32 @@ void paxos_submit_remove(struct fd_replica* replica, char* ip){
     evpaxos_replica_submit(replica->paxos_replica, val, (int) (strlen(val) + 1));
 }
 
-void paxos_submit_add(struct fd_replica* replica, char* ip){
-    char val[64];
-    int id = ip_to_id(ip);
-    snprintf(val, sizeof(val), "ADD %d", id);
-    evpaxos_replica_submit(replica->paxos_replica, val, (int) (strlen(val) + 1));
+void paxos_serialize_and_submit(
+                struct fd_replica* replica,
+                struct node_struct *nodes,
+                pthread_rwlock_t hashmap_lock,
+                struct membership_state *state){
+    char* buffer;
+
+    if(nodes == NULL){
+        printf("paxos_serialize_and_submit : NULL nodes structure \n");
+        return;
+    }
+
+    serialize_hash(nodes, hashmap_lock, &buffer, &state->len);
+    printf("Printing hash \n");
+    printf("---------------------- \n");
+    print_hash(nodes, hashmap_lock);
+    printf("---------------------- \n");
+    printf("Buffer %s, Length: %d \n", buffer, state->len);
+    evpaxos_replica_submit(replica->paxos_replica, buffer, state->len);
+    free(buffer);
+}
+
+
+
+void paxos_submit_state(struct fd_replica* replica, char* buffer){
+    evpaxos_replica_submit(replica->paxos_replica, buffer, (int) (strlen(buffer) + 1));
 }
 
 void terminate_paxos_replica() {

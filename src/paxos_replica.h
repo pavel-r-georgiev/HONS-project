@@ -2,6 +2,7 @@
 #ifndef HONS_PROJECT_PAXOS_REPLICA_H
 #define HONS_PROJECT_PAXOS_REPLICA_H
 
+#include "utils.h"
 struct trim_info
 {
     int count;
@@ -25,7 +26,11 @@ struct fd_replica
 void start_paxos_replica(int id, struct fd_replica* replica);
 void terminate_paxos_replica();
 void paxos_submit_remove(struct fd_replica* replica, char* ip);
-void paxos_submit_add(struct fd_replica* replica, char* ip);
+void paxos_serialize_and_submit(
+        struct fd_replica* replica,
+        struct node_struct *nodes,
+        pthread_rwlock_t hashmap_lock,
+        struct membership_state *state);
 
 
 #endif //HONS_PROJECT_PAXOS_REPLICA_H

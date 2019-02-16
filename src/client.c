@@ -27,6 +27,8 @@ double time_diff;
 struct timeval current_time;
 // Nodes hashmap
 struct node_struct *nodes = NULL;
+// Holds group memebership data
+struct membership_state *state;
 pthread_rwlock_t hashmap_lock;
 // Failure detector PAXOS replica - acceptor, learner, proposer
 struct fd_replica* replica;
@@ -57,7 +59,8 @@ void handle_timeout(size_t timer_id, void * user_data) {
         pthread_rwlock_unlock(&hashmap_lock);
     }
 
-    paxos_submit_remove(replica, (char *)user_data);
+    paxos_serialize_and_submit(replica, nodes, hashmap_lock, state);
+//    paxos_submit_remove(replica, (char *)user_data);
 
     printf("Timer %d expired, ip: %s\n", (int)timer_id, (char *)user_data);
     print_hash(nodes, hashmap_lock);
@@ -104,6 +107,8 @@ int main(int argc, char **argv) {
     zsock_send (listener, "si", "CONFIGURE", PING_PORT_NUMBER);
 //    Get IP of current node
     char *hostname = zstr_recv(listener);
+
+    state = malloc(sizeof(struct membership_state));
 
     //    Start PAXOS replica
     int id = ip_to_id(hostname);
@@ -168,8 +173,7 @@ int main(int argc, char **argv) {
                 estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG, fp);
                 unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
                 node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
-                paxos_submit_add(replica, node->ipaddress);
-                print_hash(nodes, hashmap_lock);
+                paxos_serialize_and_submit(replica, nodes, hashmap_lock, state);
             } else {
 //                Node in hash. Estimate the next delay based on information so far and restart the timer.
                 stop_timer(node->timer_id);
