@@ -8,7 +8,6 @@
 #include "timer.h"
 #include "adaptive_delay_model.h"
 #include "uthash.h"
-#include "utarray.h"
 #include "paxos_replica.h"
 #include "utils.h"
 
@@ -125,7 +124,7 @@ int main(int argc, char **argv) {
 
 // Init state struct - hold state buffer and length of buffer.
     state = malloc(sizeof(struct membership_state));
-    
+
     init_nodes_struct(hostname);
 
     //    Start PAXOS replica

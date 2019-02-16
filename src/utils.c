@@ -40,6 +40,8 @@ void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, ch
         printf("ERROR: can't get rdlock \n");
         return;
     }
+//    Sort hash so that every state across the nodes is in same order
+    HASH_SORT(nodes, ip_address_hash_sort_function);
     char* buf;
     tpl_node* tn;
     size_t len;
