@@ -67,6 +67,20 @@ void handle_timeout(size_t timer_id, void * user_data) {
     print_hash(nodes, hashmap_lock);
 }
 
+// Add hostname in nodes struct.Useful when sending state to other nodes.
+void init_nodes_struct(char* hostname){
+    node_struct *node = NULL;
+    node = (struct node_struct *)malloc(sizeof *node);
+    node->ipaddress = (char*) malloc(strlen(hostname));
+    strcpy(node->ipaddress,hostname);
+
+    if (pthread_rwlock_wrlock(&hashmap_lock) != 0) {
+        printf("ERROR: can't get wrlock \n");
+        return;
+    }
+    HASH_ADD_KEYPTR(hh, nodes, node->ipaddress, strlen(node->ipaddress), node);
+    pthread_rwlock_unlock(&hashmap_lock);
+}
 
 void clean_up_hashmap() {
     //    Clean up hashmap
@@ -109,7 +123,10 @@ int main(int argc, char **argv) {
 //    Get IP of current node
     char *hostname = zstr_recv(listener);
 
+// Init state struct - hold state buffer and length of buffer.
     state = malloc(sizeof(struct membership_state));
+    
+    init_nodes_struct(hostname);
 
     //    Start PAXOS replica
     int id = ip_to_id(hostname);
@@ -119,7 +136,6 @@ int main(int argc, char **argv) {
     arg->replica = replica;
     start_paxos_replica(id, replica);
 
-//    zstr_sendx (speaker, "PUBLISH", "STOP", "1000", NULL);
     zsock_send (speaker, "sbi", "PUBLISH", "!", PING_MSG_SIZE, PING_INTERVAL);
     silenced = false;
     // We will listen to anything (empty subscription)

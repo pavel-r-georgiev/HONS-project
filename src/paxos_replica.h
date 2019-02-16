@@ -25,7 +25,6 @@ struct fd_replica
 
 void start_paxos_replica(int id, struct fd_replica* replica);
 void terminate_paxos_replica();
-void paxos_submit_remove(struct fd_replica* replica, char* ip);
 void paxos_serialize_and_submit(
         struct fd_replica* replica,
         struct node_struct *nodes,

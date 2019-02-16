@@ -135,7 +135,6 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     char* result = (char*)malloc(sizeof(char) * MAX_SIZE_IP_ADDRESS_STRING);
     deserialize_hash(value, size);
     printf("Value: %.64s, Size: %d \n", value, (int)size);
-    
     if (sscanf(value, "TRIM %d %d", &replica_id, &trim_id) == 2) {
         update_trim_info(replica, replica_id, trim_id);
     } else {
