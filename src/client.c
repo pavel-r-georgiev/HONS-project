@@ -8,6 +8,7 @@
 #include "timer.h"
 #include "adaptive_delay_model.h"
 #include "uthash.h"
+#include "utarray.h"
 #include "paxos_replica.h"
 #include "utils.h"
 
