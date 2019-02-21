@@ -13,9 +13,10 @@ struct trim_info
 struct fd_replica
 {
     int id;
-    char* state;
+    struct membership_state* state;
     unsigned instance_id;
     struct trim_info trim;
+    struct node_struct** nodes_p;
     struct event* client_ev;
     struct event* sig;
     struct evpaxos_replica* paxos_replica;

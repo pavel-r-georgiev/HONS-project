@@ -132,6 +132,8 @@ int main(int argc, char **argv) {
     struct args_struct* arg = malloc(sizeof(struct args_struct));
     arg->id = id;
     replica = malloc(sizeof(struct fd_replica));
+    replica->nodes_p = &nodes;
+    replica->state = state;
     arg->replica = replica;
     start_paxos_replica(id, replica);
 

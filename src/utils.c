@@ -18,9 +18,11 @@ void print_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock) {
         printf("ERROR: can't get rdlock \n");
         return;
     }
+    printf("---------------------- \n");
     for(n=nodes; n != NULL; n=n->hh.next) {
         printf("IP addr %s: Last heartbeat: %f\n", n->ipaddress, n->last_heartbeat_ms);
     }
+    printf("---------------------- \n");
     pthread_rwlock_unlock(&hashmap_lock);
 }
 
@@ -28,7 +30,7 @@ int ip_address_hash_sort_function(struct node_struct *a,struct node_struct *b) {
     return strcmp(a->ipaddress, b->ipaddress);
 }
 
-void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, char** buffer, int* size){
+void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, char** buffer, size_t* size){
     if(nodes == NULL){
         printf("ERROR: NULL nodes structure \n");
         return;
@@ -42,7 +44,6 @@ void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, ch
     }
 //    Sort hash so that every state across the nodes is in same order
     HASH_SORT(nodes, ip_address_hash_sort_function);
-    char* buf;
     tpl_node* tn;
     size_t len;
     char* ipaddress = (char*)malloc(sizeof(char) * MAX_SIZE_IP_ADDRESS_STRING);
@@ -55,25 +56,42 @@ void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, ch
 
     tpl_dump( tn, TPL_MEM, buffer, &len);
     printf("Serializing buffer %s size: %d \n", *buffer, (int)len);
-    *size = (int) len;
+    *size = len;
     tpl_free(tn);
     free(ipaddress);
     pthread_rwlock_unlock(&hashmap_lock);
 }
 
-void deserialize_hash(char* buffer,  size_t len){
-    char *result;
+void deserialize_hash(char* buffer,  size_t len, char** result, size_t* array_length){
+    char *temp;
     tpl_node* tn;
-
-    tn = tpl_map( "A(s)", &result );
+    printf("Deserializing buffer: %s  len: %d\n", buffer, (int)len);
+    tn = tpl_map( "A(s)", &temp );
     tpl_load( tn, TPL_MEM, buffer, len);
-    printf("DESERIALIZED \n");
-    while (tpl_unpack(tn,1) > 0) printf("%s\n", result);
+    int i = 0;
+    while (tpl_unpack(tn,1) > 0){
+        result[i] = (char *)malloc(MAX_SIZE_IP_ADDRESS_STRING);
+        strcpy(result[i++], temp);
+    }
+    *array_length = (size_t)i;
 
     tpl_free( tn );
-//    free( buffer );
+    free(temp);
 }
 
 int ip_to_id(char *ip){
     return atoi(&ip[strlen(ip) - 1]);
+}
+
+void print_string_array(char** arr, size_t len){
+    if(arr == NULL || len < 0){
+        printf("ERROR: NULL array pointer or invalid length \n");
+        return;
+    }
+
+    printf("---------------------- \n");
+    for(int i = 0; i < len; i++){
+        printf("%s \n", arr[i]);
+    }
+    printf("---------------------- \n");
 }

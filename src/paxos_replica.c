@@ -35,9 +35,13 @@
 #include <event2/event-config.h>
 #include <event2/thread.h>
 #include "utils.h"
+#include "tpl.h"
+#include "unistd.h"
 
 struct timeval count_interval = {0, 0};
 pthread_t thread_id;
+struct fd_replica* replica_local;
+const char* state_filename = "state.tpl";
 
 struct trim_info
 {
@@ -49,10 +53,10 @@ struct trim_info
 struct fd_replica
 {
     int id;
-    char* state;
-    unsigned instance_id;
+    struct membership_state* state;
+    u_int32_t instance_id;
     struct trim_info trim;
-    struct event* client_ev;
+    struct node_struct** nodes_p;
     struct event* sig;
     struct evpaxos_replica* paxos_replica;
     struct event_base* base;
@@ -62,6 +66,8 @@ struct args_struct{
     int id;
     struct fd_replica* replica;
 };
+
+void clean_up_replica(struct fd_replica *pReplica);
 
 static void
 handle_sigint(int sig, short ev, void* arg)
@@ -73,33 +79,47 @@ handle_sigint(int sig, short ev, void* arg)
 static void
 init_state(struct fd_replica* replica)
 {
-    char filename[128];
-//    replica->state =
     replica->instance_id = 0;
-    snprintf(filename, sizeof(filename), "state-%d", replica->id);
-    FILE* f = fopen(filename, "r");
-    if (f != NULL) {
-        fscanf(f, "%s %d", replica->state, &replica->instance_id);
-        fclose(f);
+    replica->state->paxos_state_array = (char**)malloc(sizeof(char*) * MAX_NUM_NODES);
+
+    if( access( state_filename, F_OK ) != -1 ) {
+        //    File with serialized state information exists. Load state from file.
+        tpl_node *tn;
+        char* temp;
+        tn = tpl_map( "A(s)u", &temp, &replica->instance_id);
+        tpl_load(tn, TPL_FILE, state_filename);
+        int i = 0;
+        printf("Unpacking from file \n");
+        while (tpl_unpack( tn, 1) > 0){
+            replica->state->paxos_state_array[i] = (char *)malloc(MAX_SIZE_IP_ADDRESS_STRING);
+            strcpy( replica->state->paxos_state_array[i++], temp);
+            printf("%s \n", temp);
+        }
+        tpl_unpack(tn, 0);
+        free(temp);
     }
 }
 
 static void
 checkpoint_state(struct fd_replica* replica)
 {
-	char filename[128];
-	snprintf(filename, sizeof(filename), "state-%d", replica->id);
-	FILE* f = fopen(filename, "w+");
-	fprintf(f, "%s %d", replica->state, replica->instance_id);
-	fclose(f);
-}
+    printf("Performing state checkpoint\n");
+    char* temp;
 
-static void
-update_state(struct fd_replica* replica, unsigned iid)
-{
-//    Update membership state here
-//	replica->state =
-    replica->instance_id = iid;
+    temp = (char *)malloc(MAX_SIZE_IP_ADDRESS_STRING);
+
+    tpl_node *tn;
+
+    tn = tpl_map( "A(s)u", &temp, & replica->instance_id);
+    for(int i = 0; i < replica->state->paxos_array_len; i++){
+        strcpy(temp, replica->state->paxos_state_array[i]);
+        tpl_pack(tn, 1);
+    }
+
+    tpl_pack(tn, 0);
+    tpl_dump(tn, TPL_FILE, state_filename);
+    tpl_free(tn);
+    free(temp);
 }
 
 static void
@@ -132,58 +152,43 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     int replica_id, trim_id;
     int id;
     struct fd_replica* replica = (struct fd_replica*)arg;
-    char* result = (char*)malloc(sizeof(char) * MAX_SIZE_IP_ADDRESS_STRING);
-    deserialize_hash(value, size);
-    printf("Value: %.64s, Size: %d \n", value, (int)size);
+
+
     if (sscanf(value, "TRIM %d %d", &replica_id, &trim_id) == 2) {
         update_trim_info(replica, replica_id, trim_id);
     } else {
-        update_state(replica, iid);
+        deserialize_hash(value, size, replica->state->paxos_state_array, &replica->state->paxos_array_len);
+//        printf("Value: %.64s, Size: %d \n", value, (int)size);
+        printf("Received new state from another node: \n");
+        print_string_array(replica->state->paxos_state_array, replica->state->paxos_array_len);
+        replica->instance_id = iid;
     }
 
-
-    if (iid % 100 == 0) {
-        checkpoint_state(replica);
-        submit_trim(replica);
-    }
+//    if (iid % 2 == 0) {
+//        checkpoint_state(replica);
+//        submit_trim(replica);
+//    }
 }
 
-void paxos_submit_remove(struct fd_replica* replica, char* ip){
-    char val[64];
-    int id = ip_to_id(ip);
-    snprintf(val, sizeof(val), "REMOVE %d", id);
-    evpaxos_replica_submit(replica->paxos_replica, val, (int) (strlen(val) + 1));
-}
 
 void paxos_serialize_and_submit(
                 struct fd_replica* replica,
                 struct node_struct *nodes,
                 pthread_rwlock_t hashmap_lock,
                 struct membership_state *state){
-    char* buffer;
-
     if(nodes == NULL){
         printf("paxos_serialize_and_submit : NULL nodes structure \n");
         return;
     }
 
-    serialize_hash(nodes, hashmap_lock, &buffer, &state->len);
-    printf("Printing hash \n");
-    printf("---------------------- \n");
+    serialize_hash(nodes, hashmap_lock, &state->current_replica_state_buffer, &state->len);
+    printf("Detected change of state: \n");
     print_hash(nodes, hashmap_lock);
-    printf("---------------------- \n");
-    printf("Buffer %s, Length: %d \n", buffer, state->len);
-    evpaxos_replica_submit(replica->paxos_replica, buffer, state->len);
-    free(buffer);
-}
-
-
-
-void paxos_submit_state(struct fd_replica* replica, char* buffer){
-    evpaxos_replica_submit(replica->paxos_replica, buffer, (int) (strlen(buffer) + 1));
+    evpaxos_replica_submit(replica->paxos_replica, state->current_replica_state_buffer, (int)state->len);
 }
 
 void terminate_paxos_replica() {
+    event_base_loopexit(replica_local->base, NULL);
     pthread_cancel(thread_id);
     pthread_join(thread_id, NULL);
 }
@@ -193,6 +198,7 @@ void *init_replica(void *arg)
     struct event_base* base;
     struct event* sig;
     struct args_struct* args = arg;
+    replica_local = args->replica;
     int id = args->id;
     struct fd_replica* replica = args->replica;
     printf("Starting replica with id: %d \n", id);
@@ -225,10 +231,18 @@ void *init_replica(void *arg)
     event_base_dispatch(base);
     free(arg);
     event_free(sig);
-    event_free(replica->client_ev);
-    evpaxos_replica_free(replica->paxos_replica);
+    clean_up_replica(replica);
     event_base_free(base);
     pthread_exit(0);
+}
+
+void clean_up_replica(struct fd_replica *replica) {
+//    free(replica->state->paxos_state_string_buffer);
+    for(int i = 0; i < replica->state->paxos_array_len; i++){
+        free(replica->state->paxos_state_array[i]);
+    }
+    free(replica->state->paxos_state_array);
+    evpaxos_replica_free(replica->paxos_replica);
 }
 
 

@@ -17,15 +17,17 @@ typedef struct node_struct {
 } node_struct;
 
 typedef struct membership_state {
-    char *state_buffer;
-    int len;
+    char** paxos_state_array;
+    size_t paxos_array_len;
+    char *current_replica_state_buffer;
+    size_t len;
 } membership_state;
 
 void print_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock);
 
 int ip_to_id(char *ip);
 
-void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, char** buffer, int* size);
-void deserialize_hash(char* buffer,  size_t len);
-
+void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, char** buffer, size_t* size);
+void deserialize_hash(char* buffer,  size_t len, char** result, size_t* array_length);
+void print_string_array(char** arr, size_t len);
 #endif //HONS_PROJECT_UTILS_H
