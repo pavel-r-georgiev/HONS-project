@@ -6,7 +6,7 @@ RUN apt-get install -y \
         git build-essential libtool libssl-dev \
         pkg-config autotools-dev autoconf automake cmake \
         uuid-dev libpcre3-dev libsodium-dev valgrind \
-        libffi-dev python-dev python-pip liblmdb-dev
+        libffi-dev python-dev python-pip liblmdb-dev iproute2
 
 # Install libsodium
 RUN git clone https://github.com/jedisct1/libsodium &&\
