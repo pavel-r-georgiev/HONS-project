@@ -2,11 +2,12 @@
 #ifndef HONS_PROJECT_UTILS_H
 #define HONS_PROJECT_UTILS_H
 
+#include <czmq.h>
 #include "adaptive_delay_model.h"
 #include "uthash.h"
 
 #define MAX_SIZE_IP_ADDRESS_STRING 16
-#define MAX_NUM_NODES 5
+#define MAX_NUM_NODES 3
 
 typedef struct node_struct {
     char *ipaddress; /* key */
@@ -17,7 +18,7 @@ typedef struct node_struct {
 } node_struct;
 
 typedef struct membership_state {
-    char** paxos_state_array;
+    zlist_t* paxos_state_array;
     size_t paxos_array_len;
     char *current_replica_state_buffer;
     size_t len;
@@ -28,6 +29,6 @@ void print_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock);
 int ip_to_id(char *ip);
 
 void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, char** buffer, size_t* size);
-void deserialize_hash(char* buffer,  size_t len, char** result, size_t* array_length);
-void print_string_array(char** arr, size_t len);
+void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_length);
+void print_string_list(zlist_t* list);
 #endif //HONS_PROJECT_UTILS_H

@@ -1,7 +1,6 @@
 
 #include <czmq.h>
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
 #include <event.h>
 #include <evpaxos.h>
@@ -23,8 +22,7 @@ struct args_struct{
 bool silenced = false;
 int error;
 double time_diff;
-// Time variables
-struct timeval current_time;
+
 // Nodes hashmap
 struct node_struct *nodes = NULL;
 // Holds group memebership data
@@ -35,8 +33,7 @@ struct fd_replica* replica;
 
 
 double get_current_time_ms(){
-    gettimeofday(&current_time, NULL);
-    return (current_time.tv_sec + (current_time.tv_usec / 1e6))* 1e3;
+    return  zclock_usecs()/1e3;
 }
 
 void handle_timeout(size_t timer_id, void * user_data) {

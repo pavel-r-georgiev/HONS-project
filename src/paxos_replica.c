@@ -80,46 +80,48 @@ static void
 init_state(struct fd_replica* replica)
 {
     replica->instance_id = 0;
-    replica->state->paxos_state_array = (char**)malloc(sizeof(char*) * MAX_NUM_NODES);
+    replica->state =  malloc(sizeof(struct membership_state));
+    replica->state->paxos_state_array = zlist_new();
+//    Strings in the array will be freed automatically when list is destroyed
+    zlist_autofree (replica->state->paxos_state_array);
 
-    if( access( state_filename, F_OK ) != -1 ) {
-        //    File with serialized state information exists. Load state from file.
-        tpl_node *tn;
-        char* temp;
-        tn = tpl_map( "A(s)u", &temp, &replica->instance_id);
-        tpl_load(tn, TPL_FILE, state_filename);
-        int i = 0;
-        printf("Unpacking from file \n");
-        while (tpl_unpack( tn, 1) > 0){
-            replica->state->paxos_state_array[i] = (char *)malloc(MAX_SIZE_IP_ADDRESS_STRING);
-            strcpy( replica->state->paxos_state_array[i++], temp);
-            printf("%s \n", temp);
-        }
-        tpl_unpack(tn, 0);
-        free(temp);
-    }
+//    if( access( state_filename, F_OK ) != -1 ) {
+//        //    File with serialized state information exists. Load state from file.
+//        tpl_node *tn;
+//        char* temp;
+//        tn = tpl_map( "A(s)u", &temp, &replica->instance_id);
+//        tpl_load(tn, TPL_FILE, state_filename);
+//        int i = 0;
+//        printf("Unpacking from file \n");
+//        while (tpl_unpack( tn, 1) > 0){
+//            strcpy( replica->state->paxos_state_array[i++], temp);
+//            printf("%s \n", temp);
+//        }
+//        tpl_unpack(tn, 0);
+//        free(temp);
+//    }
 }
 
 static void
 checkpoint_state(struct fd_replica* replica)
 {
-    printf("Performing state checkpoint\n");
-    char* temp;
-
-    temp = (char *)malloc(MAX_SIZE_IP_ADDRESS_STRING);
-
-    tpl_node *tn;
-
-    tn = tpl_map( "A(s)u", &temp, & replica->instance_id);
-    for(int i = 0; i < replica->state->paxos_array_len; i++){
-        strcpy(temp, replica->state->paxos_state_array[i]);
-        tpl_pack(tn, 1);
-    }
-
-    tpl_pack(tn, 0);
-    tpl_dump(tn, TPL_FILE, state_filename);
-    tpl_free(tn);
-    free(temp);
+//    printf("Performing state checkpoint\n");
+//    char* temp;
+//
+//    temp = (char *)malloc(MAX_SIZE_IP_ADDRESS_STRING);
+//
+//    tpl_node *tn;
+//
+//    tn = tpl_map( "A(s)u", &temp, & replica->instance_id);
+//    for(int i = 0; i < replica->state->paxos_array_len; i++){
+//        strcpy(temp, replica->state->paxos_state_array[i]);
+//        tpl_pack(tn, 1);
+//    }
+//
+//    tpl_pack(tn, 0);
+//    tpl_dump(tn, TPL_FILE, state_filename);
+//    tpl_free(tn);
+//    free(temp);
 }
 
 static void
@@ -157,10 +159,9 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     if (sscanf(value, "TRIM %d %d", &replica_id, &trim_id) == 2) {
         update_trim_info(replica, replica_id, trim_id);
     } else {
+        zlist_purge(replica->state->paxos_state_array);
         deserialize_hash(value, size, replica->state->paxos_state_array, &replica->state->paxos_array_len);
 //        printf("Value: %.64s, Size: %d \n", value, (int)size);
-        printf("Received new state from another node: \n");
-        print_string_array(replica->state->paxos_state_array, replica->state->paxos_array_len);
         replica->instance_id = iid;
     }
 
@@ -237,11 +238,8 @@ void *init_replica(void *arg)
 }
 
 void clean_up_replica(struct fd_replica *replica) {
-//    free(replica->state->paxos_state_string_buffer);
-    for(int i = 0; i < replica->state->paxos_array_len; i++){
-        free(replica->state->paxos_state_array[i]);
-    }
-    free(replica->state->paxos_state_array);
+    zlist_destroy (&replica->state->paxos_state_array);
+    free(replica->state);
     evpaxos_replica_free(replica->paxos_replica);
 }
 
