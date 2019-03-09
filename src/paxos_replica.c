@@ -43,6 +43,7 @@ struct timeval count_interval = {0, 0};
 pthread_t thread_id;
 struct fd_replica* replica_local;
 const char* state_filename = "state.tpl";
+const char* logger_config_file = "/etc/zlog.conf";
 
 struct trim_info
 {
@@ -86,6 +87,16 @@ init_state(struct fd_replica* replica)
 
 //    Strings in the array will be freed automatically when list is destroyed
     zlist_autofree (replica->state->paxos_state_array);
+
+//    Setup logging
+    int rc;
+    rc = dzlog_init("/etc/zlog.conf", "timeout");
+    if (rc) {
+        printf("Failed to setup logging library %d\n", rc);
+    }
+
+    dzlog_info("hello, zlog");
+
 
 //    if( access( state_filename, F_OK ) != -1 ) {
 //        //    File with serialized state information exists. Load state from file.
@@ -240,6 +251,7 @@ void *init_replica(void *arg)
 }
 
 void clean_up_replica(struct fd_replica *replica) {
+    zlog_fini();
     zlist_destroy (&replica->state->paxos_state_array);
     free(replica->state);
     evpaxos_replica_free(replica->paxos_replica);

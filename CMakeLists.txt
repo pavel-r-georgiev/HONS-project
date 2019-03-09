@@ -53,5 +53,7 @@ IF (LMDB_FOUND)
     TARGET_LINK_LIBRARIES(client ${LMDB_LIBRARIES})
 ENDIF ()
 
+# Copy zlog configure file so we can load it
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/zlog.conf /etc/zlog.conf COPYONLY)
 add_executable(orchestrator src/test_orchestrator.c)
 TARGET_LINK_LIBRARIES(orchestrator ${ZMQ_LIB} ${CZMQ_LIB})
