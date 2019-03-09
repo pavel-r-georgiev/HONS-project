@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.5.1)
-project(HONS_Project C)
+project(HONS_Project C CXX)
 
+include_directories(src/include)
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 FIND_LIBRARY(ZMQ_LIB zmq)
@@ -10,15 +11,15 @@ set(CMAKE_USE_PTHREADS_INIT ON)
 #set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/src/lib/libpaxos/cmake")
 
 find_package(Threads REQUIRED)
+find_package (ZLOG REQUIRED)
 
-# Multithreaded timer manager
-add_library(TIMER_LIBRARY STATIC src/timer.c)
-# Adaptive timeout model
-add_library(ADAPTIVE_DELAY_LIBRARY STATIC src/adaptive_delay_model.c src/adaptive_delay_model.h)
-# Utility functions
-add_library(UTILS STATIC src/utils.c src/utils.h)#
-## Serialization lib
-add_library(TPL STATIC src/tpl.c src/tpl.h)
+set(SOURCE_FILES_CLIENT
+        src/client.c
+        src/paxos_replica.c
+        src/utils.c
+        src/timer.c
+        src/tpl.c  # Serialization library
+        src/adaptive_delay_model.c)
 
 # PAXOS library
 include_directories(${CMAKE_SOURCE_DIR}/src/lib/libpaxos/paxos/include)
@@ -41,12 +42,11 @@ file(GLOB EVPAXOS_SOURCES "src/lib/libpaxos/evpaxos/*.c")
 add_library(EVPAXOS SHARED ${EVPAXOS_SOURCES})
 file(GLOB PAXOS_SOURCES "src/lib/libpaxos/paxos/*.c")
 add_library(PAXOS SHARED ${PAXOS_SOURCES})
-add_library(PAXOS_REPLICA STATIC src/paxos_replica.c src/paxos_replica.h)
 
 # Link libraries to the client
-add_executable(client src/client.c)
-TARGET_LINK_LIBRARIES(client ${ZMQ_LIB} ${CZMQ_LIB} TIMER_LIBRARY ADAPTIVE_DELAY_LIBRARY UTILS TPL PAXOS_REPLICA EVPAXOS PAXOS event_pthreads ${LIBPAXOS_LINKER_LIBS}
-        ${LIBEVENT_LIBRARIES} ${MSGPACK_LIBRARIES} Threads::Threads)
+add_executable(client ${SOURCE_FILES_CLIENT})
+TARGET_LINK_LIBRARIES(client ${ZMQ_LIB} ${CZMQ_LIB} EVPAXOS PAXOS event_pthreads ${LIBPAXOS_LINKER_LIBS}
+        ${LIBEVENT_LIBRARIES} ${MSGPACK_LIBRARIES} zlog Threads::Threads)
 
 IF (LMDB_FOUND)
     INCLUDE_DIRECTORIES(${LMDB_INCLUDE_DIRS})

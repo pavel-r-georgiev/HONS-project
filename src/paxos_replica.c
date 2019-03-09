@@ -34,9 +34,10 @@
 #include <pthread.h>
 #include <event2/event-config.h>
 #include <event2/thread.h>
-#include "utils.h"
-#include "tpl.h"
+#include "include/utils.h"
+#include "include/tpl.h"
 #include "unistd.h"
+#include "zlog.h"
 
 struct timeval count_interval = {0, 0};
 pthread_t thread_id;
@@ -82,6 +83,7 @@ init_state(struct fd_replica* replica)
     replica->instance_id = 0;
     replica->state =  malloc(sizeof(struct membership_state));
     replica->state->paxos_state_array = zlist_new();
+
 //    Strings in the array will be freed automatically when list is destroyed
     zlist_autofree (replica->state->paxos_state_array);
 

@@ -4,7 +4,7 @@
 
 #include <czmq.h>
 #include "adaptive_delay_model.h"
-#include "uthash.h"
+#include "../uthash.h"
 
 #define MAX_SIZE_IP_ADDRESS_STRING 16
 #define MAX_NUM_NODES 3

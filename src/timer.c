@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#include "timer.h"
+#include "include/timer.h"
 
 #define MAX_TIMER_COUNT 1000
 

@@ -2,9 +2,9 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <evpaxos.h>
-#include "utils.h"
-#include "tpl.h"
-#include "paxos_replica.h"
+#include "include/utils.h"
+#include "include/tpl.h"
+#include "include/paxos_replica.h"
 
 
 void print_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock) {
@@ -63,7 +63,8 @@ void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, ch
 }
 
 void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_length){
-    char *temp;
+    char *temp = malloc(sizeof(char) * MAX_SIZE_IP_ADDRESS_STRING);
+
     tpl_node* tn;
     printf("Deserializing buffer: %s  len: %d\n", buffer, (int)len);
     tn = tpl_map( "A(s)", &temp );
@@ -76,6 +77,7 @@ void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_
     printf("Received new state from another node: \n");
     print_string_list(result);
     tpl_free( tn );
+
     free(temp);
 }
 

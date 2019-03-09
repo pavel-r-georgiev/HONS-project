@@ -5,8 +5,8 @@
 #include <stdbool.h>
 
 #define INITIAL_DELAY 5000
-#define W1_WINDOW_SIZE 3
-#define W2_WINDOW_SIZE 5
+#define W1_WINDOW_SIZE 1
+#define W2_WINDOW_SIZE 1000
 #define HEARTBEAT_INTERVAL 1000
 
 typedef struct adaptive_timeout_struct {

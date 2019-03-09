@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "adaptive_delay_model.h"
+#include "include/adaptive_delay_model.h"
 // BETA and GAMMA determine how much weight to give past samples
 #define  BETA 0.125
 #define GAMMA 0.9

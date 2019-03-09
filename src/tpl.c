@@ -63,7 +63,7 @@ typedef unsigned __int64 uint64_t;
 #include <sys/mman.h>   /* mmap */
 #endif
 
-#include "tpl.h"
+#include "include/tpl.h"
 
 #define TPL_GATHER_BUFLEN 8192
 #define TPL_MAGIC "tpl"

@@ -4,11 +4,11 @@
 #include <stdlib.h>
 #include <event.h>
 #include <evpaxos.h>
-#include "timer.h"
-#include "adaptive_delay_model.h"
+#include "include/timer.h"
+#include "include/adaptive_delay_model.h"
 #include "uthash.h"
-#include "paxos_replica.h"
-#include "utils.h"
+#include "include/paxos_replica.h"
+#include "include/utils.h"
 
 #define PING_PORT_NUMBER 1500
 #define PING_MSG_SIZE    1
