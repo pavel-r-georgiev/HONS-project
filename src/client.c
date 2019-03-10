@@ -32,10 +32,6 @@ pthread_rwlock_t hashmap_lock;
 struct fd_replica* replica;
 
 
-double get_current_time_ms(){
-    return  zclock_usecs()/1e3;
-}
-
 void handle_timeout(size_t timer_id, void * user_data) {
     struct node_struct *node = NULL;
     char *ip_address = (char *) user_data;

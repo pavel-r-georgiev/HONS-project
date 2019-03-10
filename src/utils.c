@@ -81,6 +81,10 @@ void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_
     free(temp);
 }
 
+double get_current_time_ms(){
+    return  zclock_usecs()/1e3;
+}
+
 int ip_to_id(char *ip){
     return atoi(&ip[strlen(ip) - 1]);
 }

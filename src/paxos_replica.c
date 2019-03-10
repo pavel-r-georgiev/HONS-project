@@ -92,7 +92,7 @@ init_state(struct fd_replica* replica)
     int rc;
     rc = dzlog_init("/etc/zlog.conf", "timeout");
     if (rc) {
-        printf("Failed to setup logging library %d\n", rc);
+        printf("Failed to setup logging library.\n");
     }
 
     dzlog_info("hello, zlog");
