@@ -57,8 +57,12 @@ RUN wget https://github.com/HardySimpson/zlog/archive/latest-stable.tar.gz &&\
     make && make install &&\
     cd .. && rm -rf zlog-latest-stable && rm latest-stable.tar.gz
 
+#    Make sure linker can find zlog
+RUN echo '/usr/local/lib' >> /etc/ld.so.conf &&\
+    ldconfig
+
 # At the moment mount the folder with source code until there is a stable version of client
-# docker run -v /d/Workspace/University/HONS-Project:/home/hons/ -ti simple_node:dockerfile /bin/bash
+# docker run -v /d/Workspace/University/HONS-Project:/home/ -ti simple_node:dockerfile /bin/bash
 # TODO: Copy needed executables
 #COPY src/ /home/src/
 
