@@ -32,5 +32,6 @@ void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, ch
 void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_length);
 void print_string_list(zlist_t* list);
 double get_current_time_ms();
+void log_state_list(zlist_t* list, double time_passed);
 
 #endif //HONS_PROJECT_UTILS_H

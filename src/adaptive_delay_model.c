@@ -2,12 +2,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include <zlog.h>
 #include "include/adaptive_delay_model.h"
 // BETA and GAMMA determine how much weight to give past samples
 #define  BETA 0.125
 #define GAMMA 0.9
 // Determines how much deviation from the mean to tolerate
 #define  PHI 2
+
+bool logged_windows_full = false;
 
 adaptive_timeout_struct* init_adaptive_timeout_struct(double first_heartbeat_ms) {
     adaptive_timeout_struct *metadata_struct  = (struct adaptive_timeout_struct *)malloc(sizeof *metadata_struct);
@@ -29,7 +32,7 @@ adaptive_timeout_struct* init_adaptive_timeout_struct(double first_heartbeat_ms)
     return metadata_struct;
 }
 
-void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_arrival_time, bool DEBUG, FILE *fp) {
+void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_arrival_time, bool DEBUG) {
     double estimated_arrival_w1, estimated_arrival_w2, average_heartbeat_time;
     timeout_model->seq_num++;
     long k = timeout_model->seq_num;
@@ -79,6 +82,13 @@ void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_
         timeout_model->estimated_arrival_ms =  (estimated_arrival_w1 > estimated_arrival_w2 ) ? estimated_arrival_w1 : estimated_arrival_w2;
     }
 
+    if(!logged_windows_full && k >= W1_WINDOW_SIZE && k >=W2_WINDOW_SIZE) {
+        logged_windows_full = true;
+        dzlog_info("---------------------------------------");
+        dzlog_info("DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL");
+        dzlog_info("---------------------------------------");
+    }
+
     timeout_model->deltas_between_messages[k % W2_WINDOW_SIZE] = time_from_last_heartbeat;
     timeout_model->past_arrival_time_differences_w1_ms[k % W1_WINDOW_SIZE] = t - k*average_heartbeat_time;
     timeout_model->past_arrival_time_differences_w2_ms[k % W2_WINDOW_SIZE] = t - k*average_heartbeat_time;
@@ -87,6 +97,5 @@ void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_
 
     if(DEBUG){
         printf("A:%f EA:%f FP:%f Timeout:%f \n", timeout_model->arrival_time_ms,  timeout_model-> estimated_arrival_ms, timeout_model->freshness_point, timeout_model->next_timeout);
-        fprintf(fp,"%f,%f,%f \n", timeout_model->arrival_time_ms, timeout_model->freshness_point, timeout_model->estimated_arrival_ms);
     }
 }

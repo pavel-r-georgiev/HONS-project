@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <event.h>
 #include <evpaxos.h>
+#include <zlog.h>
 #include "include/timer.h"
 #include "include/adaptive_delay_model.h"
 #include "uthash.h"
@@ -12,7 +13,7 @@
 
 #define PING_PORT_NUMBER 1500
 #define PING_MSG_SIZE    1
-#define PING_INTERVAL    1000  //  Once per second
+#define PING_INTERVAL    10  //  In ms
 
 struct args_struct{
     int id;
@@ -20,6 +21,7 @@ struct args_struct{
 };
 
 bool silenced = false;
+bool DEBUG = false;
 int error;
 double time_diff;
 
@@ -52,10 +54,17 @@ void handle_timeout(size_t timer_id, void * user_data) {
         pthread_rwlock_unlock(&hashmap_lock);
     }
 
+    double detection_time = node->timeout_metadata->next_timeout - node->timeout_metadata->arrival_time_ms;
+    dzlog_info("Timer expired. Ip: %s, Td: %f\n",  (char *)user_data, detection_time);
+
     paxos_serialize_and_submit(replica, nodes, hashmap_lock, state);
 //    paxos_submit_remove(replica, (char *)user_data);
 
-    printf("Timer %d expired, ip: %s\n", (int)timer_id, (char *)user_data);
+
+    if(DEBUG) {
+        printf("Timer %d expired, ip: %s\n", (int)timer_id, (char *)user_data);
+    }
+
     print_hash(nodes, hashmap_lock);
 }
 
@@ -72,6 +81,23 @@ void init_nodes_struct(char* hostname){
     }
     HASH_ADD_KEYPTR(hh, nodes, node->ipaddress, strlen(node->ipaddress), node);
     pthread_rwlock_unlock(&hashmap_lock);
+}
+
+/**
+ * Initialize logger with a default category. Use dzlog_set_category(char *name) to change the category if needed.
+ */
+static void
+init_logger() {
+    //    Setup logging
+    int rc;
+    rc = dzlog_init("/etc/zlog.conf", "failure_detector");
+    if (rc) {
+        printf("Failed to setup logging library.\n");
+    }
+
+    dzlog_info("-------------------------------------");
+    dzlog_info("START OF NEW LOG");
+    dzlog_info("-------------------------------------");
 }
 
 void clean_up_hashmap() {
@@ -92,15 +118,13 @@ void clean_up_hashmap() {
 }
 
 int main(int argc, char **argv) {
-    bool DEBUG = false;
     if(argc > 1 && streq(argv[1], "debug")){
         DEBUG = true;
     }
 
-//    File to save adaptive delay results. Used for benchmarking
-    FILE *fp;
-    fp=fopen("file.csv","w+");
 
+//    Initialize logger
+    init_logger();
 
     //  Create new beacon
     zactor_t *speaker = zactor_new (zbeacon, NULL);
@@ -181,14 +205,14 @@ int main(int argc, char **argv) {
                 HASH_ADD_KEYPTR(hh, nodes, node->ipaddress, strlen(node->ipaddress), node);
                 pthread_rwlock_unlock(&hashmap_lock);
 //                Adaptive estimation of the expected next delay
-                estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG, fp);
+                estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG);
                 unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
                 node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
                 paxos_serialize_and_submit(replica, nodes, hashmap_lock, state);
             } else {
 //                Node in hash. Estimate the next delay based on information so far and restart the timer.
                 stop_timer(node->timer_id);
-                estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG, fp);
+                estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG);
                 unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
                 node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
                 time_diff = (current_time_ms - node->last_heartbeat_ms);
@@ -217,10 +241,10 @@ int main(int argc, char **argv) {
     terminate_timer_manager();
 //    Stop paxos replica thread
     terminate_paxos_replica();
-//    Close opened file
-    fclose(fp);
-    // Wait for at most 1/2 second if there's no broadcasting
-    zsock_set_rcvtimeo (listener, 5*PING_INTERVAL);;
+// Destroy logger
+    zlog_fini();
+
+//    Destroy CZMQ z_actors
     zactor_destroy (&listener);
     zactor_destroy (&speaker);
 

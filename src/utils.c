@@ -2,11 +2,13 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <evpaxos.h>
+#include <zlog.h>
 #include "include/utils.h"
 #include "include/tpl.h"
 #include "include/paxos_replica.h"
 
 
+const char* TIME_PASSED_LABEL = "Since last state change: ";
 void print_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock) {
     if(nodes == NULL){
         printf("ERROR: NULL nodes structure \n");
@@ -66,7 +68,7 @@ void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_
     char *temp = malloc(sizeof(char) * MAX_SIZE_IP_ADDRESS_STRING);
 
     tpl_node* tn;
-    printf("Deserializing buffer: %s  len: %d\n", buffer, (int)len);
+//    printf("Deserializing buffer: %s  len: %d\n", buffer, (int)len);
     tn = tpl_map( "A(s)", &temp );
     tpl_load( tn, TPL_MEM, buffer, len);
 
@@ -74,8 +76,8 @@ void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_
         zlist_push (result,  temp);
     }
 
-    printf("Received new state from another node: \n");
-    print_string_list(result);
+//    printf("Received new state from another node: \n");
+//    print_string_list(result);
     tpl_free( tn );
 
     free(temp);
@@ -87,6 +89,25 @@ double get_current_time_ms(){
 
 int ip_to_id(char *ip){
     return atoi(&ip[strlen(ip) - 1]);
+}
+
+void log_state_list(zlist_t* list, double time_passed) {
+    size_t buffer_size = (zlist_size(list) * (MAX_SIZE_IP_ADDRESS_STRING + 4)) +
+            sizeof(double) + 2 +
+            sizeof(char) * strlen(TIME_PASSED_LABEL) + 4;
+
+//    Use variable so I don't have to deal with dynamic memory alloc. Sorry not sorry.
+    char a[buffer_size];
+    char* buffer = a;
+    char* str = zlist_first(list);
+
+    while(str != NULL){
+        buffer += sprintf(buffer, "| %s", str);
+        str = zlist_next(list);
+    }
+
+    sprintf(buffer, "| %s %f ms", TIME_PASSED_LABEL, time_passed);
+    dzlog_info(a);
 }
 
 void print_string_list(zlist_t* list){
@@ -102,5 +123,4 @@ void print_string_list(zlist_t* list){
         str = zlist_next(list);
     }
     printf("---------------------- \n");
-    free(str);
 }

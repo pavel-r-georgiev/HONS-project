@@ -34,6 +34,7 @@
 #include <pthread.h>
 #include <event2/event-config.h>
 #include <event2/thread.h>
+#include "include/time_rdtsc.h"
 #include "include/utils.h"
 #include "include/tpl.h"
 #include "unistd.h"
@@ -44,6 +45,7 @@ pthread_t thread_id;
 struct fd_replica* replica_local;
 const char* state_filename = "state.tpl";
 const char* logger_config_file = "/etc/zlog.conf";
+struct timespec stopwatch;
 
 struct trim_info
 {
@@ -78,6 +80,7 @@ handle_sigint(int sig, short ev, void* arg)
     event_base_loopexit(base, NULL);
 }
 
+
 static void
 init_state(struct fd_replica* replica)
 {
@@ -88,16 +91,8 @@ init_state(struct fd_replica* replica)
 //    Strings in the array will be freed automatically when list is destroyed
     zlist_autofree (replica->state->paxos_state_array);
 
-//    Setup logging
-    int rc;
-    rc = dzlog_init("/etc/zlog.conf", "timeout");
-    if (rc) {
-        printf("Failed to setup logging library.\n");
-    }
-
-    dzlog_info("hello, zlog");
-
-
+    init_rdtsc(1,0);
+    get_rdtsc_timespec(&stopwatch);
 //    if( access( state_filename, F_OK ) != -1 ) {
 //        //    File with serialized state information exists. Load state from file.
 //        tpl_node *tn;
@@ -168,12 +163,15 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     int id;
     struct fd_replica* replica = (struct fd_replica*)arg;
 
-
     if (sscanf(value, "TRIM %d %d", &replica_id, &trim_id) == 2) {
         update_trim_info(replica, replica_id, trim_id);
     } else {
         zlist_purge(replica->state->paxos_state_array);
         deserialize_hash(value, size, replica->state->paxos_state_array, &replica->state->paxos_array_len);
+        //    Get time passed since last logged state
+        double time_passed = time_elapsed_in_ms(stopwatch);
+        get_rdtsc_timespec(&stopwatch);
+        log_state_list(replica->state->paxos_state_array, time_passed);
 //        printf("Value: %.64s, Size: %d \n", value, (int)size);
         replica->instance_id = iid;
     }
@@ -196,8 +194,10 @@ void paxos_serialize_and_submit(
     }
 
     serialize_hash(nodes, hashmap_lock, &state->current_replica_state_buffer, &state->len);
-    printf("Detected change of state: \n");
-    print_hash(nodes, hashmap_lock);
+//    printf("Detected change of state: \n");
+//    print_hash(nodes, hashmap_lock);
+
+
     evpaxos_replica_submit(replica->paxos_replica, state->current_replica_state_buffer, (int)state->len);
 }
 
@@ -251,7 +251,6 @@ void *init_replica(void *arg)
 }
 
 void clean_up_replica(struct fd_replica *replica) {
-    zlog_fini();
     zlist_destroy (&replica->state->paxos_state_array);
     free(replica->state);
     evpaxos_replica_free(replica->paxos_replica);

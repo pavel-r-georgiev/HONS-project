@@ -29,6 +29,6 @@ typedef struct adaptive_timeout_struct {
 } adaptive_timeout_struct;
 
 adaptive_timeout_struct* init_adaptive_timeout_struct(double first_heartbeat_ms);
-void estimate_next_delay(adaptive_timeout_struct *heartbeat_metadata,  double current_arrival_time, bool DEBUG, FILE *fp);
+void estimate_next_delay(adaptive_timeout_struct *heartbeat_metadata,  double current_arrival_time, bool DEBUG);
 
 #endif //HONS_PROJECT_ADAPTIVE_DELAY_MODEL_H
