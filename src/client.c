@@ -27,9 +27,9 @@ double time_diff;
 
 // Nodes hashmap
 struct node_struct *nodes = NULL;
-// Holds group memebership data
-struct membership_state *state;
-pthread_rwlock_t hashmap_lock;
+
+pthread_mutex_t hashmap_lock;
+pthread_mutexattr_t attrmutex;
 // Failure detector PAXOS replica - acceptor, learner, proposer
 struct fd_replica* replica;
 
@@ -39,12 +39,11 @@ void handle_timeout(size_t timer_id, void * user_data) {
     char *ip_address = (char *) user_data;
 
     //        Check if node in map
-    if (pthread_rwlock_rdlock(&hashmap_lock) != 0) {
-        printf("ERROR: can't get rdlock \n");
+    if (pthread_mutex_lock(&hashmap_lock) != 0) {
+        printf("ERROR: can't get mutex \n");
         return;
     }
     HASH_FIND_STR(nodes, ip_address, node);
-    pthread_rwlock_unlock(&hashmap_lock);
 
     if(node != NULL){
         if (pthread_rwlock_wrlock(&hashmap_lock) != 0){
@@ -54,18 +53,15 @@ void handle_timeout(size_t timer_id, void * user_data) {
         pthread_rwlock_unlock(&hashmap_lock);
     }
 
-    double detection_time = node->timeout_metadata->next_timeout - node->timeout_metadata->arrival_time_ms;
-    dzlog_info("Timer expired. Ip: %s, Td: %f\n",  (char *)user_data, detection_time);
+    pthread_mutex_unlock(&hashmap_lock);
+    dzlog_info("Timer expired. Ip: %s, Td: %f\n",  (char *)user_data, node->timeout_metadata->next_timeout);
 
-    paxos_serialize_and_submit(replica, nodes, hashmap_lock, state);
-//    paxos_submit_remove(replica, (char *)user_data);
-
+    paxos_serialize_and_submit(replica, nodes, &hashmap_lock);
 
     if(DEBUG) {
         printf("Timer %d expired, ip: %s\n", (int)timer_id, (char *)user_data);
+        print_hash(nodes, &hashmap_lock);
     }
-
-    print_hash(nodes, hashmap_lock);
 }
 
 // Add hostname in nodes struct.Useful when sending state to other nodes.
@@ -75,12 +71,12 @@ void init_nodes_struct(char* hostname){
     node->ipaddress = (char*) malloc(strlen(hostname));
     strcpy(node->ipaddress,hostname);
 
-    if (pthread_rwlock_wrlock(&hashmap_lock) != 0) {
-        printf("ERROR: can't get wrlock \n");
+    if (pthread_mutex_lock(&hashmap_lock) != 0) {
+        printf("ERROR: can't get mutex \n");
         return;
     }
     HASH_ADD_KEYPTR(hh, nodes, node->ipaddress, strlen(node->ipaddress), node);
-    pthread_rwlock_unlock(&hashmap_lock);
+    pthread_mutex_unlock(&hashmap_lock);
 }
 
 /**
@@ -104,15 +100,17 @@ void clean_up_hashmap() {
     //    Clean up hashmap
     node_struct *current_node, *tmp;
     HASH_ITER(hh, nodes, current_node, tmp) {
-        if (pthread_rwlock_wrlock(&hashmap_lock) != 0){
-            printf("ERROR: can't get wrlock \n");
+        if (pthread_mutex_unlock(&hashmap_lock) != 0){
+            printf("ERROR: can't get mutex \n");
+        }
+        if(current_node->timeout_metadata){
+            free(current_node->timeout_metadata->past_arrival_time_differences_w1_ms);
+            free(current_node->timeout_metadata->past_arrival_time_differences_w2_ms);
+            free(current_node->timeout_metadata->deltas_between_messages);
+            free(current_node->timeout_metadata);
         }
         HASH_DEL(nodes, current_node);
-        pthread_rwlock_unlock(&hashmap_lock);
-        free(current_node->timeout_metadata->past_arrival_time_differences_w1_ms);
-        free(current_node->timeout_metadata->past_arrival_time_differences_w2_ms);
-        free(current_node->timeout_metadata->deltas_between_messages);
-        free(current_node->timeout_metadata);
+        pthread_mutex_unlock(&hashmap_lock);
         free(current_node);
     }
 }
@@ -161,9 +159,14 @@ int main(int argc, char **argv) {
 
 // Start timer management thread
     create_timer_manager();
-//    Initialize hashmap lock
-    if (pthread_rwlock_init(&hashmap_lock,NULL) != 0) {
-        printf("ERROR: can't create rwlock \n");
+
+    // Initialise attribute to mutex.
+    pthread_mutexattr_init(&attrmutex);
+    pthread_mutexattr_setpshared(&attrmutex, PTHREAD_PROCESS_SHARED);
+
+    // Initialise hash mutex
+    if (pthread_mutex_init(&hashmap_lock, &attrmutex)){
+        printf("ERROR: can't create mutex \n");
         exit(-1);
     }
 
@@ -183,12 +186,12 @@ int main(int argc, char **argv) {
             double current_time_ms = get_current_time_ms();
            
             //        Check if node in hash
-            if (pthread_rwlock_rdlock(&hashmap_lock) != 0) {
-                printf("ERROR: can't get rdlock \n");
+            if (pthread_mutex_lock(&hashmap_lock) != 0) {
+                printf("ERROR: can't get mutex \n");
                 break;
             }
             HASH_FIND_STR(nodes, ipaddress, node);
-            pthread_rwlock_unlock(&hashmap_lock);
+            pthread_mutex_unlock(&hashmap_lock);
 
 //            Node not in hash. Create a node struct and start a timeout timer.
             if(node == NULL){
@@ -198,17 +201,12 @@ int main(int argc, char **argv) {
                 node->last_heartbeat_ms = current_time_ms;
                 node->timeout_metadata = init_adaptive_timeout_struct(current_time_ms);
 
-                if (pthread_rwlock_wrlock(&hashmap_lock) != 0) {
-                    printf("ERROR: can't get wrlock \n");
-                    break;
-                }
                 HASH_ADD_KEYPTR(hh, nodes, node->ipaddress, strlen(node->ipaddress), node);
-                pthread_rwlock_unlock(&hashmap_lock);
-//                Adaptive estimation of the expected next delay
+                //                Adaptive estimation of the expected next delay
                 estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG);
                 unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
                 node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
-                paxos_serialize_and_submit(replica, nodes, hashmap_lock, state);
+                paxos_serialize_and_submit(replica, nodes, &hashmap_lock);
             } else {
 //                Node in hash. Estimate the next delay based on information so far and restart the timer.
                 stop_timer(node->timer_id);
@@ -243,6 +241,10 @@ int main(int argc, char **argv) {
     terminate_paxos_replica();
 // Destroy logger
     zlog_fini();
+
+    // Clean up mutex
+    pthread_mutex_destroy(&hashmap_lock);
+    pthread_mutexattr_destroy(&attrmutex);
 
 //    Destroy CZMQ z_actors
     zactor_destroy (&listener);

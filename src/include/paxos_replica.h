@@ -29,8 +29,7 @@ void terminate_paxos_replica();
 void paxos_serialize_and_submit(
         struct fd_replica* replica,
         struct node_struct *nodes,
-        pthread_rwlock_t hashmap_lock,
-        struct membership_state *state);
+        pthread_mutex_t *hashmap_lock);
 
 
 #endif //HONS_PROJECT_PAXOS_REPLICA_H

@@ -24,11 +24,11 @@ typedef struct membership_state {
     size_t len;
 } membership_state;
 
-void print_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock);
+void print_hash(struct node_struct *nodes, pthread_mutex_t *hashmap_lock);
 
 int ip_to_id(char *ip);
 
-void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, char** buffer, size_t* size);
+void serialize_hash(struct node_struct *nodes, pthread_mutex_t *hashmap_lock, char** buffer, size_t* size);
 void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_length);
 void print_string_list(zlist_t* list);
 double get_current_time_ms();

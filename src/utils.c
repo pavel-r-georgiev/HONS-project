@@ -9,15 +9,15 @@
 
 
 const char* TIME_PASSED_LABEL = "Since last state change: ";
-void print_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock) {
+void print_hash(struct node_struct *nodes, pthread_mutex_t *hashmap_lock) {
     if(nodes == NULL){
         printf("ERROR: NULL nodes structure \n");
         return;
     }
 
     struct node_struct *n;
-    if (pthread_rwlock_rdlock(&hashmap_lock) != 0) {
-        printf("ERROR: can't get rdlock \n");
+    if (pthread_mutex_lock(hashmap_lock) != 0) {
+        printf("ERROR: can't get mutex \n");
         return;
     }
     printf("---------------------- \n");
@@ -25,14 +25,14 @@ void print_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock) {
         printf("IP addr %s: Last heartbeat: %f\n", n->ipaddress, n->last_heartbeat_ms);
     }
     printf("---------------------- \n");
-    pthread_rwlock_unlock(&hashmap_lock);
+    pthread_mutex_unlock(hashmap_lock);
 }
 
 int ip_address_hash_sort_function(struct node_struct *a,struct node_struct *b) {
     return strcmp(a->ipaddress, b->ipaddress);
 }
 
-void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, char** buffer, size_t* size){
+void serialize_hash(struct node_struct *nodes, pthread_mutex_t *hashmap_lock, char** buffer, size_t* size){
     if(nodes == NULL){
         printf("ERROR: NULL nodes structure \n");
         return;
@@ -40,8 +40,8 @@ void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, ch
 
 
     struct node_struct *n;
-    if (pthread_rwlock_rdlock(&hashmap_lock) != 0) {
-        printf("ERROR: can't get rdlock \n");
+    if (pthread_mutex_lock(hashmap_lock) != 0) {
+        printf("ERROR: can't get mutex \n");
         return;
     }
 //    Sort hash so that every state across the nodes is in same order
@@ -57,11 +57,11 @@ void serialize_hash(struct node_struct *nodes, pthread_rwlock_t hashmap_lock, ch
     }
 
     tpl_dump( tn, TPL_MEM, buffer, &len);
-    printf("Serializing buffer %s size: %d \n", *buffer, (int)len);
+//    printf("Serializing buffer %s size: %d \n", *buffer, (int)len);
     *size = len;
     tpl_free(tn);
     free(ipaddress);
-    pthread_rwlock_unlock(&hashmap_lock);
+    pthread_mutex_unlock(hashmap_lock);
 }
 
 void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_length){
