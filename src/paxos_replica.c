@@ -69,6 +69,10 @@ struct args_struct{
     struct fd_replica* replica;
 };
 
+int done = 0;
+pthread_mutex_t mutex;
+pthread_cond_t cond = PTHREAD_COND_INITIALIZER;
+
 void clean_up_replica(struct fd_replica *pReplica);
 
 static void
@@ -241,6 +245,14 @@ void *init_replica(void *arg)
     int replica_count = evpaxos_replica_count(replica->paxos_replica);
     replica->trim.count = replica_count;
 
+    pthread_mutex_lock( &mutex );
+    done= true;
+    printf( "[paxos replica thread] Done initializing. Signalling cond.\n");
+
+    // Signal main thread that paxos replica is initialized
+    pthread_cond_signal( &cond );
+    pthread_mutex_unlock( & mutex );
+
     sig = evsignal_new(base, SIGINT, handle_sigint, base);
     evsignal_add(sig, NULL);
 
@@ -263,6 +275,15 @@ int
 start_paxos_replica(int id, struct fd_replica* replica)
 {
     signal(SIGPIPE, SIG_IGN);
+    if (pthread_mutex_init(&mutex, NULL)){
+        printf("ERROR: can't create mutex in paxos replica start \n");
+        exit(-1);
+    }
+
+    if (pthread_cond_init(&cond, NULL)){
+        printf("ERROR: can't create mutex in paxos replica start \n");
+        exit(-1);
+    }
 
     struct args_struct* arg = malloc(sizeof(struct args_struct));
     arg->id = id;
@@ -274,6 +295,23 @@ start_paxos_replica(int id, struct fd_replica* replica)
         /*Thread creation failed*/
         return 0;
     }
+
+    pthread_mutex_lock(&mutex);
+    while(!done) {
+        puts( "[thread main] done so waiting on cond\n");
+        /* block this thread until another thread signals cond. While
+       blocked, the mutex is released, then re-aquired before this
+       thread is woken up and the call returns. */
+        pthread_cond_wait( & cond, & mutex );
+        puts( "[thread main] woken up - cond was signalled." );
+    }
+
+    printf( "[thread main] Paxos replica initialized - continue in main thread \n" );
+    pthread_mutex_unlock( & mutex );
+
+    // Clean up mutex
+    pthread_mutex_destroy(&mutex);
+    pthread_cond_destroy(&cond);
     return 1;
 }
 
