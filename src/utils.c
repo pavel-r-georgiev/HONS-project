@@ -79,7 +79,6 @@ void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_
 //    printf("Received new state from another node: \n");
 //    print_string_list(result);
     tpl_free( tn );
-
     free(temp);
 }
 

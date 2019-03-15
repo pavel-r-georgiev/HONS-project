@@ -43,8 +43,6 @@
 struct timeval count_interval = {0, 0};
 pthread_t thread_id;
 struct fd_replica* replica_local;
-const char* state_filename = "state.tpl";
-const char* logger_config_file = "/etc/zlog.conf";
 struct timespec stopwatch;
 
 struct trim_info
@@ -186,19 +184,23 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
 void paxos_serialize_and_submit(
                 struct fd_replica* replica,
                 struct node_struct *nodes,
-                pthread_rwlock_t hashmap_lock,
-                struct membership_state *state){
+                pthread_mutex_t *hashmap_lock){
     if(nodes == NULL){
         printf("paxos_serialize_and_submit : NULL nodes structure \n");
         return;
     }
 
+    // Init state struct - hold state buffer and length of buffer.
+    struct membership_state *state = malloc(sizeof(struct membership_state));
+    state->current_replica_state_buffer = malloc(sizeof(char) * MAX_NUM_NODES * MAX_SIZE_IP_ADDRESS_STRING * 2);
     serialize_hash(nodes, hashmap_lock, &state->current_replica_state_buffer, &state->len);
 //    printf("Detected change of state: \n");
 //    print_hash(nodes, hashmap_lock);
 
 
     evpaxos_replica_submit(replica->paxos_replica, state->current_replica_state_buffer, (int)state->len);
+    free(state->current_replica_state_buffer);
+    free(state);
 }
 
 void terminate_paxos_replica() {

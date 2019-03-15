@@ -16,7 +16,6 @@ struct fd_replica
     struct membership_state* state;
     unsigned instance_id;
     struct trim_info trim;
-    struct node_struct** nodes_p;
     struct event* client_ev;
     struct event* sig;
     struct evpaxos_replica* paxos_replica;

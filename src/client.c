@@ -13,15 +13,11 @@
 
 #define PING_PORT_NUMBER 1500
 #define PING_MSG_SIZE    1
-#define PING_INTERVAL    10  //  In ms
+#define PING_INTERVAL    HEARTBEAT_INTERVAL //  In ms
 
-struct args_struct{
-    int id;
-    struct fd_replica* replica;
-};
+bool DEBUG = false;
 
 bool silenced = false;
-bool DEBUG = false;
 int error;
 double time_diff;
 
@@ -37,7 +33,7 @@ struct fd_replica* replica;
 void handle_timeout(size_t timer_id, void * user_data) {
     struct node_struct *node = NULL;
     char *ip_address = (char *) user_data;
-
+//    printf("%s timeout \n", ip_address);
     //        Check if node in map
     if (pthread_mutex_lock(&hashmap_lock) != 0) {
         printf("ERROR: can't get mutex \n");
@@ -46,11 +42,14 @@ void handle_timeout(size_t timer_id, void * user_data) {
     HASH_FIND_STR(nodes, ip_address, node);
 
     if(node != NULL){
-        if (pthread_rwlock_wrlock(&hashmap_lock) != 0){
-            printf("ERROR: can't get wrlock \n");
+        if(node->timeout_metadata){
+            free(node->timeout_metadata->past_arrival_time_differences_w1_ms);
+            free(node->timeout_metadata->past_arrival_time_differences_w2_ms);
+            free(node->timeout_metadata->deltas_between_messages);
+            free(node->timeout_metadata);
         }
         HASH_DEL(nodes, node);
-        pthread_rwlock_unlock(&hashmap_lock);
+        free(node);
     }
 
     pthread_mutex_unlock(&hashmap_lock);
@@ -137,19 +136,12 @@ int main(int argc, char **argv) {
 //    Get IP of current node
     char *hostname = zstr_recv(listener);
 
-// Init state struct - hold state buffer and length of buffer.
-    state = malloc(sizeof(struct membership_state));
-
     init_nodes_struct(hostname);
 
     //    Start PAXOS replica
     int id = ip_to_id(hostname);
-    struct args_struct* arg = malloc(sizeof(struct args_struct));
-    arg->id = id;
+
     replica = malloc(sizeof(struct fd_replica));
-    replica->nodes_p = &nodes;
-    replica->state = state;
-    arg->replica = replica;
     start_paxos_replica(id, replica);
 
     zsock_send (speaker, "sbi", "PUBLISH", "!", PING_MSG_SIZE, PING_INTERVAL);
@@ -171,14 +163,12 @@ int main(int argc, char **argv) {
     }
 
     while (!zctx_interrupted) {
-//        zframe_t *content = zframe_recv (listener);
         node_struct *node = NULL;
-        adaptive_timeout_struct *timeout_metadata = NULL;
 
         char *ipaddress, *received;
         zstr_recvx (listener, &ipaddress, &received, NULL);
 
-        if(!streq(hostname, ipaddress) || DEBUG){
+        if(!streq(hostname, ipaddress)){
             if(DEBUG){
                 printf("IP Address: %s, Data: %s \n", ipaddress, received);
             }
@@ -214,10 +204,8 @@ int main(int argc, char **argv) {
                 unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
                 node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, node->ipaddress);
                 time_diff = (current_time_ms - node->last_heartbeat_ms);
-                if(DEBUG){
-                    printf("Time since last heartbeat  %2fms\n", time_diff);
-                }
                 node->last_heartbeat_ms= current_time_ms;
+
             }
 
 //            Allow orchestrator to silence/restart the node.
