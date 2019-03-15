@@ -93,8 +93,8 @@ init_state(struct fd_replica* replica)
 //    Strings in the array will be freed automatically when list is destroyed
     zlist_autofree (replica->state->paxos_state_array);
 
-    init_rdtsc(1,0);
-    get_rdtsc_timespec(&stopwatch);
+//    init_rdtsc(1,0);
+//    get_rdtsc_timespec(&stopwatch);
 //    if( access( state_filename, F_OK ) != -1 ) {
 //        //    File with serialized state information exists. Load state from file.
 //        tpl_node *tn;
@@ -169,25 +169,26 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
         update_trim_info(replica, replica_id, trim_id);
     } else {
         zlist_purge(replica->state->paxos_state_array);
-        deserialize_hash(value, size, replica->state->paxos_state_array, &replica->state->paxos_array_len);
+        deserialize_hash(value, size, replica->state->paxos_state_array);
         //    Get time passed since last logged state
         double time_passed = time_elapsed_in_ms(stopwatch);
         get_rdtsc_timespec(&stopwatch);
+//        print_string_list(replica->state->paxos_state_array);
         log_state_list(replica->state->paxos_state_array, time_passed);
 //        printf("Value: %.64s, Size: %d \n", value, (int)size);
         replica->instance_id = iid;
     }
 
-//    if (iid % 2 == 0) {
+    if (iid % 100 == 0) {
 //        checkpoint_state(replica);
-//        submit_trim(replica);
-//    }
+        submit_trim(replica);
+    }
 }
 
 
 void paxos_serialize_and_submit(
                 struct fd_replica* replica,
-                struct node_struct *nodes,
+                struct node_struct **nodes,
                 pthread_mutex_t *hashmap_lock){
     if(nodes == NULL){
         printf("paxos_serialize_and_submit : NULL nodes structure \n");
@@ -196,11 +197,9 @@ void paxos_serialize_and_submit(
 
     // Init state struct - hold state buffer and length of buffer.
     struct membership_state *state = malloc(sizeof(struct membership_state));
-    state->current_replica_state_buffer = malloc(sizeof(char) * MAX_NUM_NODES * MAX_SIZE_IP_ADDRESS_STRING * 2);
     serialize_hash(nodes, hashmap_lock, &state->current_replica_state_buffer, &state->len);
 //    printf("Detected change of state: \n");
 //    print_hash(nodes, hashmap_lock);
-
 
     evpaxos_replica_submit(replica->paxos_replica, state->current_replica_state_buffer, (int)state->len);
     free(state->current_replica_state_buffer);
@@ -268,6 +267,7 @@ void clean_up_replica(struct fd_replica *replica) {
     zlist_destroy (&replica->state->paxos_state_array);
     free(replica->state);
     evpaxos_replica_free(replica->paxos_replica);
+    free(replica);
 }
 
 

@@ -6,6 +6,7 @@
 #include <poll.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <utils.h>
 
 #include "include/timer.h"
 
@@ -14,7 +15,7 @@
 struct timer_node {
     int                 fd;
     time_handler        callback;
-    void *              user_data;
+    struct timeout_args_struct  user_data;
     unsigned int        interval;
     t_timer             type;
     struct timer_node * next;
@@ -32,7 +33,7 @@ int create_timer_manager() {
     return 1;
 }
 
-size_t start_timer(unsigned int interval_ms, time_handler handler, t_timer type, void * user_data) {
+size_t start_timer(unsigned int interval_ms, time_handler handler, t_timer type, timeout_args_struct user_data) {
     struct timer_node * new_node = NULL;
     struct itimerspec new_value;
 
@@ -75,6 +76,17 @@ size_t start_timer(unsigned int interval_ms, time_handler handler, t_timer type,
     return (size_t)new_node;
 }
 
+struct timer_node * _get_timer_from_fd(int fd) {
+    struct timer_node * tmp = g_head;
+
+    while(tmp) {
+        if(tmp->fd == fd) return tmp;
+
+        tmp = tmp->next;
+    }
+    return NULL;
+}
+
 void stop_timer(size_t timer_id) {
     struct timer_node * tmp = NULL;
     struct timer_node * node = (struct timer_node *)timer_id;
@@ -103,17 +115,6 @@ void terminate_timer_manager() {
 
     pthread_cancel(g_thread_id);
     pthread_join(g_thread_id, NULL);
-}
-
-struct timer_node * _get_timer_from_fd(int fd) {
-    struct timer_node * tmp = g_head;
-
-    while(tmp) {
-        if(tmp->fd == fd) return tmp;
-
-        tmp = tmp->next;
-    }
-    return NULL;
 }
 
 void * _timer_thread(void * data) {

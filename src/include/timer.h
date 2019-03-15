@@ -1,6 +1,7 @@
 #ifndef HONS_PROJECT_TIMER_H
 #define HONS_PROJECT_TIMER_H
 #include <stdlib.h>
+#include "utils.h"
 
 typedef enum
 {
@@ -8,10 +9,10 @@ typedef enum
     TIMER_PERIODIC         /*Single Shot Timer*/
 } t_timer;
 
-typedef void (*time_handler)(size_t timer_id, void * user_data);
+typedef void (*time_handler)(size_t timer_id, timeout_args_struct user_data);
 
 int create_timer_manager();
-size_t start_timer(unsigned int interval_ms, time_handler handler, t_timer type, void * user_data);
+size_t start_timer(unsigned int interval_ms, time_handler handler, t_timer type, timeout_args_struct user_data);
 void stop_timer(size_t timer_id);
 void terminate_timer_manager();
 

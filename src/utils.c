@@ -9,8 +9,8 @@
 
 
 const char* TIME_PASSED_LABEL = "Since last state change: ";
-void print_hash(struct node_struct *nodes, pthread_mutex_t *hashmap_lock) {
-    if(nodes == NULL){
+void print_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock) {
+    if(nodes == NULL || *nodes == NULL){
         printf("ERROR: NULL nodes structure \n");
         return;
     }
@@ -21,7 +21,7 @@ void print_hash(struct node_struct *nodes, pthread_mutex_t *hashmap_lock) {
         return;
     }
     printf("---------------------- \n");
-    for(n=nodes; n != NULL; n=n->hh.next) {
+    for(n=*nodes; n != NULL; n=n->hh.next) {
         printf("IP addr %s: Last heartbeat: %f\n", n->ipaddress, n->last_heartbeat_ms);
     }
     printf("---------------------- \n");
@@ -32,12 +32,11 @@ int ip_address_hash_sort_function(struct node_struct *a,struct node_struct *b) {
     return strcmp(a->ipaddress, b->ipaddress);
 }
 
-void serialize_hash(struct node_struct *nodes, pthread_mutex_t *hashmap_lock, char** buffer, size_t* size){
-    if(nodes == NULL){
+void serialize_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock, char** buffer, size_t* size){
+    if(nodes == NULL || *nodes == NULL){
         printf("ERROR: NULL nodes structure \n");
         return;
     }
-
 
     struct node_struct *n;
     if (pthread_mutex_lock(hashmap_lock) != 0) {
@@ -45,32 +44,35 @@ void serialize_hash(struct node_struct *nodes, pthread_mutex_t *hashmap_lock, ch
         return;
     }
 //    Sort hash so that every state across the nodes is in same order
-    HASH_SORT(nodes, ip_address_hash_sort_function);
+    HASH_SORT(*nodes, ip_address_hash_sort_function);
     tpl_node* tn;
     size_t len;
-    char* ipaddress = (char*)malloc(sizeof(char) * MAX_SIZE_IP_ADDRESS_STRING);
-    tn = tpl_map("A(s)", &ipaddress);
+    char ipaddress[MAX_SIZE_IP_ADDRESS_STRING];
+    tn = tpl_map("A(c#)", &ipaddress, MAX_SIZE_IP_ADDRESS_STRING);
 
-    for(n=nodes; n != NULL; n=n->hh.next) {
+    for(n=*nodes; n != NULL; n=n->hh.next) {
         strcpy(ipaddress, n->ipaddress);
         tpl_pack(tn, 1);
     }
 
-    tpl_dump( tn, TPL_MEM, buffer, &len);
+    if(tpl_dump( tn, TPL_MEM, buffer, &len) == -1){
+        puts("ERROR: error when dumping to buffer in serialize hash function");
+    }
 //    printf("Serializing buffer %s size: %d \n", *buffer, (int)len);
     *size = len;
     tpl_free(tn);
-    free(ipaddress);
     pthread_mutex_unlock(hashmap_lock);
 }
 
-void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_length){
-    char *temp = malloc(sizeof(char) * MAX_SIZE_IP_ADDRESS_STRING);
+void deserialize_hash(char* buffer,  size_t len, zlist_t* result){
+    char temp[MAX_SIZE_IP_ADDRESS_STRING];
 
     tpl_node* tn;
 //    printf("Deserializing buffer: %s  len: %d\n", buffer, (int)len);
-    tn = tpl_map( "A(s)", &temp );
-    tpl_load( tn, TPL_MEM, buffer, len);
+    tn = tpl_map( "A(c#)", &temp, MAX_SIZE_IP_ADDRESS_STRING);
+    if(tpl_load( tn, TPL_MEM, buffer, len) == -1){
+        puts("ERROR: Loading buffer in deserialize function unsuccessful");
+    }
 
     while (tpl_unpack(tn,1) > 0){
         zlist_push (result,  temp);
@@ -79,7 +81,6 @@ void deserialize_hash(char* buffer,  size_t len, zlist_t* result, size_t* array_
 //    printf("Received new state from another node: \n");
 //    print_string_list(result);
     tpl_free( tn );
-    free(temp);
 }
 
 double get_current_time_ms(){
