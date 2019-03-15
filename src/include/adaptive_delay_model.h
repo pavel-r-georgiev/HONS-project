@@ -4,10 +4,10 @@
 #include<stdio.h>
 #include <stdbool.h>
 
-#define INITIAL_DELAY 5000
 #define W1_WINDOW_SIZE 1
 #define W2_WINDOW_SIZE 1000
-#define HEARTBEAT_INTERVAL 1000
+#define HEARTBEAT_INTERVAL 50
+#define INITIAL_DELAY 5000
 
 typedef struct adaptive_timeout_struct {
     double freshness_point;
@@ -26,6 +26,7 @@ typedef struct adaptive_timeout_struct {
     double sum_w2;
     double sum_time_deltas;
     double next_timeout;
+    double average_heartbeat_time_ms;
 } adaptive_timeout_struct;
 
 adaptive_timeout_struct* init_adaptive_timeout_struct(double first_heartbeat_ms);
