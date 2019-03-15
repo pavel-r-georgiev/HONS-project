@@ -126,6 +126,10 @@ int main(int argc, char **argv) {
         DEBUG = true;
     }
 
+    if(argc > 2 && streq(argv[2], "debug_clion")){
+        DEBUG_LOCAL = true;
+        GIMMICK_LOOP_BYPASS = true;
+    }
 
 //    Initialize logger
     init_logger();
