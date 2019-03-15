@@ -93,8 +93,8 @@ init_state(struct fd_replica* replica)
 //    Strings in the array will be freed automatically when list is destroyed
     zlist_autofree (replica->state->paxos_state_array);
 
-//    init_rdtsc(1,0);
-//    get_rdtsc_timespec(&stopwatch);
+    init_rdtsc(1,0);
+    get_rdtsc_timespec(&stopwatch);
 //    if( access( state_filename, F_OK ) != -1 ) {
 //        //    File with serialized state information exists. Load state from file.
 //        tpl_node *tn;
