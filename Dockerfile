@@ -2,7 +2,6 @@ FROM ubuntu:16.04
 MAINTAINER Pavel Georgiev "hello@pavelgeorgiev.me"
 
 ENV NAME World
-
 RUN apt-get update
 RUN apt-get install -y \
         git wget build-essential libtool libssl-dev \
@@ -58,7 +57,7 @@ RUN wget https://github.com/HardySimpson/zlog/archive/latest-stable.tar.gz &&\
     cd .. && rm -rf zlog-latest-stable && rm latest-stable.tar.gz
 
 #    Make sure linker can find zlog
-RUN echo '/usr/local/lib' >> /etc/ld.so.conf &&\
+RUN sed -i '1s/^/\/usr\/local\/lib\n/' /etc/ld.so.conf &&\
     ldconfig
 
 # At the moment mount the folder with source code until there is a stable version of client
@@ -66,4 +65,14 @@ RUN echo '/usr/local/lib' >> /etc/ld.so.conf &&\
 # TODO: Copy needed executables
 #COPY src/ /home/src/
 
-WORKDIR /home
+ADD . ./project
+WORKDIR /project
+
+
+RUN rm -rf build && mkdir build &&\
+    cd build &&\
+    cmake .. && make
+
+WORKDIR /project/build
+
+CMD /project/build/client debug
