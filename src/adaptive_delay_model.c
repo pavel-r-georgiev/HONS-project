@@ -101,22 +101,26 @@ void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_
 
     if(k != 0) {
 //        Number of samples in bigger window is currently min(k, w2 window size)
+        long number_of_samples_currently_in_w1 = k < W1_WINDOW_SIZE ? k : W1_WINDOW_SIZE;
         long number_of_samples_currently_in_w2 = k < W2_WINDOW_SIZE ? k : W2_WINDOW_SIZE;
         timeout_model->average_heartbeat_time_ms = timeout_model->sum_time_deltas / number_of_samples_currently_in_w2;
-        estimated_arrival_w1 = (1.0/k)*timeout_model->sum_w1 + (k+1)*timeout_model->average_heartbeat_time_ms;
-        estimated_arrival_w2 = (1.0/k)*timeout_model->sum_w2 + (k+1)*timeout_model->average_heartbeat_time_ms;
+        estimated_arrival_w1 = (1.0/number_of_samples_currently_in_w1)*timeout_model->sum_w1 + (k+1)*timeout_model->average_heartbeat_time_ms;
+        estimated_arrival_w2 = (1.0/number_of_samples_currently_in_w2)*timeout_model->sum_w2 + (k+1)*timeout_model->average_heartbeat_time_ms;
+        if(DEBUG){
+            printf("EA_1: %f EA_2:%f\n", estimated_arrival_w1, estimated_arrival_w2);
+        }
         timeout_model->estimated_arrival_ms =  (estimated_arrival_w1 > estimated_arrival_w2 ) ? estimated_arrival_w1 : estimated_arrival_w2;
 //        printf("Sum w1:%f Sum w2:%f Avg hb time:%f\n", timeout_model->sum_w1, timeout_model->sum_w2, timeout_model->average_heartbeat_time_ms);
     }
 
     if(!timeout_model->notified_windows_full && k >= W1_WINDOW_SIZE && k >=W2_WINDOW_SIZE) {
         timeout_model->notified_windows_full = true;
-        dzlog_info("------------------------------------------------------");
+        dzlog_info("---------------------------------------------------");
         dzlog_info("DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP %s", timeout_model->node_ip);
-        dzlog_info("------------------------------------------------------");
-        printf("---------------------------------------\n");
+        dzlog_info("---------------------------------------------------");
+        printf("------------------------------------------------------\n");
         printf("DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP %s\n", timeout_model->node_ip);
-        printf("---------------------------------------\n");
+        printf("------------------------------------------------------\n");
     }
 
     timeout_model->deltas_between_messages[k % W2_WINDOW_SIZE] = time_from_last_heartbeat;
