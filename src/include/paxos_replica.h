@@ -10,9 +10,10 @@ struct trim_info
     int instances[16];
 };
 
-struct fd_replica
+typedef struct fd_replica
 {
     int id;
+    char current_node_ip[MAX_SIZE_IP_ADDRESS_STRING];
     struct membership_state* state;
     unsigned instance_id;
     struct trim_info trim;
@@ -20,10 +21,10 @@ struct fd_replica
     struct event* sig;
     struct evpaxos_replica* paxos_replica;
     struct event_base* base;
-};
+} fd_replica;
 
 
-void start_paxos_replica(int id, struct fd_replica* replica);
+int start_paxos_replica(int id,  fd_replica* replica);
 void terminate_paxos_replica();
 void paxos_serialize_and_submit(
         struct fd_replica* replica,

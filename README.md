@@ -58,3 +58,8 @@ docker run -v /d/Workspace/University/HONS-Project:/home/ --name node_1 --net sk
 ```
 docker run -v /home/s1525701/HONS-project:/home/ -e WEAVE_CIDR=10.0.0.10/24 -e ZSYS_INTERFACE=ethwe --name node_1 -ti simple_node:dockerfile /bin/bash
 ```
+
+Clean up
+```
+docker kill $(docker ps -a -q)
+```

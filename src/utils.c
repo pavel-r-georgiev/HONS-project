@@ -32,7 +32,11 @@ int ip_address_hash_sort_function(struct node_struct *a,struct node_struct *b) {
     return strcmp(a->ipaddress, b->ipaddress);
 }
 
-void serialize_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock, char** buffer, size_t* size){
+void serialize_hash(struct node_struct **nodes,
+        pthread_mutex_t *hashmap_lock,
+        char** buffer,
+        size_t* size,
+        char current_node_ip[]){
     if(nodes == NULL || *nodes == NULL){
         printf("ERROR: NULL nodes structure \n");
         return;
@@ -48,7 +52,11 @@ void serialize_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock, c
     tpl_node* tn;
     size_t len;
     char ipaddress[MAX_SIZE_IP_ADDRESS_STRING];
-    tn = tpl_map("A(c#)", &ipaddress, MAX_SIZE_IP_ADDRESS_STRING);
+//    Serialized message includes: IP address of current node, state array
+    tn = tpl_map("c#A(c#)", current_node_ip, MAX_SIZE_IP_ADDRESS_STRING, &ipaddress, MAX_SIZE_IP_ADDRESS_STRING);
+
+//   Pack current ip address
+    tpl_pack(tn, 0);
 
     for(n=*nodes; n != NULL; n=n->hh.next) {
         strcpy(ipaddress, n->ipaddress);
@@ -64,16 +72,66 @@ void serialize_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock, c
     pthread_mutex_unlock(hashmap_lock);
 }
 
-void deserialize_hash(char* buffer,  size_t len, zlist_t* result){
+
+void get_membership_group_from_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock, zlist_t* result) {
+    if (pthread_mutex_lock(hashmap_lock) != 0) {
+        printf("ERROR: can't get mutex \n");
+        return;
+    }
+    char temp[MAX_SIZE_IP_ADDRESS_STRING];
+    struct node_struct *n;
+//    Sort hash so that every state across the nodes is in same order
+    HASH_SORT(*nodes, ip_address_hash_sort_function);
+    for(n=*nodes; n != NULL; n=n->hh.next) {
+        strcpy(temp, n->ipaddress);
+        zlist_push(result, temp);
+    }
+    pthread_mutex_unlock(hashmap_lock);
+}
+
+bool is_equal_lists(zlist_t *l1, zlist_t *l2) {
+    if(zlist_size(l1) == 0 || zlist_size(l2) == 0 || l1 == NULL || l2 == NULL){
+        return false;
+    }
+//
+//    if(l1 == NULL || l2 == NULL){
+//        return l1 == l2;
+//    }
+//
+//    if(zlist_size(l1) == 0 || zlist_size(l2) == 0){
+//        return zlist_size(l1) == zlist_size(l2);
+//    }
+
+    if(zlist_size(l1) != zlist_size(l2)){
+        return false;
+    }
+
+    char* str_l1 = zlist_first(l1);
+    char* str_l2 = zlist_first(l2);
+
+    while(str_l1 != NULL && str_l2 != NULL){
+        if(strcmp(str_l1, str_l2) != 0){
+            return false;
+        }
+        str_l1 = zlist_next(l1);
+        str_l2 = zlist_next(l2);
+    }
+
+    return str_l1 == NULL && str_l2 == NULL;
+}
+
+void deserialize_hash(char* buffer,  size_t len, zlist_t* result, char* sender_ip){
     char temp[MAX_SIZE_IP_ADDRESS_STRING];
 
     tpl_node* tn;
 //    printf("Deserializing buffer: %s  len: %d\n", buffer, (int)len);
-    tn = tpl_map( "A(c#)", &temp, MAX_SIZE_IP_ADDRESS_STRING);
+    tn = tpl_map( "c#A(c#)", sender_ip, MAX_SIZE_IP_ADDRESS_STRING, &temp, MAX_SIZE_IP_ADDRESS_STRING);
     if(tpl_load( tn, TPL_MEM, buffer, len) == -1){
         puts("ERROR: Loading buffer in deserialize function unsuccessful");
     }
-
+//    Unpack sender ip
+    tpl_unpack(tn,0);
+//    Unpack state array
     while (tpl_unpack(tn,1) > 0){
         zlist_push (result,  temp);
     }
@@ -81,6 +139,17 @@ void deserialize_hash(char* buffer,  size_t len, zlist_t* result){
 //    printf("Received new state from another node: \n");
 //    print_string_list(result);
     tpl_free( tn );
+}
+
+void copy_list(zlist_t *source, zlist_t *dest) {
+    zlist_purge(dest);
+
+    char* str = zlist_first(source);
+
+    while(str != NULL){
+        zlist_push(dest, str);
+        str = zlist_next(source);
+    }
 }
 
 double get_current_time_ms(){

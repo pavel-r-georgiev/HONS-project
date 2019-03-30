@@ -34,6 +34,7 @@
 #include <pthread.h>
 #include <event2/event-config.h>
 #include <event2/thread.h>
+#include <paxos_replica.h>
 #include "include/time_rdtsc.h"
 #include "include/utils.h"
 #include "include/tpl.h"
@@ -44,25 +45,7 @@ struct timeval count_interval = {0, 0};
 pthread_t thread_id;
 struct fd_replica* replica_local;
 struct timespec stopwatch;
-
-struct trim_info
-{
-    int count;
-    int last_trim;
-    int instances[16];
-};
-
-struct fd_replica
-{
-    int id;
-    struct membership_state* state;
-    u_int32_t instance_id;
-    struct trim_info trim;
-    struct node_struct** nodes_p;
-    struct event* sig;
-    struct evpaxos_replica* paxos_replica;
-    struct event_base* base;
-};
+struct timespec paxos_time;
 
 struct args_struct{
     int id;
@@ -89,74 +72,19 @@ init_state(struct fd_replica* replica)
     replica->instance_id = 0;
     replica->state =  malloc(sizeof(struct membership_state));
     replica->state->paxos_state_array = zlist_new();
+    replica->state->paxos_received_state_array = zlist_new();
+    replica->state->detected_state_array = zlist_new(); // only there for evaluation
 
 //    Strings in the array will be freed automatically when list is destroyed
     zlist_autofree (replica->state->paxos_state_array);
+    zlist_autofree(replica->state->paxos_received_state_array);
+    zlist_autofree (replica->state->detected_state_array);
 
     init_rdtsc(1,0);
     get_rdtsc_timespec(&stopwatch);
-//    if( access( state_filename, F_OK ) != -1 ) {
-//        //    File with serialized state information exists. Load state from file.
-//        tpl_node *tn;
-//        char* temp;
-//        tn = tpl_map( "A(s)u", &temp, &replica->instance_id);
-//        tpl_load(tn, TPL_FILE, state_filename);
-//        int i = 0;
-//        printf("Unpacking from file \n");
-//        while (tpl_unpack( tn, 1) > 0){
-//            strcpy( replica->state->paxos_state_array[i++], temp);
-//            printf("%s \n", temp);
-//        }
-//        tpl_unpack(tn, 0);
-//        free(temp);
-//    }
 }
 
-static void
-checkpoint_state(struct fd_replica* replica)
-{
-//    printf("Performing state checkpoint\n");
-//    char* temp;
-//
-//    temp = (char *)malloc(MAX_SIZE_IP_ADDRESS_STRING);
-//
-//    tpl_node *tn;
-//
-//    tn = tpl_map( "A(s)u", &temp, & replica->instance_id);
-//    for(int i = 0; i < replica->state->paxos_array_len; i++){
-//        strcpy(temp, replica->state->paxos_state_array[i]);
-//        tpl_pack(tn, 1);
-//    }
-//
-//    tpl_pack(tn, 0);
-//    tpl_dump(tn, TPL_FILE, state_filename);
-//    tpl_free(tn);
-//    free(temp);
-}
 
-static void
-update_trim_info(struct fd_replica* replica, int replica_id, int trim_id)
-{
-    if (trim_id <= replica->trim.instances[replica_id])
-        return;
-    int i, min = replica->trim.instances[0];
-    replica->trim.instances[replica_id] = trim_id;
-    for (i = 0; i < replica->trim.count; i++)
-        if (replica->trim.instances[i] < min)
-            min = replica->trim.instances[i];
-    if (min > replica->trim.last_trim) {
-        replica->trim.last_trim = min;
-        evpaxos_replica_send_trim(replica->paxos_replica, min);
-    }
-}
-
-static void
-submit_trim(struct fd_replica* replica)
-{
-    char trim[64];
-    snprintf(trim, sizeof(trim), "TRIM %d %d", replica->id, replica->instance_id);
-    evpaxos_replica_submit(replica->paxos_replica, trim, (int) (strlen(trim) + 1));
-}
 
 static void
 on_deliver(unsigned iid, char* value, size_t size, void* arg)
@@ -164,25 +92,37 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     int replica_id, trim_id;
     int id;
     struct fd_replica* replica = (struct fd_replica*)arg;
+    char sender_ip[MAX_SIZE_IP_ADDRESS_STRING];
 
-    if (sscanf(value, "TRIM %d %d", &replica_id, &trim_id) == 2) {
-        update_trim_info(replica, replica_id, trim_id);
-    } else {
-        zlist_purge(replica->state->paxos_state_array);
-        deserialize_hash(value, size, replica->state->paxos_state_array);
-        //    Get time passed since last logged state
-        double time_passed = time_elapsed_in_ms(stopwatch);
-        get_rdtsc_timespec(&stopwatch);
+    zlist_purge(replica->state->paxos_received_state_array);
+    deserialize_hash(value, size, replica->state->paxos_received_state_array, sender_ip);
+    //    Message from paxos replica on same node
+    if(strcmp(sender_ip, replica->current_node_ip) == 0){
+        return;
+    }
+//    State is the same as current state
+    if(is_equal_lists(replica->state->paxos_received_state_array, replica->state->paxos_state_array)){
+        return;
+    }
+
+    copy_list(replica->state->paxos_received_state_array, replica->state->paxos_state_array);
+
+
+//    if(is_equal_lists(replica->state->paxos_state_array, replica->state->detected_state_array)){
+//         double time_passed = get_current_time_ms() - replica->state->detected_state_time_ms;
+//        dzlog_info("Time from detected state to Paxos consensus: %f ms \n", time_passed);
+//        zlist_purge(replica->state->detected_state_array);
+//    }
+
+    //    Get time passed since last logged state
+    double time_now = get_current_time_ms();
+    double time_passed = time_now - replica->state->last_logged_state_time_ms;
+    replica->state->last_logged_state_time_ms = time_now;
 //        print_string_list(replica->state->paxos_state_array);
-        log_state_list(replica->state->paxos_state_array, time_passed);
+    log_state_list(replica->state->paxos_state_array, time_passed);
 //        printf("Value: %.64s, Size: %d \n", value, (int)size);
-        replica->instance_id = iid;
-    }
+    replica->instance_id = iid;
 
-    if (iid % 100 == 0) {
-//        checkpoint_state(replica);
-        submit_trim(replica);
-    }
 }
 
 
@@ -197,10 +137,14 @@ void paxos_serialize_and_submit(
 
     // Init state struct - hold state buffer and length of buffer.
     struct membership_state *state = malloc(sizeof(struct membership_state));
-    serialize_hash(nodes, hashmap_lock, &state->current_replica_state_buffer, &state->len);
+    serialize_hash(nodes, hashmap_lock, &state->current_replica_state_buffer, &state->len, replica->current_node_ip);
 //    printf("Detected change of state: \n");
-//    print_hash(nodes, hashmap_lock);
 
+    zlist_purge(replica->state->detected_state_array);
+    get_membership_group_from_hash(nodes, hashmap_lock, replica->state->detected_state_array);
+//    print_string_list(replica->state->detected_state_array);
+    replica->state->detected_state_time_ms = get_current_time_ms();
+    get_rdtsc_timespec(&paxos_time);
     evpaxos_replica_submit(replica->paxos_replica, state->current_replica_state_buffer, (int)state->len);
     free(state->current_replica_state_buffer);
     free(state);
@@ -265,6 +209,8 @@ void *init_replica(void *arg)
 
 void clean_up_replica(struct fd_replica *replica) {
     zlist_destroy (&replica->state->paxos_state_array);
+    zlist_destroy (&replica->state->paxos_received_state_array);
+    zlist_destroy (&replica->state->detected_state_array);
     free(replica->state);
     evpaxos_replica_free(replica->paxos_replica);
     free(replica);
@@ -272,7 +218,7 @@ void clean_up_replica(struct fd_replica *replica) {
 
 
 int
-start_paxos_replica(int id, struct fd_replica* replica)
+start_paxos_replica(int id,  fd_replica* replica)
 {
     signal(SIGPIPE, SIG_IGN);
     if (pthread_mutex_init(&mutex, NULL)){

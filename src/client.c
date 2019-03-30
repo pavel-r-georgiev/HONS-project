@@ -153,6 +153,7 @@ int main(int argc, char **argv) {
     int id = ip_to_id(hostname);
 
     replica = malloc(sizeof(struct fd_replica));
+    strcpy(replica->current_node_ip, hostname);
     start_paxos_replica(id, replica);
 
     zsock_send (speaker, "sbi", "PUBLISH", "!", PING_MSG_SIZE, PING_INTERVAL);
@@ -211,7 +212,7 @@ int main(int argc, char **argv) {
                 node = malloc(sizeof(struct node_struct));
                 strcpy(node->ipaddress,ipaddress);
                 node->last_heartbeat_ms = current_time_ms;
-                node->timeout_metadata = init_adaptive_timeout_struct(current_time_ms);
+                node->timeout_metadata = init_adaptive_timeout_struct(current_time_ms, ipaddress);
 
                 if (pthread_mutex_lock(&hashmap_lock) != 0) {
                     printf("ERROR: can't get mutex \n");

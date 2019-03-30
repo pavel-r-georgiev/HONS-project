@@ -2,6 +2,33 @@ FROM ubuntu:16.04
 MAINTAINER Pavel Georgiev "hello@pavelgeorgiev.me"
 
 ENV NAME World
+########################################################
+# Essential packages for remote debugging and login in
+########################################################
+
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+    apt-utils gcc g++ openssh-server cmake build-essential gdb gdbserver rsync vim
+
+RUN mkdir /var/run/sshd
+RUN echo 'root:root' | chpasswd
+RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+# SSH login fix. Otherwise user is kicked off after login
+RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
+
+ENV NOTVISIBLE "in users profile"
+RUN echo "export VISIBLE=now" >> /etc/profile
+
+# 22 for ssh server. 7777 for gdb server.
+EXPOSE 22 7777
+
+RUN useradd -ms /bin/bash debugger
+RUN echo 'debugger:pwd' | chpasswd
+
+########################################################
+# Packages necessary for failure detector
+########################################################
+
 RUN apt-get update
 RUN apt-get install -y \
         git wget build-essential libtool libssl-dev \
@@ -10,10 +37,10 @@ RUN apt-get install -y \
         libffi-dev python-dev python-pip liblmdb-dev iproute2
 
 # Install libsodium
-RUN git clone https://github.com/jedisct1/libsodium &&\
+RUN git clone https://github.com/jedisct1/libsodium --branch stable &&\
     cd libsodium &&\
-    ./autogen.sh && ./configure &&\
-    make -j 4 && make check &&\
+     ./configure &&\
+    make && make check  &&\
     make install && ldconfig &&\
     cd .. &&\
     rm -rf libsodium
@@ -60,10 +87,9 @@ RUN wget https://github.com/HardySimpson/zlog/archive/latest-stable.tar.gz &&\
 RUN sed -i '1s/^/\/usr\/local\/lib\n/' /etc/ld.so.conf &&\
     ldconfig
 
-# At the moment mount the folder with source code until there is a stable version of client
-# docker run -v /d/Workspace/University/HONS-Project:/home/ -ti simple_node:dockerfile /bin/bash
-# TODO: Copy needed executables
-#COPY src/ /home/src/
+
+# Copy zlog configure file so we can load it
+ADD ./zlog.conf /etc/zlog.conf
 
 ADD . ./project
 WORKDIR /project
@@ -74,5 +100,12 @@ RUN rm -rf build && mkdir build &&\
     cmake .. && make
 
 WORKDIR /project/build
+# Paxos replica ports
+EXPOSE 8801 8802
 
-CMD /project/build/client debug
+#CMD /project/build/client debug
+#
+
+
+
+CMD ["/usr/sbin/sshd", "-D"]

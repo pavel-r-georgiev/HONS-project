@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <zlog.h>
+#include <string.h>
 #include "include/adaptive_delay_model.h"
 // BETA and GAMMA determine how much weight to give past samples
 #define  BETA 0.125
@@ -12,7 +13,7 @@
 
 bool logged_windows_full = false;
 
-adaptive_timeout_struct* init_adaptive_timeout_struct(double first_heartbeat_ms) {
+adaptive_timeout_struct* init_adaptive_timeout_struct(double first_heartbeat_ms, char* node_ip) {
     adaptive_timeout_struct *metadata_struct  = (struct adaptive_timeout_struct *)malloc(sizeof *metadata_struct);
     metadata_struct->first_heartbeat_arrival_ms = first_heartbeat_ms;
     metadata_struct->freshness_point = 0;
@@ -29,6 +30,8 @@ adaptive_timeout_struct* init_adaptive_timeout_struct(double first_heartbeat_ms)
     metadata_struct -> past_arrival_time_differences_w1_ms = malloc(W1_WINDOW_SIZE* sizeof(double));
     metadata_struct -> past_arrival_time_differences_w2_ms = malloc(W2_WINDOW_SIZE* sizeof(double));
     metadata_struct -> deltas_between_messages = malloc(W2_WINDOW_SIZE * sizeof(double));
+    strcpy(metadata_struct -> node_ip, node_ip);
+    metadata_struct -> notified_windows_full = false;
     return metadata_struct;
 }
 
@@ -106,13 +109,13 @@ void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_
 //        printf("Sum w1:%f Sum w2:%f Avg hb time:%f\n", timeout_model->sum_w1, timeout_model->sum_w2, timeout_model->average_heartbeat_time_ms);
     }
 
-    if(!logged_windows_full && k >= W1_WINDOW_SIZE && k >=W2_WINDOW_SIZE) {
-        logged_windows_full = true;
-        dzlog_info("---------------------------------------");
-        dzlog_info("DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL");
-        dzlog_info("---------------------------------------");
+    if(!timeout_model->notified_windows_full && k >= W1_WINDOW_SIZE && k >=W2_WINDOW_SIZE) {
+        timeout_model->notified_windows_full = true;
+        dzlog_info("------------------------------------------------------");
+        dzlog_info("DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP %s", timeout_model->node_ip);
+        dzlog_info("------------------------------------------------------");
         printf("---------------------------------------\n");
-        printf("DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL\n");
+        printf("DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP %s\n", timeout_model->node_ip);
         printf("---------------------------------------\n");
     }
 

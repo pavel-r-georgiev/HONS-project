@@ -11,7 +11,7 @@ set(CMAKE_USE_PTHREADS_INIT ON)
 #set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/src/lib/libpaxos/cmake")
 
 find_package(Threads REQUIRED)
-#find_package (ZLOG REQUIRED)
+#find_library (ZLOG_LIG zlog)
 
 set(SOURCE_FILES_CLIENT
         src/client.c
@@ -53,7 +53,6 @@ IF (LMDB_FOUND)
     TARGET_LINK_LIBRARIES(client ${LMDB_LIBRARIES})
 ENDIF ()
 
-# Copy zlog configure file so we can load it
-#configure_file(${CMAKE_CURRENT_SOURCE_DIR}/zlog.conf /etc/zlog.conf COPYONLY)
+
 add_executable(orchestrator src/test_orchestrator.c)
 TARGET_LINK_LIBRARIES(orchestrator ${ZMQ_LIB} ${CZMQ_LIB})

@@ -84,7 +84,7 @@ time_elapsed_in_us(struct timespec start)
     struct timespec now, *diff;
     get_rdtsc_timespec(&now);
     diff = timespec_diff(&now, &start);
-    return  diff->tv_sec * 1000000 + diff->tv_nsec / 1000;
+    return  diff->tv_sec * 1000000 + diff->tv_nsec / 1000.0;
 }
 
 static inline double
