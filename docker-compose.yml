@@ -1,0 +1,53 @@
+version: '3.5'
+
+networks:
+  skynet:
+    name: skynet
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.0.0.0/24
+
+services:
+  gdbserver:
+    container_name: debug
+    build: .
+    image: "node:gdbserver"
+    volumes:
+      - .:/home/debugger/code
+    security_opt:
+      - seccomp:unconfined
+    ports:
+      - "7776:22"
+      - "7777:7777"
+      - "8800:8800"
+    working_dir: /home/debugger/code
+    hostname: debug
+    networks:
+      skynet:
+        ipv4_address: 10.0.0.10
+
+#  node_2:
+#    container_name: node_2
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.node
+#    image: "node:dockerfile"
+#    volumes:
+#      - ./:/home/
+#    networks:
+#      skynet:
+#        ipv4_address: 10.0.0.11
+#
+#  node_3:
+#    container_name: node_3
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.node
+#    image: "node:dockerfile"
+#    volumes:
+#      - ./:/home/
+#    networks:
+#      skynet:
+#        ipv4_address: 10.0.0.12
