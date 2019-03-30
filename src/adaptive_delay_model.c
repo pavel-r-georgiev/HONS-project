@@ -38,7 +38,7 @@ adaptive_timeout_struct* init_adaptive_timeout_struct(double first_heartbeat_ms,
 void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_arrival_time, bool DEBUG) {
     double estimated_arrival_w1, estimated_arrival_w2;
     timeout_model->seq_num++;
-    long k = timeout_model->seq_num;
+    long long k = timeout_model->seq_num;
     current_arrival_time = current_arrival_time - timeout_model->first_heartbeat_arrival_ms;
     double time_from_last_heartbeat = current_arrival_time - timeout_model->arrival_time_ms;
     timeout_model->arrival_time_ms = current_arrival_time;
@@ -60,7 +60,7 @@ void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_
     double normalized_arrival_time_diff = t - k*timeout_model->average_heartbeat_time_ms;
 
     if(DEBUG) {
-        printf("Error:%f Delay:%f Var:%f Alpha:%f \n", timeout_model->error,  timeout_model-> delay, timeout_model->var, timeout_model->alpha);
+//        printf("Error:%f Delay:%f Var:%f Alpha:%f \n", timeout_model->error,  timeout_model-> delay, timeout_model->var, timeout_model->alpha);
         printf("Normalized arrival time diff: %f\n", t - k*timeout_model->average_heartbeat_time_ms);
     }
 

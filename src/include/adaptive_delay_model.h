@@ -22,7 +22,7 @@ typedef struct adaptive_timeout_struct {
     double alpha;
     double var;
     double error;
-    long seq_num;
+    long long seq_num;
     double sum_w1;
     double sum_w2;
     double sum_time_deltas;

@@ -44,8 +44,6 @@
 struct timeval count_interval = {0, 0};
 pthread_t thread_id;
 struct fd_replica* replica_local;
-struct timespec stopwatch;
-struct timespec paxos_time;
 
 struct args_struct{
     int id;
@@ -79,9 +77,6 @@ init_state(struct fd_replica* replica)
     zlist_autofree (replica->state->paxos_state_array);
     zlist_autofree(replica->state->paxos_received_state_array);
     zlist_autofree (replica->state->detected_state_array);
-
-    init_rdtsc(1,0);
-    get_rdtsc_timespec(&stopwatch);
 }
 
 
@@ -95,7 +90,9 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     char sender_ip[MAX_SIZE_IP_ADDRESS_STRING];
 
     zlist_purge(replica->state->paxos_received_state_array);
-    deserialize_hash(value, size, replica->state->paxos_received_state_array, sender_ip);
+    if(deserialize_hash(value, size, replica->state->paxos_received_state_array, sender_ip) != 0){
+        return;
+    }
     //    Message from paxos replica on same node
     if(strcmp(sender_ip, replica->current_node_ip) == 0){
         return;
@@ -122,7 +119,6 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     log_state_list(replica->state->paxos_state_array, time_passed);
 //        printf("Value: %.64s, Size: %d \n", value, (int)size);
     replica->instance_id = iid;
-
 }
 
 
@@ -137,14 +133,18 @@ void paxos_serialize_and_submit(
 
     // Init state struct - hold state buffer and length of buffer.
     struct membership_state *state = malloc(sizeof(struct membership_state));
-    serialize_hash(nodes, hashmap_lock, &state->current_replica_state_buffer, &state->len, replica->current_node_ip);
+    if(serialize_hash(nodes, hashmap_lock, &state->current_replica_state_buffer, &state->len, replica->current_node_ip) != 0){
+        free(state->current_replica_state_buffer);
+        free(state);
+        return;
+    }
 //    printf("Detected change of state: \n");
 
     zlist_purge(replica->state->detected_state_array);
     get_membership_group_from_hash(nodes, hashmap_lock, replica->state->detected_state_array);
 //    print_string_list(replica->state->detected_state_array);
     replica->state->detected_state_time_ms = get_current_time_ms();
-    get_rdtsc_timespec(&paxos_time);
+
     evpaxos_replica_submit(replica->paxos_replica, state->current_replica_state_buffer, (int)state->len);
     free(state->current_replica_state_buffer);
     free(state);
