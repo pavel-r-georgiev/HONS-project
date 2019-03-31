@@ -9,6 +9,8 @@
 #define MAX_SIZE_IP_ADDRESS_STRING 16 // 255.255.255.255
 #define MAX_NUM_NODES 3
 
+extern pthread_mutex_t hashmap_lock;
+extern pthread_mutexattr_t attrmutex;
 
 typedef struct node_struct {
     char ipaddress[MAX_SIZE_IP_ADDRESS_STRING]; /* key */
@@ -22,7 +24,6 @@ typedef struct node_struct {
 typedef struct timeout_args_struct{
     char ip_address[MAX_SIZE_IP_ADDRESS_STRING];
     node_struct **nodes_p;
-    pthread_mutex_t *hashmap_lock;
     struct fd_replica* replica;
 } timeout_args_struct;
 
@@ -38,14 +39,14 @@ typedef struct membership_state {
 } membership_state;
 
 //Important to pass pointer of pointer to nodes. UTHash macros change the pointer too.
-void print_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock);
+void print_hash(struct node_struct **nodes);
 
 int ip_to_id(char *ip);
 //Important to pass pointer of pointer to nodes. UTHash macros change the pointer too.
-int serialize_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock, char** buffer, size_t* size, char* current_node_ip);
+int serialize_hash(struct node_struct **nodes, char** buffer, size_t* size, char* current_node_ip);
 int deserialize_hash(char* buffer,  size_t len, zlist_t* result, char* sender_ip);
 void print_string_list(zlist_t* list);
-void get_membership_group_from_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock, zlist_t* result);
+void get_membership_group_from_hash(struct node_struct **nodes, zlist_t* result);
 bool is_equal_lists(zlist_t *l1, zlist_t *l2);
 void copy_list(zlist_t *source, zlist_t *dest);
 double get_current_time_ms();

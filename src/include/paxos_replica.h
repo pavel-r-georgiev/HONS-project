@@ -23,13 +23,15 @@ typedef struct fd_replica
     struct event_base* base;
 } fd_replica;
 
+extern pthread_mutex_t paxos_received_state_mutex;
+extern pthread_mutex_t paxos_state_mutex;
 
 int start_paxos_replica(int id,  fd_replica* replica);
 void terminate_paxos_replica();
 void paxos_serialize_and_submit(
         struct fd_replica* replica,
-        struct node_struct **nodes, //Important to pass pointer of pointer to nodes. UTHash macros change the pointer too.
-        pthread_mutex_t *hashmap_lock);
+        struct node_struct **nodes //Important to pass pointer of pointer to nodes. UTHash macros change the pointer too.
+        );
 
 
 #endif //HONS_PROJECT_PAXOS_REPLICA_H

@@ -9,14 +9,14 @@
 
 
 const char* TIME_PASSED_LABEL = "Since last state change: ";
-void print_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock) {
+void print_hash(struct node_struct **nodes) {
     if(nodes == NULL || *nodes == NULL){
         printf("ERROR: NULL nodes structure \n");
         return;
     }
 
     struct node_struct *n;
-    if (pthread_mutex_lock(hashmap_lock) != 0) {
+    if (pthread_mutex_lock(&hashmap_lock) != 0) {
         printf("ERROR: can't get mutex \n");
         return;
     }
@@ -25,7 +25,7 @@ void print_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock) {
         printf("IP addr %s: Last heartbeat: %f\n", n->ipaddress, n->last_heartbeat_ms);
     }
     printf("---------------------- \n");
-    pthread_mutex_unlock(hashmap_lock);
+    pthread_mutex_unlock(&hashmap_lock);
 }
 
 int ip_address_hash_sort_function(struct node_struct *a,struct node_struct *b) {
@@ -33,7 +33,6 @@ int ip_address_hash_sort_function(struct node_struct *a,struct node_struct *b) {
 }
 
 int serialize_hash(struct node_struct **nodes,
-        pthread_mutex_t *hashmap_lock,
         char** buffer,
         size_t* size,
         char current_node_ip[]){
@@ -43,7 +42,7 @@ int serialize_hash(struct node_struct **nodes,
     }
 
     struct node_struct *n;
-    if (pthread_mutex_lock(hashmap_lock) != 0) {
+    if (pthread_mutex_lock(&hashmap_lock) != 0) {
         printf("ERROR: can't get mutex \n");
         return -1;
     }
@@ -66,20 +65,20 @@ int serialize_hash(struct node_struct **nodes,
     if(tpl_dump( tn, TPL_MEM, buffer, &len) == -1){
         puts("ERROR: error when dumping to buffer in serialize hash function");
         tpl_free(tn);
-        pthread_mutex_unlock(hashmap_lock);
+        pthread_mutex_unlock(&hashmap_lock);
         return -1;
     }
 //    printf("Serializing buffer %s size: %d \n", *buffer, (int)len);
     *size = len;
     tpl_free(tn);
-    pthread_mutex_unlock(hashmap_lock);
+    pthread_mutex_unlock(&hashmap_lock);
 
     return 0;
 }
 
 
-void get_membership_group_from_hash(struct node_struct **nodes, pthread_mutex_t *hashmap_lock, zlist_t* result) {
-    if (pthread_mutex_lock(hashmap_lock) != 0) {
+void get_membership_group_from_hash(struct node_struct **nodes, zlist_t* result) {
+    if (pthread_mutex_lock(&hashmap_lock) != 0) {
         printf("ERROR: can't get mutex \n");
         return;
     }
@@ -91,7 +90,7 @@ void get_membership_group_from_hash(struct node_struct **nodes, pthread_mutex_t 
         strcpy(temp, n->ipaddress);
         zlist_push(result, temp);
     }
-    pthread_mutex_unlock(hashmap_lock);
+    pthread_mutex_unlock(&hashmap_lock);
 }
 
 bool is_equal_lists(zlist_t *l1, zlist_t *l2) {

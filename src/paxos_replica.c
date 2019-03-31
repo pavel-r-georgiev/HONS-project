@@ -97,7 +97,7 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
 {
     struct fd_replica* replica = (struct fd_replica*)arg;
     char sender_ip[MAX_SIZE_IP_ADDRESS_STRING];
-
+;
     if (pthread_mutex_lock(&paxos_received_state_mutex) != 0) {
         printf("ERROR: can't get received state mutex \n");
         pthread_mutex_unlock(&paxos_received_state_mutex);
@@ -155,8 +155,7 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
 
 void paxos_serialize_and_submit(
                 struct fd_replica* replica,
-                struct node_struct **nodes,
-                pthread_mutex_t *hashmap_lock){
+                struct node_struct **nodes){
     if(nodes == NULL){
         printf("paxos_serialize_and_submit : NULL nodes structure \n");
         return;
@@ -164,7 +163,7 @@ void paxos_serialize_and_submit(
 
     // Init state struct - hold state buffer and length of buffer.
     struct membership_state *state = malloc(sizeof(struct membership_state));
-    if(serialize_hash(nodes, hashmap_lock, &state->current_replica_state_buffer, &state->len, replica->current_node_ip) != 0){
+    if(serialize_hash(nodes, &state->current_replica_state_buffer, &state->len, replica->current_node_ip) != 0){
         free(state->current_replica_state_buffer);
         free(state);
         return;
@@ -172,7 +171,7 @@ void paxos_serialize_and_submit(
 //    printf("Detected change of state: \n");
 
     zlist_purge(replica->state->detected_state_array);
-    get_membership_group_from_hash(nodes, hashmap_lock, replica->state->detected_state_array);
+    get_membership_group_from_hash(nodes, replica->state->detected_state_array);
 //    print_string_list(replica->state->detected_state_array);
     replica->state->detected_state_time_ms = get_current_time_ms();
 
