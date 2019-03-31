@@ -50,9 +50,14 @@ struct args_struct{
     struct fd_replica* replica;
 };
 
+// Used to stop main thread while initializing Paxos replica
 int done = 0;
-pthread_mutex_t mutex;
+pthread_mutex_t paxos_initialization_mutex;
 pthread_cond_t cond = PTHREAD_COND_INITIALIZER;
+
+//
+pthread_mutex_t paxos_received_state_mutex;
+pthread_mutex_t paxos_state_mutex;
 
 void clean_up_replica(struct fd_replica *pReplica);
 
@@ -80,30 +85,53 @@ init_state(struct fd_replica* replica)
 }
 
 
-
+/**
+ * Callback function of the learner in the replica learning a value
+ * @param iid
+ * @param value
+ * @param size
+ * @param arg
+ */
 static void
 on_deliver(unsigned iid, char* value, size_t size, void* arg)
 {
-    int replica_id, trim_id;
-    int id;
     struct fd_replica* replica = (struct fd_replica*)arg;
     char sender_ip[MAX_SIZE_IP_ADDRESS_STRING];
 
+    if (pthread_mutex_lock(&paxos_received_state_mutex) != 0) {
+        printf("ERROR: can't get received state mutex \n");
+        pthread_mutex_unlock(&paxos_received_state_mutex);
+        return;
+    }
+    if (pthread_mutex_lock(&paxos_state_mutex) != 0) {
+        printf("ERROR: can't get state mutex \n");
+        pthread_mutex_unlock(&paxos_state_mutex);
+        pthread_mutex_unlock(&paxos_received_state_mutex);
+        return;
+    }
     zlist_purge(replica->state->paxos_received_state_array);
     if(deserialize_hash(value, size, replica->state->paxos_received_state_array, sender_ip) != 0){
+        pthread_mutex_unlock(&paxos_state_mutex);
+        pthread_mutex_unlock(&paxos_received_state_mutex);
         return;
     }
+
     //    Message from paxos replica on same node
     if(strcmp(sender_ip, replica->current_node_ip) == 0){
+        pthread_mutex_unlock(&paxos_state_mutex);
+        pthread_mutex_unlock(&paxos_received_state_mutex);
         return;
     }
+
+
 //    State is the same as current state
     if(is_equal_lists(replica->state->paxos_received_state_array, replica->state->paxos_state_array)){
+        pthread_mutex_unlock(&paxos_state_mutex);
+        pthread_mutex_unlock(&paxos_received_state_mutex);
         return;
     }
 
     copy_list(replica->state->paxos_received_state_array, replica->state->paxos_state_array);
-
 
 //    if(is_equal_lists(replica->state->paxos_state_array, replica->state->detected_state_array)){
 //         double time_passed = get_current_time_ms() - replica->state->detected_state_time_ms;
@@ -119,6 +147,9 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     log_state_list(replica->state->paxos_state_array, time_passed);
 //        printf("Value: %.64s, Size: %d \n", value, (int)size);
     replica->instance_id = iid;
+
+    pthread_mutex_unlock(&paxos_state_mutex);
+    pthread_mutex_unlock(&paxos_received_state_mutex);
 }
 
 
@@ -188,13 +219,13 @@ void *init_replica(void *arg)
     int replica_count = evpaxos_replica_count(replica->paxos_replica);
     replica->trim.count = replica_count;
 
-    pthread_mutex_lock( &mutex );
+    pthread_mutex_lock( &paxos_initialization_mutex );
     done= true;
     printf( "[paxos replica thread] Done initializing. Signalling cond.\n");
 
     // Signal main thread that paxos replica is initialized
     pthread_cond_signal( &cond );
-    pthread_mutex_unlock( & mutex );
+    pthread_mutex_unlock( & paxos_initialization_mutex );
 
     sig = evsignal_new(base, SIGINT, handle_sigint, base);
     evsignal_add(sig, NULL);
@@ -213,6 +244,8 @@ void clean_up_replica(struct fd_replica *replica) {
     zlist_destroy (&replica->state->detected_state_array);
     free(replica->state);
     evpaxos_replica_free(replica->paxos_replica);
+    pthread_mutex_destroy(&paxos_received_state_mutex);
+    pthread_mutex_destroy(&paxos_state_mutex);
     free(replica);
 }
 
@@ -221,13 +254,23 @@ int
 start_paxos_replica(int id,  fd_replica* replica)
 {
     signal(SIGPIPE, SIG_IGN);
-    if (pthread_mutex_init(&mutex, NULL)){
+    if (pthread_mutex_init(&paxos_initialization_mutex, NULL)){
         printf("ERROR: can't create mutex in paxos replica start \n");
         exit(-1);
     }
 
     if (pthread_cond_init(&cond, NULL)){
         printf("ERROR: can't create mutex in paxos replica start \n");
+        exit(-1);
+    }
+
+    if (pthread_mutex_init(&paxos_received_state_mutex, NULL)){
+        printf("ERROR: can't create mutex for received state in paxos replica start \n");
+        exit(-1);
+    }
+
+    if (pthread_mutex_init(&paxos_state_mutex, NULL)){
+        printf("ERROR: can't create mutex for received state in paxos replica start \n");
         exit(-1);
     }
 
@@ -242,21 +285,21 @@ start_paxos_replica(int id,  fd_replica* replica)
         return 0;
     }
 
-    pthread_mutex_lock(&mutex);
+    pthread_mutex_lock(&paxos_initialization_mutex);
     while(!done) {
         puts( "[thread main] done so waiting on cond\n");
         /* block this thread until another thread signals cond. While
        blocked, the mutex is released, then re-aquired before this
        thread is woken up and the call returns. */
-        pthread_cond_wait( & cond, & mutex );
+        pthread_cond_wait( & cond, & paxos_initialization_mutex );
         puts( "[thread main] woken up - cond was signalled." );
     }
 
     printf( "[thread main] Paxos replica initialized - continue in main thread \n" );
-    pthread_mutex_unlock( & mutex );
+    pthread_mutex_unlock( & paxos_initialization_mutex );
 
     // Clean up mutex
-    pthread_mutex_destroy(&mutex);
+    pthread_mutex_destroy(&paxos_initialization_mutex);
     pthread_cond_destroy(&cond);
     return 1;
 }

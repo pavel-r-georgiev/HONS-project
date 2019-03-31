@@ -16,8 +16,6 @@
 #define PING_INTERVAL    HEARTBEAT_INTERVAL //  In ms
 
 bool DEBUG = false;
-bool DEBUG_LOCAL = false;
-bool GIMMICK_LOOP_BYPASS = false;
 bool silenced = false;
 int error;
 double time_diff;
@@ -44,11 +42,16 @@ void handle_timeout(size_t timer_id, struct timeout_args_struct args) {
     pthread_mutex_unlock(args.hashmap_lock);
 
     if(node != NULL){
-        dzlog_info("Timer expired. Ip: %s, Td: %f\n",  args.ip_address, node->timeout_metadata->next_timeout);
+        dzlog_info("Timer for IP %s expired, Detection time: %f",  args.ip_address, node->timeout_metadata->next_timeout);
 
         if(DEBUG) {
             printf("Timer expired. Ip: %s, Td: %f\n",  args.ip_address, node->timeout_metadata->next_timeout);
             print_hash(args.nodes_p, &hashmap_lock);
+            printf("t: %f, k: %lld, Avg hb: %f EA: %f, FP: %f\n", node->timeout_metadata->arrival_time_ms,
+                   node->timeout_metadata->seq_num,
+                   node->timeout_metadata->average_heartbeat_time_ms,
+                   node->timeout_metadata->estimated_arrival_ms,
+                   node->timeout_metadata->freshness_point);
         }
 
         if (pthread_mutex_lock(args.hashmap_lock) != 0) {
@@ -126,11 +129,6 @@ int main(int argc, char **argv) {
         DEBUG = true;
     }
 
-    if(argc > 2 && streq(argv[2], "debug_clion")){
-        DEBUG_LOCAL = true;
-        GIMMICK_LOOP_BYPASS = true;
-    }
-
 //    Initialize logger
     init_logger();
 
@@ -190,7 +188,7 @@ int main(int argc, char **argv) {
             continue;
         }
 
-        if(!streq(hostname, ipaddress) || DEBUG_LOCAL){
+        if(!streq(hostname, ipaddress)){
             if(DEBUG){
                 printf("IP Address: %s, Data: %s \n", ipaddress, received);
             }
@@ -207,8 +205,7 @@ int main(int argc, char **argv) {
 
 
 //            Node not in hash. Create a node struct and start a timeout timer.
-            if(node == NULL || GIMMICK_LOOP_BYPASS){
-                GIMMICK_LOOP_BYPASS = false;
+            if(node == NULL){
                 node = malloc(sizeof(struct node_struct));
                 strcpy(node->ipaddress,ipaddress);
                 node->last_heartbeat_ms = current_time_ms;

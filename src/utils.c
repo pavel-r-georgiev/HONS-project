@@ -95,17 +95,17 @@ void get_membership_group_from_hash(struct node_struct **nodes, pthread_mutex_t 
 }
 
 bool is_equal_lists(zlist_t *l1, zlist_t *l2) {
-//    if(zlist_size(l1) == 0 || zlist_size(l2) == 0 || l1 == NULL || l2 == NULL){
-//        return false;
+    if(zlist_size(l1) == 0 || zlist_size(l2) == 0 || l1 == NULL || l2 == NULL){
+        return false;
+    }
+
+//    if(l1 == NULL || l2 == NULL){
+//        return l1 == l2;
 //    }
-
-    if(l1 == NULL || l2 == NULL){
-        return l1 == l2;
-    }
-
-    if(zlist_size(l1) == 0 || zlist_size(l2) == 0){
-        return zlist_size(l1) == zlist_size(l2);
-    }
+//
+//    if(zlist_size(l1) == 0 || zlist_size(l2) == 0){
+//        return zlist_size(l1) == zlist_size(l2);
+//    }
 
     if(zlist_size(l1) != zlist_size(l2)){
         return false;
@@ -155,7 +155,7 @@ void copy_list(zlist_t *source, zlist_t *dest) {
     char* str = zlist_first(source);
 
     while(str != NULL){
-        zlist_push(dest, str);
+        zlist_append(dest, str);
         str = zlist_next(source);
     }
 }

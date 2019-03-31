@@ -48,7 +48,7 @@ void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_
 
     if(DEBUG){
         printf("Time from last heartbeat: %f \n", time_from_last_heartbeat);
-        printf("t: %f, k: %ld, Avg hb: %f \n", t, k, timeout_model->average_heartbeat_time_ms);
+        printf("t: %f, k: %lld, Avg hb: %f \n", t, k, timeout_model->average_heartbeat_time_ms);
     }
 
 //    Compute alpha using Jacobson algorithm variables
