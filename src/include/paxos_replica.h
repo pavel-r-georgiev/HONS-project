@@ -23,8 +23,7 @@ typedef struct fd_replica
     struct event_base* base;
 } fd_replica;
 
-extern pthread_mutex_t paxos_received_state_mutex;
-extern pthread_mutex_t paxos_state_mutex;
+extern pthread_mutex_t paxos_listener_mutex;
 
 int start_paxos_replica(int id,  fd_replica* replica);
 void terminate_paxos_replica();

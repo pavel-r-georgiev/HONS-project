@@ -39,7 +39,6 @@ void handle_timeout(size_t timer_id, struct timeout_args_struct args) {
         return;
     }
     HASH_FIND_STR(*args.nodes_p, args.ip_address, node);
-    pthread_mutex_unlock(&hashmap_lock);
 
     if(node == NULL){
         pthread_mutex_unlock(&hashmap_lock);
@@ -57,9 +56,8 @@ void handle_timeout(size_t timer_id, struct timeout_args_struct args) {
                node->timeout_metadata->estimated_arrival_ms,
                node->timeout_metadata->freshness_point);
     }
-    
+
     HASH_DEL(*args.nodes_p, node);
-    pthread_mutex_unlock(&hashmap_lock);
 
     if(node->timeout_metadata){
         free(node->timeout_metadata->past_arrival_time_differences_w1_ms);
@@ -70,6 +68,8 @@ void handle_timeout(size_t timer_id, struct timeout_args_struct args) {
     free(node);
 
     paxos_serialize_and_submit(args.replica, args.nodes_p);
+
+    pthread_mutex_unlock(&hashmap_lock);
 
 }
 
@@ -108,12 +108,12 @@ init_logger() {
 void clean_up_hashmap() {
     //    Clean up hashmap
     node_struct *current_node, *tmp;
+    if (pthread_mutex_lock(&hashmap_lock) != 0){
+        printf("ERROR: can't get mutex \n");
+    }
+
     HASH_ITER(hh, nodes, current_node, tmp) {
-        if (pthread_mutex_unlock(&hashmap_lock) != 0){
-            printf("ERROR: can't get mutex \n");
-        }
         HASH_DEL(nodes, current_node);
-        pthread_mutex_unlock(&hashmap_lock);
         if(current_node->timeout_metadata){
             free(current_node->timeout_metadata->past_arrival_time_differences_w1_ms);
             free(current_node->timeout_metadata->past_arrival_time_differences_w2_ms);
@@ -122,6 +122,8 @@ void clean_up_hashmap() {
         }
         free(current_node);
     }
+
+    pthread_mutex_unlock(&hashmap_lock);
 }
 
 int main(int argc, char **argv) {
@@ -194,13 +196,13 @@ int main(int argc, char **argv) {
 
             double current_time_ms = get_current_time_ms();
 
+
             //        Check if node in hash
             if (pthread_mutex_lock(&hashmap_lock) != 0) {
                 printf("ERROR: can't get mutex \n");
                 break;
             }
             HASH_FIND_STR(nodes, ipaddress, node);
-            pthread_mutex_unlock(&hashmap_lock);
 
 
 //            Node not in hash. Create a node struct and start a timeout timer.
@@ -210,35 +212,25 @@ int main(int argc, char **argv) {
                 node->last_heartbeat_ms = current_time_ms;
                 node->timeout_metadata = init_adaptive_timeout_struct(current_time_ms, ipaddress);
 
-                if (pthread_mutex_lock(&hashmap_lock) != 0) {
-                    dzlog_error("Can't get hashmap mutex on node insertion");
-                    printf("ERROR: can't get mutex \n");
-                    break;
-                }
                 HASH_ADD_STR(nodes, ipaddress, node);
 //                Adaptive estimation of the expected next delay
                 estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG);
                 unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
-                pthread_mutex_unlock(&hashmap_lock);
                 strcpy(args->ip_address,ipaddress);
                 node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, *args);
                 paxos_serialize_and_submit(replica, &nodes);
             } else {
 //                Node in hash. Estimate the next delay based on information so far and restart the timer.
-                if (pthread_mutex_lock(&hashmap_lock) != 0) {
-                    printf("ERROR: can't get mutex \n");
-                    break;
-                }
                 stop_timer(node->timer_id);
                 estimate_next_delay(node->timeout_metadata, current_time_ms, DEBUG);
                 unsigned int timeout = (unsigned int) node->timeout_metadata->next_timeout;
-                pthread_mutex_unlock(&hashmap_lock);
                 strcpy(args->ip_address,ipaddress);
                 node->timer_id = start_timer(timeout, handle_timeout, TIMER_SINGLE_SHOT, *args);
                 double time_diff = (current_time_ms - node->last_heartbeat_ms);
                 node->last_heartbeat_ms= current_time_ms;
-
             }
+
+            pthread_mutex_unlock(&hashmap_lock);
 
 //            Allow orchestrator to silence/restart the node.
             if(streq(hostname, received) && !silenced) {

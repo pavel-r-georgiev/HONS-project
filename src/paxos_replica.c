@@ -56,8 +56,7 @@ pthread_mutex_t paxos_initialization_mutex;
 pthread_cond_t cond = PTHREAD_COND_INITIALIZER;
 
 //
-pthread_mutex_t paxos_received_state_mutex;
-pthread_mutex_t paxos_state_mutex;
+pthread_mutex_t paxos_listener_mutex;
 
 void clean_up_replica(struct fd_replica *pReplica);
 
@@ -98,36 +97,26 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     struct fd_replica* replica = (struct fd_replica*)arg;
     char sender_ip[MAX_SIZE_IP_ADDRESS_STRING];
 ;
-    if (pthread_mutex_lock(&paxos_received_state_mutex) != 0) {
-        printf("ERROR: can't get received state mutex \n");
-        pthread_mutex_unlock(&paxos_received_state_mutex);
-        return;
-    }
-    if (pthread_mutex_lock(&paxos_state_mutex) != 0) {
-        printf("ERROR: can't get state mutex \n");
-        pthread_mutex_unlock(&paxos_state_mutex);
-        pthread_mutex_unlock(&paxos_received_state_mutex);
+    if (pthread_mutex_lock(&paxos_listener_mutex) != 0) {
+        printf("ERROR: can't get Paxos listener mutex \n");
         return;
     }
     zlist_purge(replica->state->paxos_received_state_array);
     if(deserialize_hash(value, size, replica->state->paxos_received_state_array, sender_ip) != 0){
-        pthread_mutex_unlock(&paxos_state_mutex);
-        pthread_mutex_unlock(&paxos_received_state_mutex);
+        pthread_mutex_unlock(&paxos_listener_mutex);
         return;
     }
 
     //    Message from paxos replica on same node
     if(strcmp(sender_ip, replica->current_node_ip) == 0){
-        pthread_mutex_unlock(&paxos_state_mutex);
-        pthread_mutex_unlock(&paxos_received_state_mutex);
+        pthread_mutex_unlock(&paxos_listener_mutex);
         return;
     }
 
 
 //    State is the same as current state
     if(is_equal_lists(replica->state->paxos_received_state_array, replica->state->paxos_state_array)){
-        pthread_mutex_unlock(&paxos_state_mutex);
-        pthread_mutex_unlock(&paxos_received_state_mutex);
+        pthread_mutex_unlock(&paxos_listener_mutex);
         return;
     }
 
@@ -148,8 +137,7 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
 //        printf("Value: %.64s, Size: %d \n", value, (int)size);
     replica->instance_id = iid;
 
-    pthread_mutex_unlock(&paxos_state_mutex);
-    pthread_mutex_unlock(&paxos_received_state_mutex);
+    pthread_mutex_unlock(&paxos_listener_mutex);
 }
 
 
@@ -243,8 +231,7 @@ void clean_up_replica(struct fd_replica *replica) {
     zlist_destroy (&replica->state->detected_state_array);
     free(replica->state);
     evpaxos_replica_free(replica->paxos_replica);
-    pthread_mutex_destroy(&paxos_received_state_mutex);
-    pthread_mutex_destroy(&paxos_state_mutex);
+    pthread_mutex_destroy(&paxos_listener_mutex);
     free(replica);
 }
 
@@ -263,13 +250,8 @@ start_paxos_replica(int id,  fd_replica* replica)
         exit(-1);
     }
 
-    if (pthread_mutex_init(&paxos_received_state_mutex, NULL)){
-        printf("ERROR: can't create mutex for received state in paxos replica start \n");
-        exit(-1);
-    }
-
-    if (pthread_mutex_init(&paxos_state_mutex, NULL)){
-        printf("ERROR: can't create mutex for received state in paxos replica start \n");
+    if (pthread_mutex_init(&paxos_listener_mutex, NULL)){
+        printf("ERROR: can't create Paxos listener mutex \n");
         exit(-1);
     }
 
