@@ -115,9 +115,11 @@ void estimate_next_delay(adaptive_timeout_struct *timeout_model, double current_
 
     if(!timeout_model->notified_windows_full && k >= W1_WINDOW_SIZE && k >=W2_WINDOW_SIZE) {
         timeout_model->notified_windows_full = true;
-        dzlog_info("---------------------------------------------------");
-        dzlog_info("DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP %s", timeout_model->node_ip);
-        dzlog_info("---------------------------------------------------");
+        zlog_category_t *c;
+        c = zlog_get_category("failure_detector");
+        zlog_info(c, "---------------------------------------------------");
+        zlog_info(c, "DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP %s", timeout_model->node_ip);
+        zlog_info(c, "---------------------------------------------------");
         printf("------------------------------------------------------\n");
         printf("DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP %s\n", timeout_model->node_ip);
         printf("------------------------------------------------------\n");

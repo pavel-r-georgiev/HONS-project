@@ -45,7 +45,9 @@ void handle_timeout(size_t timer_id, struct timeout_args_struct args) {
         return;
     }
 
-    dzlog_info("Timer for IP %s expired, Detection time: %f",  args.ip_address, node->timeout_metadata->next_timeout);
+    zlog_category_t *c;
+    c = zlog_get_category("failure_detector");
+    zlog_info(c, "Timer for IP %s expired, Detection time: %f",  args.ip_address, node->timeout_metadata->next_timeout);
 
     if(DEBUG) {
         printf("Timer expired. Ip: %s, Td: %f\n",  args.ip_address, node->timeout_metadata->next_timeout);
@@ -95,14 +97,16 @@ static void
 init_logger() {
     //    Setup logging
     int rc;
-    rc = dzlog_init("/etc/zlog.conf", "failure_detector");
+    rc = zlog_init("/etc/zlog.conf");
     if (rc) {
         printf("Failed to setup logging library.\n");
+        exit(-1);
     }
-
-    dzlog_info("-------------------------------------");
-    dzlog_info("START OF NEW LOG");
-    dzlog_info("-------------------------------------");
+    zlog_category_t *c;
+    c = zlog_get_category("failure_detector");
+    zlog_info(c, "-------------------------------------");
+    zlog_info(c, "START OF NEW LOG");
+    zlog_info(c, "-------------------------------------");
 }
 
 void clean_up_hashmap() {

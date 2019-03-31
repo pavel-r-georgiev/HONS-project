@@ -143,7 +143,9 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
         zuuid_destroy (&uuid_t);
 
         if(state != NULL){
-            printf("Time passed: %f\n", get_current_time_ms() - state->time_discovered);
+            zlog_category_t *c;
+            c = zlog_get_category("paxos");
+            zlog_info(c, "Paxos run UUID: %s | Reached consensus. Time from detection to consensus: %f ms", state->uuid, get_current_time_ms() - state->time_discovered);
             free(state->uuid);
             free(state);
             HASH_DEL(detected_states, state);
@@ -162,12 +164,6 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
     }
 
     copy_list(replica->state->paxos_received_state_array, replica->state->paxos_state_array);
-
-//    if(is_equal_lists(replica->state->paxos_state_array, replica->state->detected_state_array)){
-//         double time_passed = get_current_time_ms() - replica->state->detected_state_time_ms;
-//        dzlog_info("Time from detected state to Paxos consensus: %f ms \n", time_passed);
-//        zlist_purge(replica->state->detected_state_array);
-//    }
 
     //    Get time passed since last logged state
     double time_now = get_current_time_ms();
@@ -216,6 +212,10 @@ void paxos_serialize_and_submit(
 //    printf("Sending UUID: %s \n", detected_state->uuid);
 //    print_string_list(replica->state->detected_state_array);
 
+    zlog_category_t *c;
+    c = zlog_get_category("paxos");
+    zlog_info(c, "Paxos run UUID: %s | Detected change of state. Starting Paxos run.", detected_state->uuid);
+
     pthread_mutex_unlock(&detected_states_hashmap_lock);
 
     if(serialize_hash(nodes,
@@ -227,11 +227,6 @@ void paxos_serialize_and_submit(
         free(state);
         return;
     }
-//    if(serialize_hash(nodes, &state->current_replica_state_buffer, &state->len, replica->current_node_ip) != 0){
-//        free(state->current_replica_state_buffer);
-//        free(state);
-//        return;
-//    }
 
     evpaxos_replica_submit(replica->paxos_replica, state->current_replica_state_buffer, (int)state->len);
     free(state->current_replica_state_buffer);

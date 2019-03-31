@@ -173,7 +173,9 @@ void log_state_list(zlist_t* list, double time_passed) {
     }
 
     sprintf(buffer, "| %s %f ms", TIME_PASSED_LABEL, time_passed);
-    dzlog_info(a);
+    zlog_category_t *c;
+    c = zlog_get_category("failure_detector");
+    zlog_info(c, a);
 }
 
 void print_string_list(zlist_t* list){
