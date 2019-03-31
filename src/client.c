@@ -73,7 +73,7 @@ void handle_timeout(size_t timer_id, struct timeout_args_struct args) {
 
 }
 
-// Add hostname in nodes struct.Useful when sending state to other nodes.
+// Add hostname in nodes struct. Useful when sending state to other nodes.
 void init_nodes_struct(char* hostname){
 //    Add current node to struct
     node_struct *node = NULL;

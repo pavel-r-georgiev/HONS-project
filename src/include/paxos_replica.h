@@ -23,9 +23,17 @@ typedef struct fd_replica
     struct event_base* base;
 } fd_replica;
 
+typedef struct detected_state_struct {
+    char* uuid; /* key */
+    double time_discovered;
+    UT_hash_handle hh;  /* makes this structure hashable */
+} detected_state_struct;
+
 extern pthread_mutex_t paxos_listener_mutex;
+extern pthread_mutex_t detected_states_hashmap_lock;
 
 int start_paxos_replica(int id,  fd_replica* replica);
+void clean_up_replica(struct fd_replica *replica);
 void terminate_paxos_replica();
 void paxos_serialize_and_submit(
         struct fd_replica* replica,

@@ -29,9 +29,10 @@ int ip_address_hash_sort_function(struct node_struct *a,struct node_struct *b) {
 }
 
 int serialize_hash(struct node_struct **nodes,
-        char** buffer,
-        size_t* size,
-        char current_node_ip[]){
+                   char** buffer,
+                   size_t* size,
+                   char current_node_ip[],
+                   char* uuid){
     if(nodes == NULL || *nodes == NULL){
         printf("ERROR: NULL nodes structure \n");
         return -1;
@@ -44,8 +45,10 @@ int serialize_hash(struct node_struct **nodes,
     size_t len;
     char ipaddress[MAX_SIZE_IP_ADDRESS_STRING];
 //    Serialized message includes: IP address of current node, state array
-    tn = tpl_map("c#A(c#)", current_node_ip, MAX_SIZE_IP_ADDRESS_STRING, &ipaddress, MAX_SIZE_IP_ADDRESS_STRING);
+    tn = tpl_map("c#c#A(c#)", uuid, ZUUID_LEN, current_node_ip, MAX_SIZE_IP_ADDRESS_STRING, &ipaddress, MAX_SIZE_IP_ADDRESS_STRING);
 
+//   Pack UUID
+    tpl_pack(tn, 0);
 //   Pack current ip address
     tpl_pack(tn, 0);
 
@@ -109,17 +112,19 @@ bool is_equal_lists(zlist_t *l1, zlist_t *l2) {
     return str_l1 == NULL && str_l2 == NULL;
 }
 
-int deserialize_hash(char* buffer,  size_t len, zlist_t* result, char* sender_ip){
+int deserialize_hash(char* buffer,  size_t len, zlist_t* result, char* sender_ip, char* uuid){
     char temp[MAX_SIZE_IP_ADDRESS_STRING];
 
     tpl_node* tn;
 //    printf("Deserializing buffer: %s  len: %d\n", buffer, (int)len);
-    tn = tpl_map( "c#A(c#)", sender_ip, MAX_SIZE_IP_ADDRESS_STRING, &temp, MAX_SIZE_IP_ADDRESS_STRING);
+    tn = tpl_map( "c#c#A(c#)", uuid, ZUUID_LEN, sender_ip, MAX_SIZE_IP_ADDRESS_STRING, &temp, MAX_SIZE_IP_ADDRESS_STRING);
     if(tpl_load( tn, TPL_MEM, buffer, len) == -1){
         puts("ERROR: Loading buffer in deserialize function unsuccessful");
         tpl_free( tn );
         return -1;
     }
+//    Unpack UUID
+    tpl_unpack(tn,0);
 //    Unpack sender ip
     tpl_unpack(tn,0);
 //    Unpack state array

@@ -55,10 +55,11 @@ int done = 0;
 pthread_mutex_t paxos_initialization_mutex;
 pthread_cond_t cond = PTHREAD_COND_INITIALIZER;
 
-//
+// Mutex for Paxos listener state
 pthread_mutex_t paxos_listener_mutex;
-
-void clean_up_replica(struct fd_replica *pReplica);
+pthread_mutex_t detected_states_hashmap_lock;
+//  Hashmap to hold Paxos messages UUID and time of sending the messages. Used to benchmark Paxos consensus time.
+struct detected_state_struct *detected_states = NULL; /* important! initialize to NULL */
 
 static void
 handle_sigint(int sig, short ev, void* arg)
@@ -66,7 +67,6 @@ handle_sigint(int sig, short ev, void* arg)
     struct event_base* base = arg;
     event_base_loopexit(base, NULL);
 }
-
 
 static void
 init_state(struct fd_replica* replica)
@@ -83,6 +83,22 @@ init_state(struct fd_replica* replica)
     zlist_autofree (replica->state->detected_state_array);
 }
 
+void clean_up_paxos_hashmap() {
+    //    Clean up hashmap
+    detected_state_struct *current_state, *tmp;
+    if (pthread_mutex_lock(&detected_states_hashmap_lock) != 0){
+        printf("ERROR: can't get Paxos hashmap mutex \n");
+    }
+
+    HASH_ITER(hh, detected_states, current_state, tmp) {
+        HASH_DEL(detected_states, current_state);
+        free(current_state->uuid);
+        free(current_state);
+    }
+
+    pthread_mutex_unlock(&detected_states_hashmap_lock);
+}
+
 
 /**
  * Callback function of the learner in the replica learning a value
@@ -96,23 +112,48 @@ on_deliver(unsigned iid, char* value, size_t size, void* arg)
 {
     struct fd_replica* replica = (struct fd_replica*)arg;
     char sender_ip[MAX_SIZE_IP_ADDRESS_STRING];
+    byte uuid[ZUUID_LEN];
 ;
     if (pthread_mutex_lock(&paxos_listener_mutex) != 0) {
         printf("ERROR: can't get Paxos listener mutex \n");
         return;
     }
     zlist_purge(replica->state->paxos_received_state_array);
-    if(deserialize_hash(value, size, replica->state->paxos_received_state_array, sender_ip) != 0){
+    if(deserialize_hash(value, size, replica->state->paxos_received_state_array, sender_ip, (char*) uuid) != 0){
         pthread_mutex_unlock(&paxos_listener_mutex);
         return;
     }
 
-    //    Message from paxos replica on same node
+
+    //    Message sent from propser of paxos replica on same node
     if(strcmp(sender_ip, replica->current_node_ip) == 0){
+
+        if (pthread_mutex_lock(&detected_states_hashmap_lock) != 0) {
+            printf("ERROR: can't get mutex \n");
+            return;
+        }
+//    Get UUID from message
+        zuuid_t *uuid_t = zuuid_new ();
+        zuuid_set(uuid_t, uuid);
+//        printf("Received UUID: %s\n", zuuid_str(uuid_t));
+//        print_string_list(replica->state->paxos_received_state_array);
+//    Check if current node detected the state
+        detected_state_struct *state = NULL;
+        HASH_FIND_STR(detected_states, zuuid_str(uuid_t), state);
+        zuuid_destroy (&uuid_t);
+
+        if(state != NULL){
+            printf("Time passed: %f\n", get_current_time_ms() - state->time_discovered);
+            free(state->uuid);
+            free(state);
+            HASH_DEL(detected_states, state);
+        }
+
+        pthread_mutex_unlock(&detected_states_hashmap_lock);
+
         pthread_mutex_unlock(&paxos_listener_mutex);
         return;
     }
-
 
 //    State is the same as current state
     if(is_equal_lists(replica->state->paxos_received_state_array, replica->state->paxos_state_array)){
@@ -151,17 +192,46 @@ void paxos_serialize_and_submit(
 
     // Init state struct - hold state buffer and length of buffer.
     struct membership_state *state = malloc(sizeof(struct membership_state));
-    if(serialize_hash(nodes, &state->current_replica_state_buffer, &state->len, replica->current_node_ip) != 0){
+    zuuid_t *uuid_t = zuuid_new ();
+    byte uuid [ZUUID_LEN];
+    zuuid_export (uuid_t, uuid);
+
+//    Add detected state to hashmap
+    if (pthread_mutex_lock(&detected_states_hashmap_lock) != 0) {
+        printf("ERROR: can't get mutex \n");
+        return;
+    }
+
+    detected_state_struct *detected_state = NULL;
+    detected_state = malloc(sizeof(struct detected_state_struct));
+    detected_state->uuid = malloc(ZUUID_STR_LEN);
+    strcpy(detected_state->uuid, zuuid_str(uuid_t));
+//    Note time of detection in order speed of receipt at Paxos learner
+    detected_state->time_discovered = get_current_time_ms();
+    HASH_ADD_STR(detected_states, uuid, detected_state);
+    zuuid_destroy (&uuid_t);
+    zlist_purge(replica->state->detected_state_array);
+    get_membership_group_from_hash(nodes, replica->state->detected_state_array);
+
+//    printf("Sending UUID: %s \n", detected_state->uuid);
+//    print_string_list(replica->state->detected_state_array);
+
+    pthread_mutex_unlock(&detected_states_hashmap_lock);
+
+    if(serialize_hash(nodes,
+            &state->current_replica_state_buffer,
+            &state->len, replica->current_node_ip,
+            (char *) uuid) != 0 )
+    {
         free(state->current_replica_state_buffer);
         free(state);
         return;
     }
-//    printf("Detected change of state: \n");
-
-    zlist_purge(replica->state->detected_state_array);
-    get_membership_group_from_hash(nodes, replica->state->detected_state_array);
-//    print_string_list(replica->state->detected_state_array);
-    replica->state->detected_state_time_ms = get_current_time_ms();
+//    if(serialize_hash(nodes, &state->current_replica_state_buffer, &state->len, replica->current_node_ip) != 0){
+//        free(state->current_replica_state_buffer);
+//        free(state);
+//        return;
+//    }
 
     evpaxos_replica_submit(replica->paxos_replica, state->current_replica_state_buffer, (int)state->len);
     free(state->current_replica_state_buffer);
@@ -231,7 +301,9 @@ void clean_up_replica(struct fd_replica *replica) {
     zlist_destroy (&replica->state->detected_state_array);
     free(replica->state);
     evpaxos_replica_free(replica->paxos_replica);
+    clean_up_paxos_hashmap();
     pthread_mutex_destroy(&paxos_listener_mutex);
+    pthread_mutex_destroy(&detected_states_hashmap_lock);
     free(replica);
 }
 
@@ -252,6 +324,11 @@ start_paxos_replica(int id,  fd_replica* replica)
 
     if (pthread_mutex_init(&paxos_listener_mutex, NULL)){
         printf("ERROR: can't create Paxos listener mutex \n");
+        exit(-1);
+    }
+
+    if (pthread_mutex_init(&detected_states_hashmap_lock, NULL)){
+        printf("ERROR: can't create Paxos hashmap mutex \n");
         exit(-1);
     }
 

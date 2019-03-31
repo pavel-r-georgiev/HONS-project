@@ -43,8 +43,8 @@ void print_hash(struct node_struct **nodes);
 
 int ip_to_id(char *ip);
 //Important to pass pointer of pointer to nodes. UTHash macros change the pointer too.
-int serialize_hash(struct node_struct **nodes, char** buffer, size_t* size, char* current_node_ip);
-int deserialize_hash(char* buffer,  size_t len, zlist_t* result, char* sender_ip);
+int serialize_hash(struct node_struct **nodes, char** buffer, size_t* size, char* current_node_ip, char* uuid);
+int deserialize_hash(char* buffer,  size_t len, zlist_t* result, char* sender_ip, char* uuid);
 void print_string_list(zlist_t* list);
 void get_membership_group_from_hash(struct node_struct **nodes, zlist_t* result);
 bool is_equal_lists(zlist_t *l1, zlist_t *l2);
