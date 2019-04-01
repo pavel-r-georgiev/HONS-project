@@ -8,13 +8,11 @@ FIND_LIBRARY(ZMQ_LIB zmq)
 FIND_LIBRARY(CZMQ_LIB czmq)
 set(CMAKE_USE_PTHREADS_INIT true)
 set(CMAKE_USE_PTHREADS_INIT ON)
-#set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/src/lib/libpaxos/cmake")
 
 find_package(Threads REQUIRED)
-#find_library (ZLOG_LIG zlog)
 
-set(SOURCE_FILES_CLIENT
-        src/client.c
+set(SOURCE_FILES_FAILURE_DETECTOR
+        src/failure_detector_main.c
         src/paxos_replica.c
         src/utils.c
         src/timer.c
@@ -43,14 +41,14 @@ add_library(EVPAXOS SHARED ${EVPAXOS_SOURCES})
 file(GLOB PAXOS_SOURCES "src/lib/libpaxos/paxos/*.c")
 add_library(PAXOS SHARED ${PAXOS_SOURCES})
 
-# Link libraries to the client
-add_executable(client ${SOURCE_FILES_CLIENT})
-TARGET_LINK_LIBRARIES(client ${ZMQ_LIB} ${CZMQ_LIB} EVPAXOS PAXOS event_pthreads ${LIBPAXOS_LINKER_LIBS}
+# Link libraries to the failure detecotor main
+add_executable(failure_detector_main ${SOURCE_FILES_FAILURE_DETECTOR})
+TARGET_LINK_LIBRARIES(failure_detector_main ${ZMQ_LIB} ${CZMQ_LIB} EVPAXOS PAXOS event_pthreads ${LIBPAXOS_LINKER_LIBS}
         ${LIBEVENT_LIBRARIES} ${MSGPACK_LIBRARIES} zlog Threads::Threads)
 
 IF (LMDB_FOUND)
     INCLUDE_DIRECTORIES(${LMDB_INCLUDE_DIRS})
-    TARGET_LINK_LIBRARIES(client ${LMDB_LIBRARIES})
+    TARGET_LINK_LIBRARIES(failure_detector_main ${LMDB_LIBRARIES})
 ENDIF ()
 
 

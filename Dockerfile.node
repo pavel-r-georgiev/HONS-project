@@ -80,4 +80,4 @@ RUN rm -rf build && mkdir build &&\
 
 WORKDIR /project/build
 
-CMD /project/build/client
+CMD /project/build/failure_detector_main
