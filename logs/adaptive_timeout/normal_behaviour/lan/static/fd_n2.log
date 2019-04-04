@@ -1,0 +1,42 @@
+[18:13:04.ms] -------------------------------------
+[18:13:04.ms] START OF NEW LOG
+[18:13:04.ms] -------------------------------------
+[18:13:06.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  2437696497.313000 ms
+[18:13:14.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  7950.042000 ms
+[18:13:14.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  33.131000 ms
+[18:13:14.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.057000 ms
+[04:50:00.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[04:50:00.ms] Timer for IP 14.0.0.10 expired, Detection time: 0.000000
+[04:50:00.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  38205253.681000 ms
+[04:50:00.ms] Timer for IP 14.0.0.10 expired, Detection time: 0.000000
+[04:50:03.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  3730.920000 ms
+[04:50:03.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  21.665000 ms
+[04:50:03.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  8.346000 ms
+[04:50:03.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  70.281000 ms
+[04:50:03.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  45.044000 ms
+[04:50:03.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  4.831000 ms
+[04:50:03.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  45.149000 ms
+[04:50:03.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.060000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  50.075000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.065000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  49.793000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.061000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  50.001000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.061000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  49.994000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.060000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  58.738000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  40.728000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  50.100000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.099000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  49.817000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.096000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  49.982000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.056000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  50.071000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.100000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  50.146000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.058000 ms
+[04:50:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  49.889000 ms
+[08:59:07.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  14942709.251000 ms
+[08:59:07.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.208000 ms

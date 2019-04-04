@@ -89,6 +89,6 @@ weave stop
 Refer to [this helpful guide](https://github.com/shuhaoliu/docker-clion-dev).
 
 Run the debugging server as:
-```dockerfile
+```
 docker-compose -f docker-compose-debugger.yml up -d
 ```

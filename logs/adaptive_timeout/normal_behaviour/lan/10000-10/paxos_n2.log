@@ -1,0 +1,216 @@
+[18:13:01.ms] Paxos run UUID: EC3FB387CE4C4A14808DC06C27BD4B5D | Detected change of state. Starting Paxos run.
+[18:13:03.ms] Paxos run UUID: EC3FB387CE4C4A14808DC06C27BD4B5D | Reached consensus. Time from detection to consensus: 1986.661000 ms
+[18:13:10.ms] Paxos run UUID: EE0BA650E90249B482EDD2A93410E0FA | Detected change of state. Starting Paxos run.
+[18:13:10.ms] Paxos run UUID: EE0BA650E90249B482EDD2A93410E0FA | Reached consensus. Time from detection to consensus: 1.814000 ms
+[19:28:36.ms] Paxos run UUID: 71C8D2340B4F4E3AB3FDD15613617AFB | Detected change of state. Starting Paxos run.
+[19:28:36.ms] Paxos run UUID: 43ABC442F4CD4B1C933F3977E7E5AFE3 | Detected change of state. Starting Paxos run.
+[19:28:36.ms] Paxos run UUID: 71C8D2340B4F4E3AB3FDD15613617AFB | Reached consensus. Time from detection to consensus: 1.524000 ms
+[19:28:36.ms] Paxos run UUID: 43ABC442F4CD4B1C933F3977E7E5AFE3 | Reached consensus. Time from detection to consensus: 1.633000 ms
+[19:36:30.ms] Paxos run UUID: 3CA6AC5F764645F9B372D97A2AC42A64 | Detected change of state. Starting Paxos run.
+[19:36:30.ms] Paxos run UUID: 3CA6AC5F764645F9B372D97A2AC42A64 | Reached consensus. Time from detection to consensus: 0.855000 ms
+[19:36:35.ms] Paxos run UUID: FE98B613E145492AAEE30FB5FA8F35B9 | Detected change of state. Starting Paxos run.
+[19:36:35.ms] Paxos run UUID: FE98B613E145492AAEE30FB5FA8F35B9 | Reached consensus. Time from detection to consensus: 1.486000 ms
+[19:39:01.ms] Paxos run UUID: 39962FDD7310493CADA6713728E5E5D9 | Detected change of state. Starting Paxos run.
+[19:39:01.ms] Paxos run UUID: 39962FDD7310493CADA6713728E5E5D9 | Reached consensus. Time from detection to consensus: 1.320000 ms
+[19:39:01.ms] Paxos run UUID: 68D2AD4C417D4216BA6DC8A524FD396E | Detected change of state. Starting Paxos run.
+[19:39:01.ms] Paxos run UUID: 68D2AD4C417D4216BA6DC8A524FD396E | Reached consensus. Time from detection to consensus: 0.904000 ms
+[20:57:24.ms] Paxos run UUID: E849775A164144D596CC1C066A917D84 | Detected change of state. Starting Paxos run.
+[20:57:24.ms] Paxos run UUID: 540FB2540E8947A9851C6310D7216B69 | Detected change of state. Starting Paxos run.
+[20:57:24.ms] Paxos run UUID: E849775A164144D596CC1C066A917D84 | Reached consensus. Time from detection to consensus: 1.720000 ms
+[20:57:24.ms] Paxos run UUID: 540FB2540E8947A9851C6310D7216B69 | Reached consensus. Time from detection to consensus: 1.667000 ms
+[21:07:20.ms] Paxos run UUID: DCFF2CE17BD6462CA41C8F8A80ED8585 | Detected change of state. Starting Paxos run.
+[21:07:20.ms] Paxos run UUID: 280AAD5166E641C9A2A93FC0FEA236C5 | Detected change of state. Starting Paxos run.
+[21:07:20.ms] Paxos run UUID: DCFF2CE17BD6462CA41C8F8A80ED8585 | Reached consensus. Time from detection to consensus: 1.281000 ms
+[21:07:20.ms] Paxos run UUID: 280AAD5166E641C9A2A93FC0FEA236C5 | Reached consensus. Time from detection to consensus: 1.334000 ms
+[22:12:55.ms] Paxos run UUID: 37620A6474B148D28A99A06A9FA7520A | Detected change of state. Starting Paxos run.
+[22:12:55.ms] Paxos run UUID: 6B1F9CAA4BE843419FBB053F8F76F3D6 | Detected change of state. Starting Paxos run.
+[22:12:55.ms] Paxos run UUID: 37620A6474B148D28A99A06A9FA7520A | Reached consensus. Time from detection to consensus: 1.799000 ms
+[22:12:55.ms] Paxos run UUID: 6B1F9CAA4BE843419FBB053F8F76F3D6 | Reached consensus. Time from detection to consensus: 1.450000 ms
+[22:27:00.ms] Paxos run UUID: 6E8CB239C23E4B73824ED9EF27E7519F | Detected change of state. Starting Paxos run.
+[22:27:00.ms] Paxos run UUID: 6E8CB239C23E4B73824ED9EF27E7519F | Reached consensus. Time from detection to consensus: 1.350000 ms
+[22:27:00.ms] Paxos run UUID: A02E6A9892B046EFAEBD3BC9E8F2FECF | Detected change of state. Starting Paxos run.
+[22:27:00.ms] Paxos run UUID: A02E6A9892B046EFAEBD3BC9E8F2FECF | Reached consensus. Time from detection to consensus: 1.196000 ms
+[23:34:35.ms] Paxos run UUID: 490C3287610F4C6F9B9F9CF894E4A625 | Detected change of state. Starting Paxos run.
+[23:34:35.ms] Paxos run UUID: 490C3287610F4C6F9B9F9CF894E4A625 | Reached consensus. Time from detection to consensus: 1.399000 ms
+[23:34:35.ms] Paxos run UUID: 71C4F77BB80246D8AD30E9B45463CA84 | Detected change of state. Starting Paxos run.
+[23:34:35.ms] Paxos run UUID: 71C4F77BB80246D8AD30E9B45463CA84 | Reached consensus. Time from detection to consensus: 1.455000 ms
+[23:49:35.ms] Paxos run UUID: DA551C83550B4478BCAE2530EE84794E | Detected change of state. Starting Paxos run.
+[23:49:35.ms] Paxos run UUID: 182A9167FC844178B99305BD41004C60 | Detected change of state. Starting Paxos run.
+[23:49:35.ms] Paxos run UUID: DA551C83550B4478BCAE2530EE84794E | Reached consensus. Time from detection to consensus: 1.209000 ms
+[23:49:35.ms] Paxos run UUID: 182A9167FC844178B99305BD41004C60 | Reached consensus. Time from detection to consensus: 1.253000 ms
+[00:53:11.ms] Paxos run UUID: EF66285FFA7447ED8D9A4CD9BE8482D1 | Detected change of state. Starting Paxos run.
+[00:53:11.ms] Paxos run UUID: EF66285FFA7447ED8D9A4CD9BE8482D1 | Reached consensus. Time from detection to consensus: 1.462000 ms
+[00:53:11.ms] Paxos run UUID: 19633334F48C4939B890C2339D071E9D | Detected change of state. Starting Paxos run.
+[00:53:11.ms] Paxos run UUID: 19633334F48C4939B890C2339D071E9D | Reached consensus. Time from detection to consensus: 1.023000 ms
+[01:06:27.ms] Paxos run UUID: 1B5B2F278AA04FC180A05BEDCD570754 | Detected change of state. Starting Paxos run.
+[01:06:27.ms] Paxos run UUID: 1B5B2F278AA04FC180A05BEDCD570754 | Reached consensus. Time from detection to consensus: 1.353000 ms
+[01:06:27.ms] Paxos run UUID: EBB13822F9DC4265A5D5E7535F3478CA | Detected change of state. Starting Paxos run.
+[01:06:27.ms] Paxos run UUID: EBB13822F9DC4265A5D5E7535F3478CA | Reached consensus. Time from detection to consensus: 1.440000 ms
+[02:15:21.ms] Paxos run UUID: 98FA8D08DB5F4FDE9762F1BF7C7FD84D | Detected change of state. Starting Paxos run.
+[02:15:21.ms] Paxos run UUID: 98FA8D08DB5F4FDE9762F1BF7C7FD84D | Reached consensus. Time from detection to consensus: 1.411000 ms
+[02:15:21.ms] Paxos run UUID: 4353EE7D91824D958D131138E2768DC3 | Detected change of state. Starting Paxos run.
+[02:15:21.ms] Paxos run UUID: 4353EE7D91824D958D131138E2768DC3 | Reached consensus. Time from detection to consensus: 1.019000 ms
+[02:22:36.ms] Paxos run UUID: 7EBBE652C9024A73BE404D936E6FB634 | Detected change of state. Starting Paxos run.
+[02:22:36.ms] Paxos run UUID: 5DA324C8248B445CA0D559B1ADF72D55 | Detected change of state. Starting Paxos run.
+[02:22:36.ms] Paxos run UUID: 7EBBE652C9024A73BE404D936E6FB634 | Reached consensus. Time from detection to consensus: 1.251000 ms
+[02:22:36.ms] Paxos run UUID: 5DA324C8248B445CA0D559B1ADF72D55 | Reached consensus. Time from detection to consensus: 1.539000 ms
+[03:32:10.ms] Paxos run UUID: 0122269D040A4FD489A59B9CF0CD07CB | Detected change of state. Starting Paxos run.
+[03:32:10.ms] Paxos run UUID: 1DF9E1D410F844088CF645BD3AB15C4E | Detected change of state. Starting Paxos run.
+[03:32:10.ms] Paxos run UUID: 0122269D040A4FD489A59B9CF0CD07CB | Reached consensus. Time from detection to consensus: 0.907000 ms
+[03:32:10.ms] Paxos run UUID: 1DF9E1D410F844088CF645BD3AB15C4E | Reached consensus. Time from detection to consensus: 0.878000 ms
+[03:38:28.ms] Paxos run UUID: 764A6C8A618A48A98B4B42786A4F2B13 | Detected change of state. Starting Paxos run.
+[03:38:28.ms] Paxos run UUID: A2FBCB3F13C84DE485AEFD29CA50AB74 | Detected change of state. Starting Paxos run.
+[03:38:28.ms] Paxos run UUID: 764A6C8A618A48A98B4B42786A4F2B13 | Reached consensus. Time from detection to consensus: 0.955000 ms
+[03:38:28.ms] Paxos run UUID: A2FBCB3F13C84DE485AEFD29CA50AB74 | Reached consensus. Time from detection to consensus: 0.817000 ms
+[04:50:00.ms] Paxos run UUID: 99CF3E15CE594B729F712DC3D36D0BDA | Detected change of state. Starting Paxos run.
+[04:50:00.ms] Paxos run UUID: EAAF1006A8B14B19A66CBF72125CC5B4 | Detected change of state. Starting Paxos run.
+[04:50:00.ms] Paxos run UUID: 0A0A34094E0F49CCB2A1E66ACE318634 | Detected change of state. Starting Paxos run.
+[04:50:00.ms] Paxos run UUID: 4FC4DBAB2CDD46E1890F55C0F6D5B861 | Detected change of state. Starting Paxos run.
+[04:50:00.ms] Paxos run UUID: 99CF3E15CE594B729F712DC3D36D0BDA | Reached consensus. Time from detection to consensus: 2.098000 ms
+[04:50:00.ms] Paxos run UUID: EAAF1006A8B14B19A66CBF72125CC5B4 | Reached consensus. Time from detection to consensus: 2.150000 ms
+[04:50:00.ms] Paxos run UUID: 0A0A34094E0F49CCB2A1E66ACE318634 | Reached consensus. Time from detection to consensus: 1.564000 ms
+[04:50:00.ms] Paxos run UUID: 4FC4DBAB2CDD46E1890F55C0F6D5B861 | Reached consensus. Time from detection to consensus: 1.503000 ms
+[06:18:50.ms] Paxos run UUID: 242DB2D0DB9B47299CA5C03D86BC7B3F | Detected change of state. Starting Paxos run.
+[06:18:50.ms] Paxos run UUID: 242DB2D0DB9B47299CA5C03D86BC7B3F | Reached consensus. Time from detection to consensus: 1.014000 ms
+[06:18:50.ms] Paxos run UUID: 51B60EF914EC4AE1A43D95C023D3B767 | Detected change of state. Starting Paxos run.
+[06:18:50.ms] Paxos run UUID: 51B60EF914EC4AE1A43D95C023D3B767 | Reached consensus. Time from detection to consensus: 0.840000 ms
+[06:21:23.ms] Paxos run UUID: 716558E9F7A84DAA86A4F39F28965044 | Detected change of state. Starting Paxos run.
+[06:21:23.ms] Paxos run UUID: 173F4F44CDC44DBBBDB3072B9E9AB55E | Detected change of state. Starting Paxos run.
+[06:21:23.ms] Paxos run UUID: 716558E9F7A84DAA86A4F39F28965044 | Reached consensus. Time from detection to consensus: 1.127000 ms
+[06:21:23.ms] Paxos run UUID: 173F4F44CDC44DBBBDB3072B9E9AB55E | Reached consensus. Time from detection to consensus: 0.780000 ms
+[07:45:01.ms] Paxos run UUID: AE00BDC4CF6C4F6C9D7BE4F1BC595E72 | Detected change of state. Starting Paxos run.
+[07:45:01.ms] Paxos run UUID: AE00BDC4CF6C4F6C9D7BE4F1BC595E72 | Reached consensus. Time from detection to consensus: 0.914000 ms
+[07:45:01.ms] Paxos run UUID: 5F41DD8EF84F48A48F9A90B8C7CBF723 | Detected change of state. Starting Paxos run.
+[07:45:01.ms] Paxos run UUID: 5F41DD8EF84F48A48F9A90B8C7CBF723 | Reached consensus. Time from detection to consensus: 0.683000 ms
+[07:53:38.ms] Paxos run UUID: FD7F580C51E64AE9AF7C8A19CA3DFAC9 | Detected change of state. Starting Paxos run.
+[07:53:38.ms] Paxos run UUID: FD7F580C51E64AE9AF7C8A19CA3DFAC9 | Reached consensus. Time from detection to consensus: 0.859000 ms
+[07:53:38.ms] Paxos run UUID: 9257D4D87BE9449780F201CB0BBAF261 | Detected change of state. Starting Paxos run.
+[07:53:38.ms] Paxos run UUID: 9257D4D87BE9449780F201CB0BBAF261 | Reached consensus. Time from detection to consensus: 0.786000 ms
+[09:19:59.ms] Paxos run UUID: D8AC563E57F846B5A73F0A08C3CB5073 | Detected change of state. Starting Paxos run.
+[09:19:59.ms] Paxos run UUID: D8AC563E57F846B5A73F0A08C3CB5073 | Reached consensus. Time from detection to consensus: 1.763000 ms
+[09:19:59.ms] Paxos run UUID: 5F1D2CCA237D482B914A3D8C08F25F5D | Detected change of state. Starting Paxos run.
+[09:19:59.ms] Paxos run UUID: 5F1D2CCA237D482B914A3D8C08F25F5D | Reached consensus. Time from detection to consensus: 0.859000 ms
+[09:22:25.ms] Paxos run UUID: 0E127F165FCA491DB03D5AB8627743E6 | Detected change of state. Starting Paxos run.
+[09:22:25.ms] Paxos run UUID: B81EBBFC25684E529EC6ACD6103386B6 | Detected change of state. Starting Paxos run.
+[09:22:25.ms] Paxos run UUID: 0E127F165FCA491DB03D5AB8627743E6 | Reached consensus. Time from detection to consensus: 1.472000 ms
+[09:22:25.ms] Paxos run UUID: B81EBBFC25684E529EC6ACD6103386B6 | Reached consensus. Time from detection to consensus: 1.425000 ms
+[10:38:57.ms] Paxos run UUID: C8A1EFD0DA0A4AF1B28AF6EAB8CF052F | Detected change of state. Starting Paxos run.
+[10:38:57.ms] Paxos run UUID: F2674B2B974E41DB88E986349494BB59 | Detected change of state. Starting Paxos run.
+[10:38:57.ms] Paxos run UUID: C8A1EFD0DA0A4AF1B28AF6EAB8CF052F | Reached consensus. Time from detection to consensus: 1.060000 ms
+[10:38:57.ms] Paxos run UUID: F2674B2B974E41DB88E986349494BB59 | Reached consensus. Time from detection to consensus: 0.838000 ms
+[10:40:06.ms] Paxos run UUID: 8B3B3111F04A4C20AC6A248AEE7FACE5 | Detected change of state. Starting Paxos run.
+[10:40:06.ms] Paxos run UUID: 8B3B3111F04A4C20AC6A248AEE7FACE5 | Reached consensus. Time from detection to consensus: 0.880000 ms
+[10:40:06.ms] Paxos run UUID: 3B38CFB1BA994062B999BF9E564FAFCC | Detected change of state. Starting Paxos run.
+[10:40:06.ms] Paxos run UUID: 3B38CFB1BA994062B999BF9E564FAFCC | Reached consensus. Time from detection to consensus: 0.696000 ms
+[11:52:25.ms] Paxos run UUID: E2C482D79B4C404D91C5BFD651519759 | Detected change of state. Starting Paxos run.
+[11:52:25.ms] Paxos run UUID: 8145DD4CFE3B4BA1924A380DF7BD411B | Detected change of state. Starting Paxos run.
+[11:52:25.ms] Paxos run UUID: E2C482D79B4C404D91C5BFD651519759 | Reached consensus. Time from detection to consensus: 0.984000 ms
+[11:52:25.ms] Paxos run UUID: 8145DD4CFE3B4BA1924A380DF7BD411B | Reached consensus. Time from detection to consensus: 0.767000 ms
+[11:57:55.ms] Paxos run UUID: 832CFC70E1D54CA7B70127A435EE9B75 | Detected change of state. Starting Paxos run.
+[11:57:55.ms] Paxos run UUID: 26DC09E1E4F04E4EAD746A518743F8D7 | Detected change of state. Starting Paxos run.
+[11:57:55.ms] Paxos run UUID: 832CFC70E1D54CA7B70127A435EE9B75 | Reached consensus. Time from detection to consensus: 1.051000 ms
+[11:57:55.ms] Paxos run UUID: 26DC09E1E4F04E4EAD746A518743F8D7 | Reached consensus. Time from detection to consensus: 0.847000 ms
+[13:23:53.ms] Paxos run UUID: 540DB645236E498EA026CB3AD085B742 | Detected change of state. Starting Paxos run.
+[13:23:53.ms] Paxos run UUID: 540DB645236E498EA026CB3AD085B742 | Reached consensus. Time from detection to consensus: 0.938000 ms
+[13:23:53.ms] Paxos run UUID: 25D511B405B2488F8BAAECE5EC10D06D | Detected change of state. Starting Paxos run.
+[13:23:53.ms] Paxos run UUID: 25D511B405B2488F8BAAECE5EC10D06D | Reached consensus. Time from detection to consensus: 0.767000 ms
+[13:31:59.ms] Paxos run UUID: 04321EDB73D34552806BF194B7BEEA7B | Detected change of state. Starting Paxos run.
+[13:31:59.ms] Paxos run UUID: 04321EDB73D34552806BF194B7BEEA7B | Reached consensus. Time from detection to consensus: 1.335000 ms
+[13:31:59.ms] Paxos run UUID: 4A96DCA8B8C54193AA1B0827CCE662A5 | Detected change of state. Starting Paxos run.
+[13:31:59.ms] Paxos run UUID: 4A96DCA8B8C54193AA1B0827CCE662A5 | Reached consensus. Time from detection to consensus: 0.870000 ms
+[14:46:43.ms] Paxos run UUID: CD456FEB4EE54E7396AD5C47D61C10D1 | Detected change of state. Starting Paxos run.
+[14:46:43.ms] Paxos run UUID: CD456FEB4EE54E7396AD5C47D61C10D1 | Reached consensus. Time from detection to consensus: 0.734000 ms
+[14:46:43.ms] Paxos run UUID: 8822C811C9E74182972BB8DD172389D6 | Detected change of state. Starting Paxos run.
+[14:46:43.ms] Paxos run UUID: 8822C811C9E74182972BB8DD172389D6 | Reached consensus. Time from detection to consensus: 0.841000 ms
+[14:56:13.ms] Paxos run UUID: 56C9987852D346ACBB0B5FE7C3C56BEB | Detected change of state. Starting Paxos run.
+[14:56:13.ms] Paxos run UUID: E290860CB7544782A5F6EB81F1CF5FFA | Detected change of state. Starting Paxos run.
+[14:56:13.ms] Paxos run UUID: 56C9987852D346ACBB0B5FE7C3C56BEB | Reached consensus. Time from detection to consensus: 0.968000 ms
+[14:56:13.ms] Paxos run UUID: E290860CB7544782A5F6EB81F1CF5FFA | Reached consensus. Time from detection to consensus: 0.941000 ms
+[16:20:51.ms] Paxos run UUID: 606D191990C94194A04DBB4CA2C323F4 | Detected change of state. Starting Paxos run.
+[16:20:51.ms] Paxos run UUID: 606D191990C94194A04DBB4CA2C323F4 | Reached consensus. Time from detection to consensus: 1.000000 ms
+[16:20:51.ms] Paxos run UUID: 028C7698A2FA4E3398994E3E25B9C09B | Detected change of state. Starting Paxos run.
+[16:20:51.ms] Paxos run UUID: 028C7698A2FA4E3398994E3E25B9C09B | Reached consensus. Time from detection to consensus: 0.753000 ms
+[16:28:49.ms] Paxos run UUID: 7B926D510D154D27BA2ED914BD03B42D | Detected change of state. Starting Paxos run.
+[16:28:49.ms] Paxos run UUID: 7B926D510D154D27BA2ED914BD03B42D | Reached consensus. Time from detection to consensus: 0.848000 ms
+[16:28:49.ms] Paxos run UUID: 8AC9ECABAF2A41E685A4C4C5556DE160 | Detected change of state. Starting Paxos run.
+[16:28:49.ms] Paxos run UUID: 8AC9ECABAF2A41E685A4C4C5556DE160 | Reached consensus. Time from detection to consensus: 0.773000 ms
+[17:54:16.ms] Paxos run UUID: 9EFB05F4942B481EB1131DBFFCDA674E | Detected change of state. Starting Paxos run.
+[17:54:16.ms] Paxos run UUID: 53584A10A2C1428FB4C8204169453FE1 | Detected change of state. Starting Paxos run.
+[17:54:16.ms] Paxos run UUID: 9EFB05F4942B481EB1131DBFFCDA674E | Reached consensus. Time from detection to consensus: 1.050000 ms
+[17:54:16.ms] Paxos run UUID: 53584A10A2C1428FB4C8204169453FE1 | Reached consensus. Time from detection to consensus: 0.994000 ms
+[17:54:17.ms] Paxos run UUID: B43EFD1ADAA643A689388DFD177B9A8E | Detected change of state. Starting Paxos run.
+[17:54:17.ms] Paxos run UUID: B43EFD1ADAA643A689388DFD177B9A8E | Reached consensus. Time from detection to consensus: 0.715000 ms
+[17:54:17.ms] Paxos run UUID: 3B848236BA8D4FB8A29361133791E039 | Detected change of state. Starting Paxos run.
+[17:54:17.ms] Paxos run UUID: 3B848236BA8D4FB8A29361133791E039 | Reached consensus. Time from detection to consensus: 0.835000 ms
+[19:23:58.ms] Paxos run UUID: 3B150BDF163B4AF6B9AFD65B80440EEB | Detected change of state. Starting Paxos run.
+[19:23:58.ms] Paxos run UUID: 3B150BDF163B4AF6B9AFD65B80440EEB | Reached consensus. Time from detection to consensus: 1.161000 ms
+[19:23:58.ms] Paxos run UUID: D2DD075049764D789353FCDE4CC6A2A9 | Detected change of state. Starting Paxos run.
+[19:23:58.ms] Paxos run UUID: D2DD075049764D789353FCDE4CC6A2A9 | Reached consensus. Time from detection to consensus: 0.841000 ms
+[19:26:41.ms] Paxos run UUID: EEE7F0D2B9CF40E2BA53DF7212FA5283 | Detected change of state. Starting Paxos run.
+[19:26:41.ms] Paxos run UUID: E1F3B0A7546F430883C4DDB359B38581 | Detected change of state. Starting Paxos run.
+[19:26:41.ms] Paxos run UUID: EEE7F0D2B9CF40E2BA53DF7212FA5283 | Reached consensus. Time from detection to consensus: 0.987000 ms
+[19:26:41.ms] Paxos run UUID: E1F3B0A7546F430883C4DDB359B38581 | Reached consensus. Time from detection to consensus: 0.897000 ms
+[20:50:44.ms] Paxos run UUID: ECA39C359D644CC0BBBE800436B899E6 | Detected change of state. Starting Paxos run.
+[20:50:44.ms] Paxos run UUID: ECA39C359D644CC0BBBE800436B899E6 | Reached consensus. Time from detection to consensus: 0.851000 ms
+[20:50:44.ms] Paxos run UUID: B7580132455640769E40457392FBA296 | Detected change of state. Starting Paxos run.
+[20:50:44.ms] Paxos run UUID: B7580132455640769E40457392FBA296 | Reached consensus. Time from detection to consensus: 0.739000 ms
+[21:10:03.ms] Paxos run UUID: 5EB9091F244C424680D789B5C8ADA310 | Detected change of state. Starting Paxos run.
+[21:10:03.ms] Paxos run UUID: 5EB9091F244C424680D789B5C8ADA310 | Reached consensus. Time from detection to consensus: 0.864000 ms
+[21:10:03.ms] Paxos run UUID: DE895A500320411999947E8995F33673 | Detected change of state. Starting Paxos run.
+[21:10:03.ms] Paxos run UUID: DE895A500320411999947E8995F33673 | Reached consensus. Time from detection to consensus: 0.895000 ms
+[22:38:06.ms] Paxos run UUID: 85954793170643FDB6A2BAB8A298C7D1 | Detected change of state. Starting Paxos run.
+[22:38:06.ms] Paxos run UUID: 85954793170643FDB6A2BAB8A298C7D1 | Reached consensus. Time from detection to consensus: 0.941000 ms
+[22:38:06.ms] Paxos run UUID: 8D7F2A572C344A1782FA8EEF3120E67C | Detected change of state. Starting Paxos run.
+[22:38:06.ms] Paxos run UUID: 8D7F2A572C344A1782FA8EEF3120E67C | Reached consensus. Time from detection to consensus: 0.808000 ms
+[22:53:09.ms] Paxos run UUID: 26E6641548DC4F9A8350BE5FEB657707 | Detected change of state. Starting Paxos run.
+[22:53:09.ms] Paxos run UUID: 26E6641548DC4F9A8350BE5FEB657707 | Reached consensus. Time from detection to consensus: 0.930000 ms
+[22:53:09.ms] Paxos run UUID: 2D099D1F12FB4A3EBE7AECB0F61BC8B7 | Detected change of state. Starting Paxos run.
+[22:53:09.ms] Paxos run UUID: 2D099D1F12FB4A3EBE7AECB0F61BC8B7 | Reached consensus. Time from detection to consensus: 0.817000 ms
+[00:09:36.ms] Paxos run UUID: 5A697454238F45EE8CFC0636C21C00C1 | Detected change of state. Starting Paxos run.
+[00:09:36.ms] Paxos run UUID: 5A697454238F45EE8CFC0636C21C00C1 | Reached consensus. Time from detection to consensus: 0.926000 ms
+[00:09:36.ms] Paxos run UUID: 98598BDDE026443A91320A01B49F07FF | Detected change of state. Starting Paxos run.
+[00:09:36.ms] Paxos run UUID: 98598BDDE026443A91320A01B49F07FF | Reached consensus. Time from detection to consensus: 0.814000 ms
+[00:17:37.ms] Paxos run UUID: F4ACBF4DD1C24E3AA62051BDCA8BAF1A | Detected change of state. Starting Paxos run.
+[00:17:37.ms] Paxos run UUID: F4ACBF4DD1C24E3AA62051BDCA8BAF1A | Reached consensus. Time from detection to consensus: 0.918000 ms
+[00:17:37.ms] Paxos run UUID: 5DF990BA570F4A4CAA2B0EE88A087D0C | Detected change of state. Starting Paxos run.
+[00:17:37.ms] Paxos run UUID: 5DF990BA570F4A4CAA2B0EE88A087D0C | Reached consensus. Time from detection to consensus: 0.786000 ms
+[01:34:24.ms] Paxos run UUID: AD330676AF0248D8ABE0BBA1D2E2C23D | Detected change of state. Starting Paxos run.
+[01:34:24.ms] Paxos run UUID: AD330676AF0248D8ABE0BBA1D2E2C23D | Reached consensus. Time from detection to consensus: 0.877000 ms
+[01:34:24.ms] Paxos run UUID: AA7CDA3426AD42D086663D5E517D1AAD | Detected change of state. Starting Paxos run.
+[01:34:24.ms] Paxos run UUID: AA7CDA3426AD42D086663D5E517D1AAD | Reached consensus. Time from detection to consensus: 0.845000 ms
+[01:37:41.ms] Paxos run UUID: E5D69EACEB1C4C1FA11DA89436F4B7EE | Detected change of state. Starting Paxos run.
+[01:37:41.ms] Paxos run UUID: 6C6A6C706875483EB859C56E883E9675 | Detected change of state. Starting Paxos run.
+[01:37:41.ms] Paxos run UUID: E5D69EACEB1C4C1FA11DA89436F4B7EE | Reached consensus. Time from detection to consensus: 0.919000 ms
+[01:37:41.ms] Paxos run UUID: 6C6A6C706875483EB859C56E883E9675 | Reached consensus. Time from detection to consensus: 0.874000 ms
+[02:57:36.ms] Paxos run UUID: B351F75E204C4DD9B1F18705E54E3E09 | Detected change of state. Starting Paxos run.
+[02:57:36.ms] Paxos run UUID: 77E011032C0045FABE90D72CB8005012 | Detected change of state. Starting Paxos run.
+[02:57:36.ms] Paxos run UUID: B351F75E204C4DD9B1F18705E54E3E09 | Reached consensus. Time from detection to consensus: 0.922000 ms
+[02:57:36.ms] Paxos run UUID: 77E011032C0045FABE90D72CB8005012 | Reached consensus. Time from detection to consensus: 0.954000 ms
+[03:14:53.ms] Paxos run UUID: 99421D646EC84A5A9CF65E49707BBA8D | Detected change of state. Starting Paxos run.
+[03:14:53.ms] Paxos run UUID: 99421D646EC84A5A9CF65E49707BBA8D | Reached consensus. Time from detection to consensus: 1.092000 ms
+[03:14:53.ms] Paxos run UUID: 6084D4E386B24CD5B9A54C6E30EAE87A | Detected change of state. Starting Paxos run.
+[03:14:53.ms] Paxos run UUID: 6084D4E386B24CD5B9A54C6E30EAE87A | Reached consensus. Time from detection to consensus: 0.872000 ms
+[04:18:51.ms] Paxos run UUID: 993EF279B7624AF19AE8090058837EA5 | Detected change of state. Starting Paxos run.
+[04:18:51.ms] Paxos run UUID: 189320B5B6B640EF8C5A5B38198CF34A | Detected change of state. Starting Paxos run.
+[04:18:51.ms] Paxos run UUID: 993EF279B7624AF19AE8090058837EA5 | Reached consensus. Time from detection to consensus: 0.897000 ms
+[04:18:51.ms] Paxos run UUID: 189320B5B6B640EF8C5A5B38198CF34A | Reached consensus. Time from detection to consensus: 0.794000 ms
+[04:40:53.ms] Paxos run UUID: 38C6124B419D483FAD9FBB6683543A77 | Detected change of state. Starting Paxos run.
+[04:40:53.ms] Paxos run UUID: 38C6124B419D483FAD9FBB6683543A77 | Reached consensus. Time from detection to consensus: 0.995000 ms
+[04:40:53.ms] Paxos run UUID: EF4E5276923643E6B7D4F98D3F00992F | Detected change of state. Starting Paxos run.
+[04:40:53.ms] Paxos run UUID: EF4E5276923643E6B7D4F98D3F00992F | Reached consensus. Time from detection to consensus: 0.852000 ms
+[05:48:22.ms] Paxos run UUID: BB681C8E2D5D4BA1AF41BC50EE2E3C2E | Detected change of state. Starting Paxos run.
+[05:48:22.ms] Paxos run UUID: BB681C8E2D5D4BA1AF41BC50EE2E3C2E | Reached consensus. Time from detection to consensus: 0.993000 ms
+[05:48:22.ms] Paxos run UUID: EAA6721D07024BA7BC1872E038BFF34E | Detected change of state. Starting Paxos run.
+[05:48:22.ms] Paxos run UUID: EAA6721D07024BA7BC1872E038BFF34E | Reached consensus. Time from detection to consensus: 0.823000 ms
+[06:07:12.ms] Paxos run UUID: 36B011C625994B858E8D5A9A6CCFA39F | Detected change of state. Starting Paxos run.
+[06:07:12.ms] Paxos run UUID: 36B011C625994B858E8D5A9A6CCFA39F | Reached consensus. Time from detection to consensus: 1.002000 ms
+[06:07:12.ms] Paxos run UUID: 4D9BB9299DD34D798D4FB9F83CB09BDC | Detected change of state. Starting Paxos run.
+[06:07:12.ms] Paxos run UUID: 4D9BB9299DD34D798D4FB9F83CB09BDC | Reached consensus. Time from detection to consensus: 0.728000 ms
+[07:28:53.ms] Paxos run UUID: B67769019EB549C0904297AA6F2C3B34 | Detected change of state. Starting Paxos run.
+[07:28:53.ms] Paxos run UUID: EBA5B199FC1143C1A65839DE3E6C9EEC | Detected change of state. Starting Paxos run.
+[07:28:53.ms] Paxos run UUID: B67769019EB549C0904297AA6F2C3B34 | Reached consensus. Time from detection to consensus: 1.058000 ms
+[07:28:53.ms] Paxos run UUID: EBA5B199FC1143C1A65839DE3E6C9EEC | Reached consensus. Time from detection to consensus: 0.854000 ms
+[07:34:18.ms] Paxos run UUID: 37B621F7D47E4E7C86031D9EC79EB575 | Detected change of state. Starting Paxos run.
+[07:34:18.ms] Paxos run UUID: 37B621F7D47E4E7C86031D9EC79EB575 | Reached consensus. Time from detection to consensus: 0.951000 ms
+[07:34:18.ms] Paxos run UUID: AB1770B0334B420F81CC8A9C979DE205 | Detected change of state. Starting Paxos run.
+[07:34:18.ms] Paxos run UUID: AB1770B0334B420F81CC8A9C979DE205 | Reached consensus. Time from detection to consensus: 0.812000 ms

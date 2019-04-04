@@ -1,0 +1,297 @@
+[03:54:42.ms] -------------------------------------
+[03:54:42.ms] START OF NEW LOG
+[03:54:42.ms] -------------------------------------
+[03:54:44.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  62767.899000 ms
+[03:54:44.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.023000 ms
+[04:03:05.ms] ---------------------------------------------------
+[04:03:05.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[04:03:05.ms] ---------------------------------------------------
+[04:03:05.ms] ---------------------------------------------------
+[04:03:05.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[04:03:05.ms] ---------------------------------------------------
+[06:31:06.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  9382053.492000 ms
+[06:31:06.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  21.247000 ms
+[06:41:59.ms] Timer for IP 12.0.0.11 expired, Detection time: 48.503769
+[06:41:59.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  653420.721000 ms
+[06:41:59.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  1.013000 ms
+[06:50:22.ms] ---------------------------------------------------
+[06:50:22.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[06:50:22.ms] ---------------------------------------------------
+[07:20:04.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  2284411.077000 ms
+[07:20:04.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  1.145000 ms
+[07:39:58.ms] Timer for IP 12.0.0.10 expired, Detection time: 50.048824
+[07:48:21.ms] ---------------------------------------------------
+[07:48:21.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[07:48:21.ms] ---------------------------------------------------
+[08:49:07.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  5343220.370000 ms
+[08:49:07.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  7.229000 ms
+[09:42:44.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  3217373.393000 ms
+[09:42:44.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  37.067000 ms
+[10:09:07.ms] Timer for IP 12.0.0.11 expired, Detection time: 36.855135
+[10:16:24.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  2019554.291000 ms
+[10:16:24.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  2.512000 ms
+[10:17:30.ms] ---------------------------------------------------
+[10:17:30.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[10:17:30.ms] ---------------------------------------------------
+[10:37:08.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  1244467.029000 ms
+[10:37:08.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  10.524000 ms
+[11:16:16.ms] Timer for IP 12.0.0.10 expired, Detection time: 20.186184
+[11:24:39.ms] ---------------------------------------------------
+[11:24:39.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[11:24:39.ms] ---------------------------------------------------
+[11:27:08.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  2999662.219000 ms
+[11:27:08.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  26.782000 ms
+[11:49:08.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  1320086.707000 ms
+[11:49:08.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  15.178000 ms
+[11:49:08.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  0.035000 ms
+[11:49:08.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.013000 ms
+[11:53:38.ms] Timer for IP 12.0.0.11 expired, Detection time: 27.717173
+[11:53:38.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  269587.981000 ms
+[11:53:38.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  1.841000 ms
+[12:02:01.ms] ---------------------------------------------------
+[12:02:01.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[12:02:01.ms] ---------------------------------------------------
+[12:41:17.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  2859081.464000 ms
+[12:41:17.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  13.340000 ms
+[12:41:26.ms] Timer for IP 12.0.0.11 expired, Detection time: 39.417796
+[12:41:26.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  9660.617000 ms
+[12:41:26.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  4.380000 ms
+[12:41:27.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  126.052000 ms
+[12:41:27.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  18.796000 ms
+[12:49:49.ms] ---------------------------------------------------
+[12:49:49.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[12:49:49.ms] ---------------------------------------------------
+[13:12:08.ms] Timer for IP 12.0.0.10 expired, Detection time: 12.242395
+[13:12:15.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  1848460.636000 ms
+[13:12:15.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  19.981000 ms
+[13:20:30.ms] ---------------------------------------------------
+[13:20:30.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[13:20:30.ms] ---------------------------------------------------
+[13:20:46.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  510964.722000 ms
+[13:20:46.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  11.872000 ms
+[13:29:08.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  502423.749000 ms
+[13:29:08.ms] Timer for IP 12.0.0.11 expired, Detection time: 31.313928
+[13:29:08.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  13.378000 ms
+[13:37:31.ms] ---------------------------------------------------
+[13:37:31.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[13:37:31.ms] ---------------------------------------------------
+[14:17:09.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  2880893.340000 ms
+[14:17:09.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  12.730000 ms
+[15:15:11.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  3481477.071000 ms
+[15:15:11.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  29.711000 ms
+[15:16:27.ms] Timer for IP 12.0.0.10 expired, Detection time: 35.659459
+[15:19:21.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  249877.758000 ms
+[15:19:21.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  19.128000 ms
+[15:20:01.ms] Timer for IP 12.0.0.11 expired, Detection time: 10.178990
+[15:23:21.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  239733.726000 ms
+[15:23:21.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  27.927000 ms
+[15:24:49.ms] ---------------------------------------------------
+[15:24:49.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[15:24:49.ms] ---------------------------------------------------
+[15:25:28.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  127074.745000 ms
+[15:25:28.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  5.639000 ms
+[15:28:23.ms] ---------------------------------------------------
+[15:28:23.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[15:28:23.ms] ---------------------------------------------------
+[15:47:38.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  1330413.214000 ms
+[15:47:38.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  31.097000 ms
+[15:47:38.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  47.697000 ms
+[15:47:38.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  1.949000 ms
+[15:47:38.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  0.025000 ms
+[15:47:38.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.013000 ms
+[16:13:44.ms] Timer for IP 12.0.0.11 expired, Detection time: 3.889761
+[16:13:45.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  1566426.546000 ms
+[16:13:45.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  14.132000 ms
+[16:22:07.ms] ---------------------------------------------------
+[16:22:07.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[16:22:07.ms] ---------------------------------------------------
+[16:53:33.ms] Timer for IP 12.0.0.10 expired, Detection time: 30.283773
+[16:54:08.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  2423476.546000 ms
+[16:54:08.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  28.055000 ms
+[17:01:55.ms] ---------------------------------------------------
+[17:01:55.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[17:01:55.ms] ---------------------------------------------------
+[17:16:39.ms] Timer for IP 12.0.0.11 expired, Detection time: 43.190954
+[17:17:33.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  1404692.167000 ms
+[17:17:33.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.355000 ms
+[17:25:02.ms] ---------------------------------------------------
+[17:25:02.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[17:25:02.ms] ---------------------------------------------------
+[17:35:33.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  1080241.578000 ms
+[17:35:33.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  5.894000 ms
+[17:54:44.ms] Timer for IP 12.0.0.10 expired, Detection time: 49.292550
+[18:03:06.ms] ---------------------------------------------------
+[18:03:06.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[18:03:06.ms] ---------------------------------------------------
+[18:16:52.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  2479090.227000 ms
+[18:16:52.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  3.723000 ms
+[18:17:23.ms] Timer for IP 12.0.0.10 expired, Detection time: 41.957465
+[18:17:51.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  58714.756000 ms
+[18:17:51.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  6.995000 ms
+[18:17:59.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  7739.926000 ms
+[18:17:59.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  7.183000 ms
+[18:23:34.ms] Timer for IP 12.0.0.11 expired, Detection time: 29.176427
+[18:25:45.ms] ---------------------------------------------------
+[18:25:45.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[18:25:45.ms] ---------------------------------------------------
+[18:31:30.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  811760.471000 ms
+[18:31:30.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  30.488000 ms
+[18:31:57.ms] ---------------------------------------------------
+[18:31:57.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[18:31:57.ms] ---------------------------------------------------
+[19:04:00.ms] Timer for IP 12.0.0.11 expired, Detection time: 14.503544
+[19:12:23.ms] ---------------------------------------------------
+[19:12:23.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[19:12:23.ms] ---------------------------------------------------
+[19:39:40.ms] Timer for IP 12.0.0.10 expired, Detection time: 3.870066
+[19:48:03.ms] ---------------------------------------------------
+[19:48:03.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[19:48:03.ms] ---------------------------------------------------
+[20:19:13.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  6462279.473000 ms
+[20:19:13.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  35.822000 ms
+[20:43:40.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  1466997.833000 ms
+[20:43:40.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  17.055000 ms
+[21:09:54.ms] Timer for IP 12.0.0.11 expired, Detection time: 33.033632
+[21:14:51.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  1871040.628000 ms
+[21:14:51.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.892000 ms
+[21:18:17.ms] ---------------------------------------------------
+[21:18:17.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[21:18:17.ms] ---------------------------------------------------
+[21:18:31.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  220112.611000 ms
+[21:18:31.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  8.476000 ms
+[21:21:36.ms] Timer for IP 12.0.0.10 expired, Detection time: 8.815065
+[21:29:59.ms] ---------------------------------------------------
+[21:29:59.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[21:29:59.ms] ---------------------------------------------------
+[21:33:19.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  888073.312000 ms
+[21:33:19.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.040000 ms
+[22:05:54.ms] Timer for IP 12.0.0.10 expired, Detection time: 19.989579
+[22:11:14.ms] Timer for IP 12.0.0.11 expired, Detection time: 24.779962
+[22:14:16.ms] ---------------------------------------------------
+[22:14:16.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[22:14:16.ms] ---------------------------------------------------
+[22:19:36.ms] ---------------------------------------------------
+[22:19:36.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[22:19:36.ms] ---------------------------------------------------
+[22:37:55.ms] Timer for IP 12.0.0.10 expired, Detection time: 47.825956
+[22:37:55.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  3876217.574000 ms
+[22:37:55.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  26.749000 ms
+[22:37:55.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  0.032000 ms
+[22:37:55.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.184000 ms
+[22:46:17.ms] ---------------------------------------------------
+[22:46:17.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[22:46:17.ms] ---------------------------------------------------
+[23:13:37.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  2141905.162000 ms
+[23:13:37.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  25.877000 ms
+[23:16:13.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  156068.355000 ms
+[23:16:13.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  12.639000 ms
+[23:18:05.ms] Timer for IP 12.0.0.11 expired, Detection time: 27.577830
+[23:26:27.ms] ---------------------------------------------------
+[23:26:27.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[23:26:27.ms] ---------------------------------------------------
+[00:55:03.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  5929248.466000 ms
+[00:55:03.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  1.521000 ms
+[01:03:36.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  513012.189000 ms
+[01:03:36.ms] Timer for IP 12.0.0.11 expired, Detection time: 13.161313
+[01:03:36.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  26.976000 ms
+[01:03:36.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  124.038000 ms
+[01:03:36.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.903000 ms
+[01:11:58.ms] ---------------------------------------------------
+[01:11:58.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[01:11:58.ms] ---------------------------------------------------
+[01:31:20.ms] Timer for IP 12.0.0.10 expired, Detection time: 27.515528
+[01:33:14.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  1778657.857000 ms
+[01:33:14.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  15.638000 ms
+[01:39:43.ms] ---------------------------------------------------
+[01:39:43.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[01:39:43.ms] ---------------------------------------------------
+[02:37:04.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  3829379.022000 ms
+[02:37:04.ms] Timer for IP 12.0.0.11 expired, Detection time: 30.459664
+[02:37:04.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  23.991000 ms
+[02:45:26.ms] ---------------------------------------------------
+[02:45:26.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[02:45:26.ms] ---------------------------------------------------
+[03:06:55.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  1791161.231000 ms
+[03:06:55.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  39.619000 ms
+[03:06:59.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  4319.657000 ms
+[03:06:59.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.203000 ms
+[03:07:06.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  6403.451000 ms
+[03:07:06.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.700000 ms
+[03:07:31.ms] Timer for IP 12.0.0.10 expired, Detection time: 27.540797
+[03:15:54.ms] ---------------------------------------------------
+[03:15:54.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[03:15:54.ms] ---------------------------------------------------
+[04:05:39.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  3513557.065000 ms
+[04:05:39.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.722000 ms
+[04:55:40.ms] Timer for IP 12.0.0.10 expired, Detection time: 45.518808
+[04:55:40.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  3000432.637000 ms
+[04:55:40.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  4.879000 ms
+[05:04:02.ms] ---------------------------------------------------
+[05:04:02.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[05:04:02.ms] ---------------------------------------------------
+[05:42:47.ms] Timer for IP 12.0.0.11 expired, Detection time: 47.456085
+[05:51:09.ms] ---------------------------------------------------
+[05:51:09.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[05:51:09.ms] ---------------------------------------------------
+[06:04:44.ms] Timer for IP 12.0.0.10 expired, Detection time: 19.067848
+[06:13:07.ms] ---------------------------------------------------
+[06:13:07.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[06:13:07.ms] ---------------------------------------------------
+[06:17:40.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  4919852.285000 ms
+[06:17:40.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  12.605000 ms
+[06:19:01.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  81814.672000 ms
+[06:19:01.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  3.694000 ms
+[06:39:40.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  1238992.030000 ms
+[06:39:40.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  1.733000 ms
+[07:54:00.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  4459341.194000 ms
+[07:54:00.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.934000 ms
+[07:58:23.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  262837.327000 ms
+[07:58:23.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  37.249000 ms
+[08:55:59.ms] Timer for IP 12.0.0.11 expired, Detection time: 44.654720
+[09:01:41.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  3798805.962000 ms
+[09:01:41.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  11.696000 ms
+[09:04:22.ms] ---------------------------------------------------
+[09:04:22.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[09:04:22.ms] ---------------------------------------------------
+[09:13:41.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  720024.019000 ms
+[09:13:41.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  26.668000 ms
+[09:24:36.ms] Timer for IP 12.0.0.10 expired, Detection time: 48.900312
+[09:32:59.ms] ---------------------------------------------------
+[09:32:59.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[09:32:59.ms] ---------------------------------------------------
+[09:51:42.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  2280295.605000 ms
+[09:51:42.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  10.423000 ms
+[11:50:46.ms] Timer for IP 12.0.0.11 expired, Detection time: 38.228737
+[11:51:42.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  7199652.015000 ms
+[11:51:42.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  2.675000 ms
+[11:51:42.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  0.568000 ms
+[11:51:42.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  0.031000 ms
+[11:52:11.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  29613.831000 ms
+[11:52:11.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  11.314000 ms
+[11:57:41.ms] Timer for IP 12.0.0.10 expired, Detection time: 23.864304
+[11:59:09.ms] ---------------------------------------------------
+[11:59:09.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[11:59:09.ms] ---------------------------------------------------
+[12:06:04.ms] ---------------------------------------------------
+[12:06:04.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[12:06:04.ms] ---------------------------------------------------
+[12:49:43.ms] Timer for IP 12.0.0.10 expired, Detection time: 42.864909
+[12:49:43.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  3451944.732000 ms
+[12:49:43.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  4.411000 ms
+[12:58:06.ms] ---------------------------------------------------
+[12:58:06.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[12:58:06.ms] ---------------------------------------------------
+[13:20:57.ms] | 12.0.0.11| 12.0.0.10| Since last state change:  1873580.619000 ms
+[13:20:57.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  17.372000 ms
+[13:21:43.ms] Timer for IP 12.0.0.11 expired, Detection time: 24.409664
+[13:21:43.ms] | 12.0.0.12| 12.0.0.10| Since last state change:  46754.969000 ms
+[13:21:43.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  2.914000 ms
+[13:30:06.ms] ---------------------------------------------------
+[13:30:06.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.11
+[13:30:06.ms] ---------------------------------------------------
+[13:33:33.ms] Timer for IP 12.0.0.10 expired, Detection time: 30.143193
+[13:33:33.ms] | 12.0.0.12| 12.0.0.11| Since last state change:  709912.352000 ms
+[13:33:33.ms] | 12.0.0.12| 12.0.0.11| 12.0.0.10| Since last state change:  19.348000 ms
+[13:41:56.ms] ---------------------------------------------------
+[13:41:56.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 12.0.0.10
+[13:41:56.ms] ---------------------------------------------------

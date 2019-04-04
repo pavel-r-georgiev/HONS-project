@@ -1,0 +1,1247 @@
+[14:31:00.ms] -------------------------------------
+[14:31:00.ms] START OF NEW LOG
+[14:31:00.ms] -------------------------------------
+[14:31:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  124641292.531000 ms
+[14:31:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.080000 ms
+[14:31:03.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  194.049000 ms
+[14:31:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.034000 ms
+[14:38:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  437721.904000 ms
+[14:38:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.018000 ms
+[14:38:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  22.328000 ms
+[14:38:21.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  225.681000 ms
+[14:38:21.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.970000 ms
+[14:38:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.518906
+[14:38:21.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  838.332000 ms
+[14:38:22.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  55.405000 ms
+[14:38:22.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  200.660000 ms
+[14:38:22.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  98.201000 ms
+[14:38:22.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.039000 ms
+[14:38:22.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.015000 ms
+[14:38:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 104.380168
+[14:39:23.ms] ---------------------------------------------------
+[14:39:23.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[14:39:23.ms] ---------------------------------------------------
+[14:46:43.ms] Timer for IP 13.0.0.12 expired, Detection time: 7.451152
+[14:47:03.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  520809.889000 ms
+[14:47:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  90.553000 ms
+[14:47:16.ms] ---------------------------------------------------
+[14:47:16.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[14:47:16.ms] ---------------------------------------------------
+[14:47:16.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  12956.723000 ms
+[14:47:16.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.057000 ms
+[14:47:16.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  105.838000 ms
+[14:47:16.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.044000 ms
+[14:47:16.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.016000 ms
+[14:47:16.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.015000 ms
+[14:54:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 65.886239
+[14:55:05.ms] ---------------------------------------------------
+[14:55:05.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[14:55:05.ms] ---------------------------------------------------
+[15:01:20.ms] Timer for IP 13.0.0.12 expired, Detection time: 67.774369
+[15:03:10.ms] ---------------------------------------------------
+[15:03:10.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[15:03:10.ms] ---------------------------------------------------
+[15:03:53.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  997010.103000 ms
+[15:03:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  89.356000 ms
+[15:06:23.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  149656.032000 ms
+[15:06:23.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  98.226000 ms
+[15:06:23.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.043000 ms
+[15:06:23.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[15:08:47.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  144431.334000 ms
+[15:08:47.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  88.361000 ms
+[15:09:42.ms] ---------------------------------------------------
+[15:09:42.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[15:09:42.ms] ---------------------------------------------------
+[15:12:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 68.617433
+[15:20:28.ms] Timer for IP 13.0.0.12 expired, Detection time: 64.071835
+[15:20:39.ms] ---------------------------------------------------
+[15:20:39.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[15:20:39.ms] ---------------------------------------------------
+[15:24:46.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  958960.947000 ms
+[15:24:46.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  108.052000 ms
+[15:28:32.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  226202.980000 ms
+[15:28:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  83.974000 ms
+[15:28:42.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  9859.951000 ms
+[15:28:42.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  80.552000 ms
+[15:28:43.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  1019.813000 ms
+[15:28:44.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  106.207000 ms
+[15:28:50.ms] ---------------------------------------------------
+[15:28:50.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[15:28:50.ms] ---------------------------------------------------
+[15:28:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 64.840711
+[15:37:17.ms] ---------------------------------------------------
+[15:37:17.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[15:37:17.ms] ---------------------------------------------------
+[15:45:15.ms] Timer for IP 13.0.0.12 expired, Detection time: 53.142993
+[15:47:14.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  1109984.146000 ms
+[15:47:14.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  97.438000 ms
+[15:48:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  82816.962000 ms
+[15:48:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  91.253000 ms
+[15:48:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.084000 ms
+[15:48:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.022000 ms
+[15:50:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 58.569110
+[15:50:18.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  101765.526000 ms
+[15:50:18.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  100.330000 ms
+[15:53:37.ms] ---------------------------------------------------
+[15:53:37.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[15:53:37.ms] ---------------------------------------------------
+[15:58:40.ms] ---------------------------------------------------
+[15:58:40.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[15:58:40.ms] ---------------------------------------------------
+[16:05:26.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  907609.995000 ms
+[16:05:26.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  113.852000 ms
+[16:05:26.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  105.396000 ms
+[16:05:26.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.039000 ms
+[16:05:26.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  101.544000 ms
+[16:05:26.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.054000 ms
+[16:05:26.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.016000 ms
+[16:05:26.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.015000 ms
+[16:05:26.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  85.099000 ms
+[16:05:26.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.053000 ms
+[16:05:26.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.017000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  111.659000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.059000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  98.024000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.040000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.017000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  107.026000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  103.950000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.057000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.016000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.014000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  95.829000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.058000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  109.203000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.054000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.017000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.015000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  107.462000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.082000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.031000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.033000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  114.703000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.050000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  105.391000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.043000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.017000 ms
+[16:05:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.014000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  96.398000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.060000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.016000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  103.520000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.056000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.018000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  122.817000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.042000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.017000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  87.946000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.097000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.018000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  107.453000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.057000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  94.961000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.053000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  97.624000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.041000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.017000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  86.648000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.055000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.017000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  118.441000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.055000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  86.036000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.040000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.017000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.027000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.018000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.028000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  46.864000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.040000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  32.015000 ms
+[16:05:28.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  5.632000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  70.168000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  57.492000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  6.335000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.541000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  75.437000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.041000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  28.150000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  11.333000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  62.918000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  45.885000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  50.107000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.060000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.050000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  45.347000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  27.469000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  12.021000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  69.306000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.037000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  54.346000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.050000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  25.396000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  24.803000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  45.679000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.042000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  36.268000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  19.545000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  32.916000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  19.046000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  40.288000 ms
+[16:05:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  40.213000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  53.105000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.685000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.994000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.047000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.048000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  40.087000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.742000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  15.780000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  22.457000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  36.804000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  33.541000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  55.144000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  11.025000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  9.151000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  87.118000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.054000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  41.712000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.042000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42.064000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  63.335000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42.433000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  53.545000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.059000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  53.908000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  23.949000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  33.515000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  28.350000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  71.465000 ms
+[16:05:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  15.311000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  75.294000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  16.440000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  26.395000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  60.721000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  46.259000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.038000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  55.828000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  52.095000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  34.761000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  28.017000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  31.036000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  39.656000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.109000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  37.239000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  49.973000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  12.576000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  50.335000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.005000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.327000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  57.750000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  38.430000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  38.548000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.080000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  61.290000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  74.040000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  58.711000 ms
+[16:05:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  24.642000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  45.225000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  58.749000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  14.471000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  34.520000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  52.309000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  42.251000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  53.294000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.472000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  33.212000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  5.017000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.949000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  85.353000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.050000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  24.119000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  41.958000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.047000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  61.560000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.039000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  43.700000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  50.466000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  8.865000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  20.738000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  73.860000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.057000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  46.021000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  42.728000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  26.983000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  24.178000 ms
+[16:05:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  55.500000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  41.356000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42.615000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  65.784000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  43.177000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  47.109000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  57.624000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  75.519000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  11.483000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  32.441000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  48.530000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  28.841000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  33.580000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  24.285000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  56.951000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.047000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.413000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  44.060000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  61.198000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  33.903000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  33.747000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  29.317000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  41.732000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  43.505000 ms
+[16:05:33.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  58.062000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  51.782000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  26.605000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  25.845000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  46.792000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.041000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  64.537000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.238000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42.237000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  23.997000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  56.743000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  24.151000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  45.637000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.079000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  39.673000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  44.226000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.023000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.175000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  63.205000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.044000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  41.077000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.841000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  50.080000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.042000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  59.823000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  24.244000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  32.867000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.910000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  48.231000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  37.335000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  35.719000 ms
+[16:05:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  25.370000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  40.245000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.043000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  62.154000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.055000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  40.156000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  59.945000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  11.672000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  28.121000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  45.027000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.045000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  68.991000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  29.146000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  38.452000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  16.267000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  55.238000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  25.437000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  22.559000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.619000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  52.009000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  43.145000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  78.224000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.254000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  65.323000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  55.939000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  47.506000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  60.714000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  18.317000 ms
+[16:05:35.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  25.144000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  60.251000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  44.313000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  35.605000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  47.809000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  50.155000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  72.515000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  18.286000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  23.234000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  52.711000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  37.563000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  69.774000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  28.466000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  50.441000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.041000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  57.590000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.044000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  45.713000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  68.736000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  34.292000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  40.348000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  29.734000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  44.234000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  41.809000 ms
+[16:05:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  45.418000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  34.804000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  71.337000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  12.413000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  47.049000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  37.446000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  52.228000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  17.469000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  43.963000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  38.006000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  56.280000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  12.684000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  23.567000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  45.555000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  58.782000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  40.273000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.435000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  48.230000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  12.140000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  60.376000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  28.878000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  86.186000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  37.537000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  18.285000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  28.669000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.393000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.055000 ms
+[16:05:37.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  41.856000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.135000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.604000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  26.981000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  74.351000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  31.993000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  84.026000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  16.665000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  59.078000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  58.642000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  15.396000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.087000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  94.669000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.244000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  61.529000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  21.646000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  26.488000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.832000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  56.928000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.611000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42.110000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.153000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  34.706000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  59.110000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  22.667000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  18.652000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  43.932000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.949000 ms
+[16:05:38.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  28.604000 ms
+[16:05:39.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  83.463000 ms
+[16:07:47.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  128093.824000 ms
+[16:07:47.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.174000 ms
+[16:07:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 67.549593
+[16:08:43.ms] Timer for IP 13.0.0.12 expired, Detection time: 60.062305
+[16:08:45.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  57913.421000 ms
+[16:08:45.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  15.169000 ms
+[16:16:17.ms] ---------------------------------------------------
+[16:16:17.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[16:16:17.ms] ---------------------------------------------------
+[16:17:05.ms] ---------------------------------------------------
+[16:17:05.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[16:17:05.ms] ---------------------------------------------------
+[16:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  860801.934000 ms
+[16:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.135000 ms
+[16:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  39.856000 ms
+[16:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  17.833000 ms
+[16:24:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 62.711833
+[16:24:32.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  86512.690000 ms
+[16:24:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.131000 ms
+[16:25:47.ms] Timer for IP 13.0.0.12 expired, Detection time: 65.196232
+[16:26:36.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  124170.077000 ms
+[16:26:36.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.100000 ms
+[16:32:54.ms] ---------------------------------------------------
+[16:32:54.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[16:32:54.ms] ---------------------------------------------------
+[16:34:09.ms] ---------------------------------------------------
+[16:34:09.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[16:34:09.ms] ---------------------------------------------------
+[16:43:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 67.855220
+[16:43:09.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  992559.644000 ms
+[16:43:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.502000 ms
+[16:44:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  52333.168000 ms
+[16:44:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  9.794000 ms
+[16:44:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.359000 ms
+[16:44:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  5.525000 ms
+[16:45:51.ms] Timer for IP 13.0.0.12 expired, Detection time: 62.864796
+[16:46:03.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  121913.169000 ms
+[16:46:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.439000 ms
+[16:51:31.ms] ---------------------------------------------------
+[16:51:31.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[16:51:31.ms] ---------------------------------------------------
+[16:54:13.ms] ---------------------------------------------------
+[16:54:13.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[16:54:13.ms] ---------------------------------------------------
+[17:01:02.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  898589.386000 ms
+[17:01:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.493000 ms
+[17:01:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  7670.273000 ms
+[17:01:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.294000 ms
+[17:01:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.058000 ms
+[17:01:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.055000 ms
+[17:01:24.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  14942.029000 ms
+[17:01:24.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  10.715000 ms
+[17:01:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 63.718447
+[17:02:38.ms] Timer for IP 13.0.0.12 expired, Detection time: 62.375330
+[17:10:17.ms] ---------------------------------------------------
+[17:10:17.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[17:10:17.ms] ---------------------------------------------------
+[17:11:00.ms] ---------------------------------------------------
+[17:11:00.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[17:11:00.ms] ---------------------------------------------------
+[17:16:48.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  923214.767000 ms
+[17:16:48.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.387000 ms
+[17:16:48.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.583000 ms
+[17:16:48.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  18.230000 ms
+[17:16:50.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  1948.903000 ms
+[17:16:50.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.869000 ms
+[17:17:29.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  39734.580000 ms
+[17:17:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.081000 ms
+[17:19:53.ms] Timer for IP 13.0.0.12 expired, Detection time: 63.712231
+[17:26:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 60.341247
+[17:28:15.ms] ---------------------------------------------------
+[17:28:15.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[17:28:15.ms] ---------------------------------------------------
+[17:32:49.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  919610.180000 ms
+[17:32:49.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.070000 ms
+[17:32:49.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  338.517000 ms
+[17:32:49.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.869000 ms
+[17:32:49.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  62.727000 ms
+[17:32:49.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.045000 ms
+[17:34:38.ms] ---------------------------------------------------
+[17:34:38.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[17:34:38.ms] ---------------------------------------------------
+[17:36:01.ms] Timer for IP 13.0.0.12 expired, Detection time: 63.021967
+[17:36:04.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  194335.925000 ms
+[17:36:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  10.659000 ms
+[17:43:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 68.628954
+[17:44:23.ms] ---------------------------------------------------
+[17:44:23.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[17:44:23.ms] ---------------------------------------------------
+[17:50:59.ms] Timer for IP 13.0.0.12 expired, Detection time: 54.489159
+[17:51:42.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  938340.242000 ms
+[17:51:42.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.061000 ms
+[17:51:50.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  7727.759000 ms
+[17:51:50.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.366000 ms
+[17:51:57.ms] ---------------------------------------------------
+[17:51:57.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[17:51:57.ms] ---------------------------------------------------
+[17:53:58.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  128032.063000 ms
+[17:53:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.985000 ms
+[17:58:49.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  291324.649000 ms
+[17:58:49.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.679000 ms
+[17:59:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 64.794833
+[17:59:21.ms] ---------------------------------------------------
+[17:59:21.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[17:59:21.ms] ---------------------------------------------------
+[18:07:40.ms] ---------------------------------------------------
+[18:07:40.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[18:07:40.ms] ---------------------------------------------------
+[18:08:45.ms] Timer for IP 13.0.0.12 expired, Detection time: 60.615531
+[18:09:47.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  657663.749000 ms
+[18:09:47.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  10.885000 ms
+[18:09:47.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  43.604000 ms
+[18:09:47.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  10.698000 ms
+[18:10:02.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  15567.540000 ms
+[18:10:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.498000 ms
+[18:14:56.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  293204.640000 ms
+[18:14:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.457000 ms
+[18:17:07.ms] ---------------------------------------------------
+[18:17:07.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[18:17:07.ms] ---------------------------------------------------
+[18:23:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 56.905120
+[18:23:19.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  503821.248000 ms
+[18:23:19.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.046000 ms
+[18:25:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  101330.923000 ms
+[18:25:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  17.466000 ms
+[18:25:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  47.219000 ms
+[18:25:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.053000 ms
+[18:25:17.ms] Timer for IP 13.0.0.12 expired, Detection time: 55.886527
+[18:31:39.ms] ---------------------------------------------------
+[18:31:39.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[18:31:39.ms] ---------------------------------------------------
+[18:33:10.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  489019.253000 ms
+[18:33:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  6.982000 ms
+[18:33:39.ms] ---------------------------------------------------
+[18:33:39.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[18:33:39.ms] ---------------------------------------------------
+[18:41:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 59.276917
+[18:41:16.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  486541.213000 ms
+[18:41:16.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.046000 ms
+[18:46:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  290817.077000 ms
+[18:46:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  25.206000 ms
+[18:47:49.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  101831.049000 ms
+[18:47:49.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.786000 ms
+[18:48:26.ms] Timer for IP 13.0.0.12 expired, Detection time: 63.770118
+[18:49:25.ms] ---------------------------------------------------
+[18:49:25.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[18:49:25.ms] ---------------------------------------------------
+[18:50:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  150746.165000 ms
+[18:50:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.068000 ms
+[18:56:48.ms] ---------------------------------------------------
+[18:56:48.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[18:56:48.ms] ---------------------------------------------------
+[19:08:49.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  1109609.490000 ms
+[19:08:49.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.759000 ms
+[19:09:39.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49210.776000 ms
+[19:09:39.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.103000 ms
+[19:10:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 53.871284
+[19:10:45.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  66008.789000 ms
+[19:10:45.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.855000 ms
+[19:12:50.ms] Timer for IP 13.0.0.12 expired, Detection time: 60.218196
+[19:12:51.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  125893.533000 ms
+[19:12:51.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.556000 ms
+[19:19:07.ms] ---------------------------------------------------
+[19:19:07.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[19:19:07.ms] ---------------------------------------------------
+[19:21:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 41.329495
+[19:21:12.ms] ---------------------------------------------------
+[19:21:12.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[19:21:12.ms] ---------------------------------------------------
+[19:23:52.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  661334.543000 ms
+[19:23:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.067000 ms
+[19:27:15.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  202551.988000 ms
+[19:27:15.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.073000 ms
+[19:28:00.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  45285.016000 ms
+[19:28:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.072000 ms
+[19:29:07.ms] Timer for IP 13.0.0.12 expired, Detection time: 67.297919
+[19:29:07.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  67570.871000 ms
+[19:29:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.421000 ms
+[19:29:34.ms] ---------------------------------------------------
+[19:29:34.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[19:29:34.ms] ---------------------------------------------------
+[19:37:29.ms] ---------------------------------------------------
+[19:37:29.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[19:37:29.ms] ---------------------------------------------------
+[19:41:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 64.926257
+[19:45:45.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  997551.964000 ms
+[19:45:45.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  11.443000 ms
+[19:46:03.ms] Timer for IP 13.0.0.12 expired, Detection time: 67.366486
+[19:46:16.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  31201.262000 ms
+[19:46:16.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  5.553000 ms
+[19:46:39.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  22345.248000 ms
+[19:46:39.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.846000 ms
+[19:47:12.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  33855.026000 ms
+[19:47:12.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  7.714000 ms
+[19:50:21.ms] ---------------------------------------------------
+[19:50:21.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[19:50:21.ms] ---------------------------------------------------
+[19:54:25.ms] ---------------------------------------------------
+[19:54:25.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[19:54:25.ms] ---------------------------------------------------
+[20:01:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 58.749506
+[20:03:09.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  956133.513000 ms
+[20:03:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.318000 ms
+[20:03:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  46492.487000 ms
+[20:03:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  22.771000 ms
+[20:03:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.301000 ms
+[20:03:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  16.877000 ms
+[20:04:15.ms] Timer for IP 13.0.0.12 expired, Detection time: 65.332262
+[20:04:15.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  19477.183000 ms
+[20:04:15.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.274000 ms
+[20:10:20.ms] ---------------------------------------------------
+[20:10:20.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[20:10:20.ms] ---------------------------------------------------
+[20:12:36.ms] ---------------------------------------------------
+[20:12:36.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[20:12:36.ms] ---------------------------------------------------
+[20:20:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 62.260137
+[20:21:03.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  1008287.925000 ms
+[20:21:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  25.306000 ms
+[20:21:11.ms] Timer for IP 13.0.0.12 expired, Detection time: 67.101839
+[20:21:11.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  8349.340000 ms
+[20:21:11.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  6.893000 ms
+[20:26:48.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  336881.013000 ms
+[20:26:48.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  19.504000 ms
+[20:26:48.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  38.505000 ms
+[20:26:48.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.329000 ms
+[20:28:33.ms] ---------------------------------------------------
+[20:28:33.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[20:28:33.ms] ---------------------------------------------------
+[20:29:33.ms] ---------------------------------------------------
+[20:29:33.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[20:29:33.ms] ---------------------------------------------------
+[20:41:18.ms] Timer for IP 13.0.0.12 expired, Detection time: 58.532095
+[20:41:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  871967.477000 ms
+[20:41:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  17.388000 ms
+[20:44:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  167212.344000 ms
+[20:44:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.049000 ms
+[20:44:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.872000 ms
+[20:44:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.043000 ms
+[20:49:40.ms] ---------------------------------------------------
+[20:49:40.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[20:49:40.ms] ---------------------------------------------------
+[20:53:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 40.866364
+[20:53:22.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  554331.959000 ms
+[20:53:22.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  25.087000 ms
+[20:59:41.ms] Timer for IP 13.0.0.12 expired, Detection time: 60.692471
+[20:59:41.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  378960.571000 ms
+[20:59:41.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.610000 ms
+[21:01:44.ms] ---------------------------------------------------
+[21:01:44.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[21:01:44.ms] ---------------------------------------------------
+[21:05:19.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  338015.777000 ms
+[21:05:19.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.049000 ms
+[21:05:21.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  1897.887000 ms
+[21:05:21.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  10.213000 ms
+[21:07:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 69.145281
+[21:07:59.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  158354.638000 ms
+[21:07:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.111000 ms
+[21:08:03.ms] ---------------------------------------------------
+[21:08:03.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[21:08:03.ms] ---------------------------------------------------
+[21:16:04.ms] Timer for IP 13.0.0.12 expired, Detection time: 68.111376
+[21:16:04.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  485318.011000 ms
+[21:16:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.280000 ms
+[21:16:21.ms] ---------------------------------------------------
+[21:16:21.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[21:16:21.ms] ---------------------------------------------------
+[21:22:52.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  407502.772000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  72.662000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  38.910000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.051000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  43.997000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.467000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  41.764000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  41.553000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  12.108000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  47.937000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.980000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  92.981000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  1.048000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.035000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  45.861000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.045000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  52.348000 ms
+[21:22:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.045000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.552000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  55.237000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  35.710000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  15.001000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.122000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.043000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  68.034000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  26.276000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  54.254000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.067000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  37.003000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  52.300000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  46.872000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.971000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  55.845000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  43.278000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42.899000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  11.601000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  36.617000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  60.404000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  36.482000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  39.527000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  29.858000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  10.741000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  40.389000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  35.583000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  40.974000 ms
+[21:22:53.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  18.381000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.675000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  3.056000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  34.983000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  24.285000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  33.856000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  9.585000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  64.315000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  46.163000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  9.171000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  27.598000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  58.315000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  5.664000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  47.153000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.646000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  45.228000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.775000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.572000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.100000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  36.201000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  53.208000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.098000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.055000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  45.279000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  53.066000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.102000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  51.777000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.388000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.049000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.649000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  56.463000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  13.224000 ms
+[21:22:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  29.493000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  43.406000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.061000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  59.694000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.127000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  57.946000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  46.951000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  30.591000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.353000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  69.712000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  31.476000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  90.541000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  9.699000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  69.924000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  39.832000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  54.159000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  46.583000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  38.293000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.045000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  63.115000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  45.754000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  58.689000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.039000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  40.971000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.064000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  43.541000 ms
+[21:22:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  53.287000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  23.945000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  20.262000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  63.185000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  50.512000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  25.080000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  76.042000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  17.308000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.980000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  65.754000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  49.376000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  53.750000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  43.741000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  12.042000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  22.982000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  74.943000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  48.356000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  61.831000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  22.338000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  26.863000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  34.588000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  47.255000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  53.971000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.043000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  52.003000 ms
+[21:22:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.300000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  40.093000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  16.977000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  47.846000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.107000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  58.066000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  25.943000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  86.628000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  2.855000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  32.735000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.256000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  41.411000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  36.535000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  22.112000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  41.330000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  46.569000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  6.817000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  62.369000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  31.940000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  74.062000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.054000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  33.688000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  63.282000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  46.495000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  62.088000 ms
+[21:22:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  27.413000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  27.735000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  23.547000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  62.313000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  38.312000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  50.153000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  46.117000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  37.219000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  20.172000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  60.198000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  42.815000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  22.843000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  18.312000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  58.273000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  25.970000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  52.671000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  22.673000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  46.830000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.045000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  52.653000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  45.250000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  39.369000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  11.866000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  55.855000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  61.380000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  69.655000 ms
+[21:22:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  5.666000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  33.105000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  34.658000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  52.879000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  6.783000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  41.806000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  26.217000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  17.825000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  31.780000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  57.561000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  65.057000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  32.417000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.062000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  72.633000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  21.873000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  60.890000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  54.255000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  60.826000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.057000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  29.057000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  23.656000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  50.031000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  39.681000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  47.734000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  51.843000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  28.293000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  34.528000 ms
+[21:22:59.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  34.729000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  19.615000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  37.164000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  15.916000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  34.349000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  42.151000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  15.162000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  37.514000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.339000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.050000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.124000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  25.237000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  33.818000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  37.391000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  15.608000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  56.077000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  40.549000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  16.186000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.092000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  36.576000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  9.059000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  53.338000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  35.002000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  35.857000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  65.894000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  51.186000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  54.560000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.059000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  55.051000 ms
+[21:23:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.042000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  43.563000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  37.405000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42.720000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  21.637000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  35.908000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  54.799000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  32.397000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  15.904000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  57.299000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  10.599000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  13.068000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  57.991000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  33.425000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  33.589000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.654000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  33.839000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  54.612000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  16.016000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  27.925000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.058000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  69.252000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.043000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  27.507000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  27.618000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.645000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  37.583000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.522000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.061000 ms
+[21:23:01.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  56.796000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  37.030000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  27.844000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  35.752000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  21.410000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  29.908000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.508000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  57.103000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.580000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.043000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  62.484000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  30.764000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  35.475000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.080000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  64.101000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.045000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  39.765000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  15.868000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  53.233000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  36.482000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  47.823000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.474000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  47.198000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  20.161000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  31.603000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.960000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  56.051000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  38.651000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  71.565000 ms
+[21:23:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  34.837000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  41.978000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  43.300000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  33.238000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  31.799000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  48.619000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  16.069000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  31.110000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  50.527000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  12.951000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  42.924000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  23.382000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  16.999000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  48.145000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.243000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42.964000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  41.192000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  48.514000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  30.319000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  33.189000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  11.415000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  43.070000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  38.764000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  63.961000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.063000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  31.646000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.056000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  87.151000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  27.638000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  61.126000 ms
+[21:23:03.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.049000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  28.721000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  6.267000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  62.369000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  44.541000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  75.539000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  27.486000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  65.855000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  31.440000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  57.972000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  39.998000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  30.565000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  16.958000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  48.915000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  16.310000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  32.666000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.050000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  68.481000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  30.086000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  46.427000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  6.276000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  54.511000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  56.476000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  30.769000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  18.248000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  38.900000 ms
+[21:23:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  57.233000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  25.317000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.389000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  71.672000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.063000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  31.592000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  69.495000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  17.574000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.415000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  88.748000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  30.578000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  39.962000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.045000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  68.778000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.059000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  28.139000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  22.294000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  34.353000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.888000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  65.312000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  36.619000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  34.189000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  15.827000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  38.794000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  5.724000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  60.971000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  45.398000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  35.322000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  31.738000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  31.233000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.032000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  47.895000 ms
+[21:23:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.052000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  54.658000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  36.608000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  13.006000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  33.460000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  48.799000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  17.199000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42.340000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  60.552000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  8.976000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  21.761000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  74.266000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  42.962000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  73.287000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  17.341000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  85.853000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  28.096000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  35.657000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  6.858000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  53.691000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  35.864000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  32.443000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  28.766000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  34.444000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  5.301000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  74.132000 ms
+[21:23:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  30.072000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  60.194000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  36.919000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  52.500000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  11.541000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42.184000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  56.445000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.086000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.077000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  35.707000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  54.171000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  32.359000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  15.985000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  62.566000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.045000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  40.991000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  47.572000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  45.003000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.719000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  60.391000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.061000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.712000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  47.807000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  21.920000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.622000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  71.630000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  48.478000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  46.585000 ms
+[21:23:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.050000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  49.428000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.062000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  47.666000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.738000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  61.874000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  36.010000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  57.067000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.774000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  52.283000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.046000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.154000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  40.288000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  86.245000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  22.873000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  72.376000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  23.068000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  81.415000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  22.748000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  50.431000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.167000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42.327000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.043000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  63.323000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  40.639000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  91.702000 ms
+[21:23:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  17.251000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  71.037000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  18.867000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.533000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.059000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  70.073000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.058000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  24.518000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  19.604000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  54.014000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  11.314000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  74.468000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  51.014000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  44.129000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.079000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  54.837000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  17.189000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  34.822000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.126000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  65.860000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  43.828000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  53.192000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  35.965000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  51.749000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.052000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  34.504000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  18.252000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  56.042000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  37.997000 ms
+[21:23:09.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  1.612000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  49.208000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  35.525000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  63.364000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  53.687000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  17.536000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  53.759000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  11.820000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  59.095000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  9.508000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  46.120000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.099000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  45.463000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  62.490000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  29.072000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.446000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  71.615000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.053000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  39.690000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  67.038000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  25.243000 ms
+[21:23:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  57.914000 ms
+[21:23:18.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  7734.104000 ms
+[21:23:18.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.071000 ms
+[21:24:26.ms] ---------------------------------------------------
+[21:24:26.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[21:24:26.ms] ---------------------------------------------------
+[21:25:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 66.237198
+[21:25:07.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  109221.845000 ms
+[21:25:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.024000 ms
+[21:33:22.ms] Timer for IP 13.0.0.12 expired, Detection time: 68.663869
+[21:33:29.ms] ---------------------------------------------------
+[21:33:29.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[21:33:29.ms] ---------------------------------------------------
+[21:36:05.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  657317.374000 ms
+[21:36:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.069000 ms
+[21:41:44.ms] ---------------------------------------------------
+[21:41:44.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.12
+[21:41:44.ms] ---------------------------------------------------
+[21:43:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 61.764292
+[21:43:45.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  460537.818000 ms
+[21:43:45.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  7.392000 ms
+[21:44:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  16447.398000 ms
+[21:44:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  10.831000 ms
+[21:44:02.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  47.943000 ms
+[21:44:02.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.044000 ms
+[21:52:07.ms] ---------------------------------------------------
+[21:52:07.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[21:52:07.ms] ---------------------------------------------------
+[21:52:08.ms] Timer for IP 13.0.0.12 expired, Detection time: 63.335446

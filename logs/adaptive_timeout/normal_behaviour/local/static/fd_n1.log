@@ -1,0 +1,648 @@
+[03:54:31.ms] -------------------------------------
+[03:54:31.ms] START OF NEW LOG
+[03:54:31.ms] -------------------------------------
+[03:54:34.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  53468.355000 ms
+[03:54:34.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  1.715000 ms
+[03:54:34.ms] | 14.0.0.12| Since last state change:  0.049000 ms
+[03:54:34.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:34.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[03:54:34.ms] | 14.0.0.11| Since last state change:  11.435000 ms
+[03:54:34.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  1.714000 ms
+[03:54:34.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.028000 ms
+[03:54:34.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  0.037000 ms
+[03:54:34.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.019000 ms
+[03:54:36.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:36.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1919.341000 ms
+[03:54:36.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.055000 ms
+[03:54:37.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:37.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  402.569000 ms
+[03:54:37.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  2.303000 ms
+[03:54:37.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[03:54:37.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  242.881000 ms
+[03:54:37.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.459000 ms
+[03:54:37.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:37.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  9.364000 ms
+[03:54:37.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  2.036000 ms
+[03:54:37.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[03:54:37.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  144.009000 ms
+[03:54:37.ms] | 14.0.0.12| Since last state change:  0.027000 ms
+[03:54:37.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  9.327000 ms
+[03:54:37.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.031000 ms
+[03:54:37.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  59.772000 ms
+[03:54:37.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.033000 ms
+[03:54:38.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[03:54:38.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  786.404000 ms
+[03:54:38.ms] | 14.0.0.12| Since last state change:  0.046000 ms
+[03:54:38.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:38.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  20.645000 ms
+[03:54:38.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.052000 ms
+[03:54:38.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  241.182000 ms
+[03:54:38.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.048000 ms
+[03:54:40.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:41.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:41.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  2755.229000 ms
+[03:54:41.ms] | 14.0.0.12| Since last state change:  0.773000 ms
+[03:54:41.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1.343000 ms
+[03:54:41.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.034000 ms
+[03:54:41.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:41.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:41.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  423.962000 ms
+[03:54:41.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  18.097000 ms
+[03:54:44.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:44.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  2376.160000 ms
+[03:54:44.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  4.379000 ms
+[03:54:44.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  5.204000 ms
+[03:54:44.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:44.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[03:54:44.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  195.554000 ms
+[03:54:44.ms] | 14.0.0.12| Since last state change:  0.036000 ms
+[03:54:44.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  2.359000 ms
+[03:54:44.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.033000 ms
+[03:54:44.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.028000 ms
+[03:54:44.ms] | 14.0.0.11| Since last state change:  0.119000 ms
+[03:54:44.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  0.126000 ms
+[03:54:44.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.018000 ms
+[03:54:44.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:44.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[03:54:44.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  515.289000 ms
+[03:54:44.ms] | 14.0.0.12| Since last state change:  0.044000 ms
+[03:54:44.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  3.849000 ms
+[03:54:44.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.051000 ms
+[03:54:44.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.037000 ms
+[03:54:44.ms] | 14.0.0.11| Since last state change:  0.030000 ms
+[03:54:44.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.028000 ms
+[03:54:44.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.030000 ms
+[03:54:45.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:45.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  121.129000 ms
+[03:54:45.ms] | 14.0.0.11| Since last state change:  0.036000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.018000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  0.017000 ms
+[03:54:45.ms] | 14.0.0.12| Since last state change:  0.015000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.015000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.650000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  171.903000 ms
+[03:54:45.ms] | 14.0.0.12| Since last state change:  0.049000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  10.395000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.050000 ms
+[03:54:45.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[03:54:45.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  229.071000 ms
+[03:54:45.ms] | 14.0.0.11| Since last state change:  0.022000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.016000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.017000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.016000 ms
+[03:54:45.ms] | 14.0.0.12| Since last state change:  0.015000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.015000 ms
+[03:54:45.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.016000 ms
+[03:58:41.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[05:36:42.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[05:58:42.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[05:58:42.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  7437072.032000 ms
+[05:58:42.ms] | 14.0.0.12| Since last state change:  0.023000 ms
+[05:58:42.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  0.236000 ms
+[05:58:42.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.015000 ms
+[06:22:42.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1440219.840000 ms
+[06:22:42.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.249000 ms
+[06:30:01.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[07:44:43.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  4920760.958000 ms
+[07:44:43.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.278000 ms
+[08:03:33.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  1129771.931000 ms
+[08:03:33.ms] | 14.0.0.12| Since last state change:  4.971000 ms
+[08:03:33.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.037000 ms
+[08:03:33.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.028000 ms
+[08:12:43.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[08:12:43.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  550491.887000 ms
+[08:12:43.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.039000 ms
+[08:40:44.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1680238.410000 ms
+[08:40:44.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.030000 ms
+[09:56:44.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  4560607.807000 ms
+[09:56:44.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.075000 ms
+[09:56:44.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.387000 ms
+[09:56:44.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.390000 ms
+[10:30:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  2040279.240000 ms
+[10:30:45.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.442000 ms
+[10:38:45.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[10:38:45.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[10:38:45.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[11:36:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  3960544.951000 ms
+[11:36:45.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  2.887000 ms
+[11:45:04.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  499224.829000 ms
+[11:45:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  5.107000 ms
+[11:48:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  220862.240000 ms
+[11:48:45.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.035000 ms
+[12:02:25.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  820229.773000 ms
+[12:02:25.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.051000 ms
+[12:06:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  259910.427000 ms
+[12:06:45.ms] | 14.0.0.12| Since last state change:  0.030000 ms
+[12:06:45.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  0.016000 ms
+[12:06:45.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.015000 ms
+[12:33:04.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  1578337.997000 ms
+[12:33:04.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[12:33:04.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  4.221000 ms
+[12:33:04.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[12:33:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  47.801000 ms
+[12:34:04.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  59827.056000 ms
+[12:34:04.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.504000 ms
+[12:36:22.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[12:36:22.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  138008.496000 ms
+[12:36:22.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.137000 ms
+[12:40:46.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[12:44:46.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[12:58:25.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[12:58:25.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1323240.089000 ms
+[12:58:25.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  42.048000 ms
+[12:58:25.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.427000 ms
+[12:58:25.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  27.720000 ms
+[12:58:25.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  26.696000 ms
+[12:58:25.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  22.892000 ms
+[12:58:25.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.512000 ms
+[12:58:25.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  50.270000 ms
+[13:03:32.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[13:03:32.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  307441.847000 ms
+[13:03:32.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.729000 ms
+[13:03:36.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[13:03:44.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  11071.283000 ms
+[13:03:44.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.654000 ms
+[13:03:44.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  17.254000 ms
+[13:03:44.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.189000 ms
+[13:03:48.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[13:03:48.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  4165.534000 ms
+[13:03:48.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  2.011000 ms
+[13:03:49.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[13:03:49.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1023.037000 ms
+[13:03:49.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.924000 ms
+[13:03:50.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[13:03:50.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1105.767000 ms
+[13:03:50.ms] | 14.0.0.11| Since last state change:  4.771000 ms
+[13:03:50.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  10.293000 ms
+[13:03:50.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.067000 ms
+[13:03:50.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  1.324000 ms
+[13:03:50.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.182000 ms
+[13:03:52.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[13:03:52.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[13:03:52.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  2412.230000 ms
+[13:03:52.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  2.384000 ms
+[13:03:52.ms] | 14.0.0.11| Since last state change:  0.054000 ms
+[13:03:52.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.040000 ms
+[13:03:52.ms] | 14.0.0.12| Since last state change:  0.657000 ms
+[13:03:52.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.374000 ms
+[13:03:52.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  39.542000 ms
+[13:03:52.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.064000 ms
+[13:15:12.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[13:20:46.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[13:26:46.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[13:26:46.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1374008.495000 ms
+[13:26:46.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  5.803000 ms
+[13:32:46.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[13:50:47.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  1440225.262000 ms
+[13:50:47.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  0.032000 ms
+[13:50:47.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.017000 ms
+[13:56:26.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  339776.383000 ms
+[13:56:26.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[13:56:26.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.387000 ms
+[14:10:39.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[14:56:35.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  3608232.116000 ms
+[14:56:35.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  6.093000 ms
+[15:06:47.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  612677.630000 ms
+[15:06:47.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.033000 ms
+[15:12:47.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  360041.890000 ms
+[15:12:47.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.438000 ms
+[15:14:52.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:14:56.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:15:00.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:15:00.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  132818.297000 ms
+[15:15:00.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.497000 ms
+[15:16:07.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  67085.480000 ms
+[15:16:07.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.176000 ms
+[15:16:36.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  28944.474000 ms
+[15:16:36.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.051000 ms
+[15:16:37.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:16:37.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:16:37.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  643.909000 ms
+[15:16:37.ms] | 14.0.0.12| Since last state change:  1.145000 ms
+[15:16:37.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  0.044000 ms
+[15:16:37.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.079000 ms
+[15:16:37.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.038000 ms
+[15:16:37.ms] | 14.0.0.11| Since last state change:  0.032000 ms
+[15:16:37.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  6.545000 ms
+[15:16:37.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.037000 ms
+[15:16:38.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1211.773000 ms
+[15:16:38.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.046000 ms
+[15:16:52.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  14170.525000 ms
+[15:16:52.ms] | 14.0.0.11| Since last state change:  0.445000 ms
+[15:16:52.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.030000 ms
+[15:16:52.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.025000 ms
+[15:17:05.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:17:06.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  13355.057000 ms
+[15:17:06.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.568000 ms
+[15:17:07.ms] Timer for IP 14.0.0.11 expired, Detection time: 5000.000000
+[15:17:07.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:17:07.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1459.229000 ms
+[15:17:07.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.039000 ms
+[15:19:21.ms] Timer for IP 14.0.0.11 expired, Detection time: 5000.000000
+[15:19:21.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  133737.281000 ms
+[15:19:21.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.625000 ms
+[15:19:32.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  11374.928000 ms
+[15:19:32.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  4.296000 ms
+[15:19:36.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  3846.935000 ms
+[15:19:36.ms] | 14.0.0.11| Since last state change:  0.742000 ms
+[15:19:36.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.139000 ms
+[15:19:36.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.434000 ms
+[15:19:55.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:19:55.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  18790.900000 ms
+[15:19:55.ms] | 14.0.0.11| Since last state change:  6.459000 ms
+[15:19:55.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.068000 ms
+[15:19:55.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.908000 ms
+[15:19:55.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.056000 ms
+[15:19:55.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.048000 ms
+[15:20:15.ms] Timer for IP 14.0.0.11 expired, Detection time: 5000.000000
+[15:20:15.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  20295.561000 ms
+[15:20:15.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.769000 ms
+[15:20:15.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.525000 ms
+[15:20:15.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.779000 ms
+[15:20:24.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:20:24.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  9257.592000 ms
+[15:20:24.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.789000 ms
+[15:20:27.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:20:27.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  2237.818000 ms
+[15:20:27.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.235000 ms
+[15:20:43.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  16902.077000 ms
+[15:20:43.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.611000 ms
+[15:20:45.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:20:45.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1241.175000 ms
+[15:20:45.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  2.027000 ms
+[15:20:55.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:20:55.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  9867.134000 ms
+[15:20:55.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.078000 ms
+[15:21:15.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  20900.422000 ms
+[15:21:15.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.497000 ms
+[15:21:20.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  4271.454000 ms
+[15:21:20.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  5.472000 ms
+[15:21:23.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:21:46.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:22:00.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:22:01.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:22:14.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  54050.229000 ms
+[15:22:14.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  3.748000 ms
+[15:22:17.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:34:58.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:34:58.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:34:58.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  764074.667000 ms
+[15:34:58.ms] | 14.0.0.11| Since last state change:  0.035000 ms
+[15:34:58.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.021000 ms
+[15:34:58.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.020000 ms
+[15:34:58.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  4.247000 ms
+[15:34:58.ms] | 14.0.0.12| Since last state change:  0.033000 ms
+[15:34:58.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.021000 ms
+[15:34:58.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.020000 ms
+[15:35:08.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  9971.545000 ms
+[15:35:08.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.865000 ms
+[15:35:17.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:36:12.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  63973.362000 ms
+[15:36:12.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.157000 ms
+[15:36:12.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  55.617000 ms
+[15:36:12.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  7.555000 ms
+[15:36:12.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  5.468000 ms
+[15:36:12.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  45.143000 ms
+[15:36:14.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:36:21.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  9468.556000 ms
+[15:36:21.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.069000 ms
+[15:36:21.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:36:21.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  25.466000 ms
+[15:36:21.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:36:21.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  28.837000 ms
+[15:36:21.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.082000 ms
+[15:36:21.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.046000 ms
+[15:36:21.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  28.100000 ms
+[15:36:22.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  117.695000 ms
+[15:36:22.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  0.075000 ms
+[15:36:22.ms] | 14.0.0.12| Since last state change:  0.039000 ms
+[15:36:22.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1.563000 ms
+[15:36:22.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.127000 ms
+[15:36:22.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  125.062000 ms
+[15:36:22.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.063000 ms
+[15:36:23.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:36:23.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  977.411000 ms
+[15:36:23.ms] | 14.0.0.11| Since last state change:  12.914000 ms
+[15:36:23.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  2.250000 ms
+[15:36:23.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.102000 ms
+[15:36:23.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  212.913000 ms
+[15:36:23.ms] | 14.0.0.11| Since last state change:  0.108000 ms
+[15:36:23.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.560000 ms
+[15:36:23.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  6.720000 ms
+[15:36:25.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  2040.559000 ms
+[15:36:25.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  4.798000 ms
+[15:36:25.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.075000 ms
+[15:36:25.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.429000 ms
+[15:39:06.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:39:06.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  161205.805000 ms
+[15:39:06.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.024000 ms
+[15:39:06.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:39:06.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  255.814000 ms
+[15:39:06.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.837000 ms
+[15:39:14.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  7383.220000 ms
+[15:39:14.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.050000 ms
+[15:39:16.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1678.603000 ms
+[15:39:16.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:39:16.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[15:39:16.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  6.958000 ms
+[15:55:10.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[15:57:10.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[16:03:10.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1434243.265000 ms
+[16:03:10.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.098000 ms
+[16:05:22.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[16:05:22.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  132160.833000 ms
+[16:05:22.ms] | 14.0.0.12| Since last state change:  0.054000 ms
+[16:05:22.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  0.067000 ms
+[16:05:22.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.640000 ms
+[16:24:02.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[16:24:02.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[16:24:02.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1119927.655000 ms
+[16:24:02.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  0.070000 ms
+[16:24:02.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.040000 ms
+[16:26:35.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  152772.553000 ms
+[16:26:35.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.501000 ms
+[16:26:44.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[16:29:10.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  155315.808000 ms
+[16:29:10.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.058000 ms
+[16:37:10.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  480052.511000 ms
+[16:37:10.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.283000 ms
+[16:39:10.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[16:39:10.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  120019.877000 ms
+[16:39:10.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.673000 ms
+[16:45:10.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[16:45:49.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[16:45:49.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[16:51:10.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  720081.718000 ms
+[16:51:10.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.032000 ms
+[17:02:47.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  697109.178000 ms
+[17:02:47.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.046000 ms
+[17:02:47.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.489000 ms
+[17:02:47.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.034000 ms
+[17:04:31.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[17:04:31.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  103576.069000 ms
+[17:04:31.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.590000 ms
+[17:04:33.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  1713.878000 ms
+[17:04:33.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[17:04:33.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  4.270000 ms
+[17:05:05.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  32279.010000 ms
+[17:05:05.ms] | 14.0.0.11| Since last state change:  1.809000 ms
+[17:05:05.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  0.052000 ms
+[17:05:05.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.038000 ms
+[17:09:30.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  265132.632000 ms
+[17:09:30.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.995000 ms
+[17:18:49.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:18:49.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[17:20:32.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  661790.484000 ms
+[17:20:32.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.703000 ms
+[17:22:24.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:22:24.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:22:24.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:22:24.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:22:24.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:22:24.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:22:24.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:22:24.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:22:24.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:23:51.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[17:33:11.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  758900.910000 ms
+[17:33:11.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.054000 ms
+[17:35:11.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:38:37.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[17:39:17.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:41:11.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  480297.151000 ms
+[17:41:11.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  3.011000 ms
+[17:44:35.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[17:44:35.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  204402.468000 ms
+[17:44:35.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.587000 ms
+[18:01:11.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[18:01:11.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  995819.929000 ms
+[18:01:11.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.503000 ms
+[18:08:29.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  438252.263000 ms
+[18:08:29.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.083000 ms
+[18:08:29.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.031000 ms
+[18:08:29.ms] | 14.0.0.11| Since last state change:  0.676000 ms
+[18:08:29.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  0.037000 ms
+[18:08:29.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.030000 ms
+[18:09:00.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  30313.021000 ms
+[18:09:00.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.153000 ms
+[18:10:05.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  65529.253000 ms
+[18:10:05.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.914000 ms
+[18:11:11.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[18:11:11.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  65977.469000 ms
+[18:11:11.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.155000 ms
+[18:27:12.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  960297.676000 ms
+[18:27:12.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.034000 ms
+[18:34:22.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  430676.161000 ms
+[18:34:22.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.090000 ms
+[18:56:28.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1325367.819000 ms
+[18:56:28.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.112000 ms
+[19:01:12.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  284198.809000 ms
+[19:01:12.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.308000 ms
+[19:13:53.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  761539.157000 ms
+[19:13:53.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.891000 ms
+[19:31:18.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1044181.524000 ms
+[19:31:18.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[19:31:18.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  42.172000 ms
+[19:31:18.ms] | 14.0.0.12| Since last state change:  0.074000 ms
+[19:31:18.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.045000 ms
+[19:31:18.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.263000 ms
+[19:31:18.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  2.151000 ms
+[19:31:18.ms] | 14.0.0.11| Since last state change:  4.354000 ms
+[19:31:18.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  2.457000 ms
+[19:31:18.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  41.000000 ms
+[19:31:18.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  5.610000 ms
+[19:31:18.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  45.263000 ms
+[19:54:57.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1419408.664000 ms
+[19:54:57.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.551000 ms
+[19:54:57.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.051000 ms
+[19:54:57.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.039000 ms
+[20:39:03.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[20:39:03.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  2645829.096000 ms
+[20:39:03.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.884000 ms
+[20:43:13.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[20:43:13.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  249932.549000 ms
+[20:43:13.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.040000 ms
+[21:13:13.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1800537.254000 ms
+[21:13:13.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.046000 ms
+[21:13:13.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  0.024000 ms
+[21:13:13.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.021000 ms
+[21:13:13.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  49.617000 ms
+[21:13:13.ms] | 14.0.0.11| Since last state change:  0.045000 ms
+[21:13:13.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.326000 ms
+[21:13:13.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.051000 ms
+[21:17:13.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  239979.758000 ms
+[21:17:13.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.108000 ms
+[21:33:13.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[21:41:14.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[22:35:40.ms] Timer for IP 14.0.0.12 expired, Detection time: -nan
+[22:40:36.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  5002860.130000 ms
+[22:40:36.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.566000 ms
+[22:45:14.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  277922.705000 ms
+[22:45:14.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.188000 ms
+[22:59:14.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[22:59:14.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  840099.006000 ms
+[22:59:14.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.061000 ms
+[23:08:19.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  544633.848000 ms
+[23:08:19.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  0.066000 ms
+[23:08:19.ms] | 14.0.0.11| Since last state change:  0.037000 ms
+[23:08:19.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.139000 ms
+[23:08:19.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1.236000 ms
+[23:08:19.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.051000 ms
+[23:10:13.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[23:10:40.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  141106.448000 ms
+[23:10:40.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.092000 ms
+[23:11:14.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[23:22:57.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  736840.796000 ms
+[23:22:57.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.042000 ms
+[23:43:01.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1204011.448000 ms
+[23:43:01.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.245000 ms
+[23:43:01.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  55.026000 ms
+[23:43:01.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  45.512000 ms
+[23:43:01.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  4.577000 ms
+[23:43:01.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  45.716000 ms
+[00:03:42.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[00:14:45.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1904340.195000 ms
+[00:14:45.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.026000 ms
+[00:43:16.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[00:43:16.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  1710892.560000 ms
+[00:43:16.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.078000 ms
+[00:51:06.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[00:51:06.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  470035.861000 ms
+[00:51:06.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  44.603000 ms
+[00:51:06.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  5.474000 ms
+[00:51:06.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  44.998000 ms
+[00:51:50.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[00:58:52.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  465203.692000 ms
+[00:58:52.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  41.408000 ms
+[00:58:52.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  5.368000 ms
+[00:58:52.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  46.752000 ms
+[01:01:13.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[01:01:13.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[01:01:13.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[01:01:13.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[01:58:37.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[01:58:37.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  3584991.733000 ms
+[01:58:37.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.638000 ms
+[02:19:05.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[02:19:05.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  1228114.793000 ms
+[02:19:05.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.103000 ms
+[02:19:16.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  10872.057000 ms
+[02:19:16.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.871000 ms
+[02:21:16.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  120011.857000 ms
+[02:21:16.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.080000 ms
+[02:33:16.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[02:33:16.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  720084.755000 ms
+[02:33:16.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.398000 ms
+[02:40:32.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[02:40:32.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  435839.499000 ms
+[02:40:32.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.108000 ms
+[02:40:32.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  6.972000 ms
+[02:51:43.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  671378.216000 ms
+[02:51:43.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.512000 ms
+[02:57:16.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[02:58:32.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  409365.155000 ms
+[02:58:32.ms] | 14.0.0.12| Since last state change:  0.089000 ms
+[02:58:32.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  0.060000 ms
+[02:58:32.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.049000 ms
+[02:58:32.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.684000 ms
+[02:58:32.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[02:58:32.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[02:58:32.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  15.209000 ms
+[02:58:32.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.043000 ms
+[02:58:32.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  32.864000 ms
+[02:58:32.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.070000 ms
+[02:58:42.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  9675.507000 ms
+[02:58:42.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[02:58:42.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  23.451000 ms
+[02:58:54.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[02:59:25.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  42730.518000 ms
+[02:59:25.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.492000 ms
+[03:01:30.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  124914.297000 ms
+[03:01:30.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  3.468000 ms
+[03:01:30.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  39.490000 ms
+[03:01:30.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  2.171000 ms
+[03:01:30.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  7.282000 ms
+[03:01:30.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.110000 ms
+[03:01:30.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  42.648000 ms
+[03:01:30.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.041000 ms
+[03:02:13.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  43035.173000 ms
+[03:02:13.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.109000 ms
+[03:02:33.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  20558.448000 ms
+[03:02:33.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.398000 ms
+[04:43:17.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  6043487.719000 ms
+[04:43:17.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  5.944000 ms
+[05:05:17.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[05:05:17.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[05:43:17.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  3600373.014000 ms
+[05:43:17.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.157000 ms
+[06:11:18.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  1680200.597000 ms
+[06:11:18.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.542000 ms
+[06:39:18.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1680199.862000 ms
+[06:39:18.ms] | 14.0.0.11| Since last state change:  1.982000 ms
+[06:39:18.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1.717000 ms
+[06:39:18.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.027000 ms
+[07:58:22.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[08:41:19.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  7320864.867000 ms
+[08:41:19.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.500000 ms
+[09:10:20.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  1741190.935000 ms
+[09:10:20.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.193000 ms
+[09:16:14.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[09:16:14.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  354247.244000 ms
+[09:16:14.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.269000 ms
+[11:01:40.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  6325981.666000 ms
+[11:01:40.ms] | 14.0.0.12| Since last state change:  0.051000 ms
+[11:01:40.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.028000 ms
+[11:01:40.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.025000 ms
+[11:40:15.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  2315349.304000 ms
+[11:40:15.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.116000 ms
+[11:42:51.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[11:42:51.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[11:43:14.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  178878.758000 ms
+[11:43:14.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.655000 ms
+[11:45:09.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  114729.177000 ms
+[11:45:09.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.946000 ms
+[11:49:20.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[11:49:20.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  251108.633000 ms
+[11:49:20.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.692000 ms
+[12:04:39.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  918941.625000 ms
+[12:04:39.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.458000 ms
+[12:04:39.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.567000 ms
+[12:05:20.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  41178.878000 ms
+[12:05:20.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.675000 ms
+[12:41:42.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  2182005.333000 ms
+[12:41:42.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  7.318000 ms
+[12:43:21.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  98241.448000 ms
+[12:43:21.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.032000 ms
+[12:50:18.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[12:50:18.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  417174.431000 ms
+[12:50:18.ms] | 14.0.0.11| Since last state change:  0.045000 ms
+[12:50:18.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.032000 ms
+[12:50:18.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.029000 ms
+[13:03:21.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  782960.347000 ms
+[13:03:21.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.041000 ms
+[13:12:34.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[13:12:34.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[13:12:34.ms] | 14.0.0.12| 14.0.0.10| Since last state change:  553196.221000 ms
+[13:12:34.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  0.097000 ms
+[13:12:34.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  2.765000 ms
+[13:13:21.ms] Timer for IP 14.0.0.11 expired, Detection time: 0.000000
+[13:13:21.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[13:15:21.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  166904.892000 ms
+[13:15:21.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.046000 ms
+[13:15:21.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  0.023000 ms
+[13:15:21.ms] | 14.0.0.11| Since last state change:  0.020000 ms
+[13:15:21.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  0.020000 ms
+[13:15:21.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.019000 ms
+[13:25:06.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  585359.094000 ms
+[13:25:06.ms] | 14.0.0.11| Since last state change:  0.816000 ms
+[13:25:06.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  1.031000 ms
+[13:25:06.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  1.294000 ms
+[13:25:11.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000
+[13:25:11.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  4439.400000 ms
+[13:25:11.ms] | 14.0.0.11| Since last state change:  0.054000 ms
+[13:25:11.ms] | 14.0.0.11| 14.0.0.10| Since last state change:  0.264000 ms
+[13:25:11.ms] | 14.0.0.12| 14.0.0.11| Since last state change:  0.050000 ms
+[13:25:11.ms] | 14.0.0.12| 14.0.0.11| 14.0.0.10| Since last state change:  0.038000 ms
+[13:25:11.ms] Timer for IP 14.0.0.12 expired, Detection time: 0.000000

@@ -1,0 +1,35 @@
+version: '3.5'
+
+networks:
+  skynet:
+    name: skynet_10000_10
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 13.0.0.0/24
+
+services:
+  node_1:
+    container_name: node_1_10000_10
+    image: "node:dockerfile-10000-10"
+    networks:
+      skynet:
+        ipv4_address: 13.0.0.10
+    restart: unless-stopped
+
+  node_2:
+    container_name: node_2_10000_10
+    image: "node:dockerfile-10000-10"
+    networks:
+      skynet:
+        ipv4_address: 13.0.0.11
+    restart: unless-stopped
+
+  node_3:
+    container_name: node_3_10000_10
+    image: "node:dockerfile-10000-10"
+    networks:
+      skynet:
+        ipv4_address: 13.0.0.12
+    restart: unless-stopped

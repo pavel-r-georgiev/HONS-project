@@ -1,8 +1,6 @@
 FROM ubuntu:16.04
 MAINTAINER Pavel Georgiev "hello@pavelgeorgiev.me"
 
-ENV NAME World
-
 ########################################################
 # Packages necessary for failure detector
 ########################################################
@@ -75,8 +73,6 @@ WORKDIR /project
 RUN rm -rf build && mkdir build &&\
     cd build &&\
     cmake .. && make
-
-#WORKDIR /home/build
 
 WORKDIR /project/build
 

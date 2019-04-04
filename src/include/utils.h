@@ -7,7 +7,6 @@
 #include "uthash.h"
 
 #define MAX_SIZE_IP_ADDRESS_STRING 16 // 255.255.255.255
-#define MAX_NUM_NODES 3
 
 extern pthread_mutex_t hashmap_lock;
 extern pthread_mutexattr_t attrmutex;

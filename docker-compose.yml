@@ -1,0 +1,142 @@
+version: '3.5'
+
+networks:
+  skynet:
+    name: skynet
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.0.0.0/24
+
+services:
+  node_1:
+    container_name: node_1
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    image: "node:dockerfile"
+    volumes:
+      - ./:/home/
+    networks:
+      skynet:
+        ipv4_address: 10.0.0.10
+    restart: unless-stopped
+
+  node_2:
+    container_name: node_2
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    image: "node:dockerfile"
+    volumes:
+      - ./:/home/
+    networks:
+      skynet:
+        ipv4_address: 10.0.0.11
+    restart: unless-stopped
+
+  node_3:
+    container_name: node_3
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    image: "node:dockerfile"
+    volumes:
+      - ./:/home/
+    networks:
+      skynet:
+        ipv4_address: 10.0.0.12
+    restart: unless-stopped
+
+
+#  node_4:
+#    container_name: node_4
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.node
+#    image: "node:dockerfile"
+#    volumes:
+#      - ./:/home/
+#    networks:
+#      skynet:
+#        ipv4_address: 10.0.0.13
+#    restart: unless-stopped
+#
+#  node_5:
+#    container_name: node_5
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.node
+#    image: "node:dockerfile"
+#    volumes:
+#      - ./:/home/
+#    networks:
+#      skynet:
+#        ipv4_address: 10.0.0.14
+#    restart: unless-stopped
+#
+#  node_6:
+#    container_name: node_6
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.node
+#    image: "node:dockerfile"
+#    volumes:
+#      - ./:/home/
+#    networks:
+#      skynet:
+#        ipv4_address: 10.0.0.15
+#    restart: unless-stopped
+#
+#  node_7:
+#    container_name: node_7
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.node
+#    image: "node:dockerfile"
+#    volumes:
+#      - ./:/home/
+#    networks:
+#      skynet:
+#        ipv4_address: 10.0.0.16
+#    restart: unless-stopped
+#
+#  node_8:
+#    container_name: node_8
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.node
+#    image: "node:dockerfile"
+#    volumes:
+#      - ./:/home/
+#    networks:
+#      skynet:
+#        ipv4_address: 10.0.0.17
+#    restart: unless-stopped
+#
+#  node_9:
+#    container_name: node_9
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.node
+#    image: "node:dockerfile"
+#    volumes:
+#      - ./:/home/
+#    networks:
+#      skynet:
+#        ipv4_address: 10.0.0.18
+#    restart: unless-stopped
+#
+#  node_10:
+#    container_name: node_10
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.node
+#    image: "node:dockerfile"
+#    volumes:
+#      - ./:/home/
+#    networks:
+#      skynet:
+#        ipv4_address: 10.0.0.19
+#    restart: unless-stopped

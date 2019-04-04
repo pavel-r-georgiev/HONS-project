@@ -1,0 +1,1 @@
+> Static detection time of 1.1*heartbeat interval = 60ms

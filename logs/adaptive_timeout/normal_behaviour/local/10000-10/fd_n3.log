@@ -1,0 +1,1721 @@
+[03:54:45.ms] -------------------------------------
+[03:54:45.ms] START OF NEW LOG
+[03:54:45.ms] -------------------------------------
+[03:54:47.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  66172.418000 ms
+[03:54:47.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.024000 ms
+[04:03:08.ms] ---------------------------------------------------
+[04:03:08.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[04:03:08.ms] ---------------------------------------------------
+[04:03:08.ms] ---------------------------------------------------
+[04:03:08.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[04:03:08.ms] ---------------------------------------------------
+[05:36:56.ms] Timer for IP 13.0.0.11 expired, Detection time: 49.394352
+[05:43:40.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  6532679.585000 ms
+[05:43:40.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  3.077000 ms
+[05:45:17.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  96881.734000 ms
+[05:45:17.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.750000 ms
+[05:45:17.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  49.754000 ms
+[05:45:17.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.630000 ms
+[05:45:19.ms] ---------------------------------------------------
+[05:45:19.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[05:45:19.ms] ---------------------------------------------------
+[05:48:08.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  171453.593000 ms
+[05:48:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.678000 ms
+[05:52:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 50.037421
+[06:00:45.ms] ---------------------------------------------------
+[06:00:45.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[06:00:45.ms] ---------------------------------------------------
+[07:13:06.ms] Timer for IP 13.0.0.11 expired, Detection time: 49.619610
+[07:15:10.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  5222083.974000 ms
+[07:15:10.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.665000 ms
+[07:21:30.ms] ---------------------------------------------------
+[07:21:30.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[07:21:30.ms] ---------------------------------------------------
+[07:40:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 5.895843
+[07:40:46.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  1535513.243000 ms
+[07:40:46.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  29.110000 ms
+[07:43:04.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  137789.508000 ms
+[07:43:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.426000 ms
+[07:49:09.ms] ---------------------------------------------------
+[07:49:09.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[07:49:09.ms] ---------------------------------------------------
+[09:00:10.ms] Timer for IP 13.0.0.11 expired, Detection time: 48.704342
+[09:03:21.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  4817579.925000 ms
+[09:03:21.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.065000 ms
+[09:08:33.ms] ---------------------------------------------------
+[09:08:33.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[09:08:33.ms] ---------------------------------------------------
+[09:24:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 50.631133
+[09:26:13.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  1371778.101000 ms
+[09:26:13.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  6.427000 ms
+[09:28:46.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  153289.188000 ms
+[09:28:46.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.536000 ms
+[09:32:46.ms] ---------------------------------------------------
+[09:32:46.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[09:32:46.ms] ---------------------------------------------------
+[10:41:55.ms] Timer for IP 13.0.0.11 expired, Detection time: 46.323935
+[10:48:56.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  4810171.182000 ms
+[10:48:56.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  11.517000 ms
+[10:50:18.ms] ---------------------------------------------------
+[10:50:18.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[10:50:18.ms] ---------------------------------------------------
+[11:05:01.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  964865.156000 ms
+[11:05:01.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.385000 ms
+[11:14:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 50.275870
+[11:14:25.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  563765.294000 ms
+[11:14:25.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.465000 ms
+[11:22:48.ms] ---------------------------------------------------
+[11:22:48.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[11:22:48.ms] ---------------------------------------------------
+[11:53:38.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  2352628.312000 ms
+[11:53:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  11.045000 ms
+[12:16:57.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  1399641.935000 ms
+[12:16:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.033000 ms
+[12:16:57.ms] Timer for IP 13.0.0.11 expired, Detection time: 48.636055
+[12:25:20.ms] ---------------------------------------------------
+[12:25:20.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[12:25:20.ms] ---------------------------------------------------
+[12:45:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 50.448258
+[12:45:58.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  1740749.798000 ms
+[12:45:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.955000 ms
+[12:49:08.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  190246.259000 ms
+[12:49:08.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  3.682000 ms
+[12:53:31.ms] ---------------------------------------------------
+[12:53:31.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[12:53:31.ms] ---------------------------------------------------
+[13:12:06.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  1378033.303000 ms
+[13:12:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  3.543000 ms
+[13:12:06.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  15.079000 ms
+[13:12:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.698000 ms
+[13:12:15.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  8672.155000 ms
+[13:12:15.ms] Timer for IP 13.0.0.11 expired, Detection time: 9.546225
+[13:12:15.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  22.780000 ms
+[13:12:15.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  85.825000 ms
+[13:12:15.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.577000 ms
+[13:20:38.ms] ---------------------------------------------------
+[13:20:38.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[13:20:38.ms] ---------------------------------------------------
+[14:11:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 48.142522
+[14:19:48.ms] ---------------------------------------------------
+[14:19:48.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[14:19:48.ms] ---------------------------------------------------
+[14:36:55.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  5079504.511000 ms
+[14:36:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.737000 ms
+[14:43:43.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  408734.244000 ms
+[14:48:45.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  301358.014000 ms
+[14:48:45.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.034000 ms
+[14:48:58.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  12805.603000 ms
+[14:48:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  6.214000 ms
+[14:49:20.ms] Timer for IP 13.0.0.11 expired, Detection time: 48.261410
+[14:57:43.ms] ---------------------------------------------------
+[14:57:43.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[14:57:43.ms] ---------------------------------------------------
+[15:37:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 49.991505
+[15:38:25.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  2967391.053000 ms
+[15:38:25.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.751000 ms
+[15:43:31.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  305498.352000 ms
+[15:43:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.258000 ms
+[15:44:44.ms] Timer for IP 13.0.0.11 expired, Detection time: 6.351180
+[15:44:44.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  73920.725000 ms
+[15:44:44.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  3.655000 ms
+[15:46:18.ms] ---------------------------------------------------
+[15:46:18.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[15:46:18.ms] ---------------------------------------------------
+[15:47:30.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  165213.050000 ms
+[15:47:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  16.472000 ms
+[15:53:07.ms] ---------------------------------------------------
+[15:53:07.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[15:53:07.ms] ---------------------------------------------------
+[16:35:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 46.387281
+[16:43:30.ms] ---------------------------------------------------
+[16:43:30.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[16:43:30.ms] ---------------------------------------------------
+[16:52:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  3876895.217000 ms
+[16:52:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  35.058000 ms
+[16:52:07.ms] Timer for IP 13.0.0.11 expired, Detection time: 39.184920
+[16:54:12.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  125405.195000 ms
+[16:54:12.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  37.969000 ms
+[16:54:42.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  30179.962000 ms
+[16:54:42.ms] | 13.0.0.11| Since last state change:  5.838000 ms
+[16:54:42.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  8.392000 ms
+[16:54:42.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.971000 ms
+[17:00:29.ms] ---------------------------------------------------
+[17:00:29.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[17:00:29.ms] ---------------------------------------------------
+[17:28:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 45.818011
+[17:32:11.ms] Timer for IP 13.0.0.11 expired, Detection time: 35.614786
+[17:32:11.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  2248485.832000 ms
+[17:32:11.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  15.281000 ms
+[17:36:36.ms] ---------------------------------------------------
+[17:36:36.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[17:36:36.ms] ---------------------------------------------------
+[17:40:34.ms] ---------------------------------------------------
+[17:40:34.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[17:40:34.ms] ---------------------------------------------------
+[18:09:00.ms] Timer for IP 13.0.0.11 expired, Detection time: 97.685663
+[18:16:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 7.150030
+[18:16:52.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  2681383.422000 ms
+[18:16:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  13.293000 ms
+[18:16:52.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  193.698000 ms
+[18:16:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  8.350000 ms
+[18:17:23.ms] ---------------------------------------------------
+[18:17:23.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[18:17:23.ms] ---------------------------------------------------
+[18:17:23.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  30405.271000 ms
+[18:17:23.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  23.725000 ms
+[18:17:51.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  28041.127000 ms
+[18:17:51.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  10.242000 ms
+[18:25:15.ms] ---------------------------------------------------
+[18:25:15.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[18:25:15.ms] ---------------------------------------------------
+[19:04:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 32.560882
+[19:04:00.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  2768992.021000 ms
+[19:04:00.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  17.199000 ms
+[19:12:23.ms] ---------------------------------------------------
+[19:12:23.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[19:12:23.ms] ---------------------------------------------------
+[19:41:26.ms] Timer for IP 13.0.0.11 expired, Detection time: 42.011006
+[19:42:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  2338582.868000 ms
+[19:42:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.360000 ms
+[19:49:49.ms] ---------------------------------------------------
+[19:49:49.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[19:49:49.ms] ---------------------------------------------------
+[19:50:43.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  464882.126000 ms
+[19:50:43.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.875000 ms
+[19:51:13.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  29281.704000 ms
+[19:51:13.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.721000 ms
+[20:46:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 48.197341
+[20:46:13.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  3300404.989000 ms
+[20:46:13.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.615000 ms
+[20:54:36.ms] ---------------------------------------------------
+[20:54:36.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[20:54:36.ms] ---------------------------------------------------
+[21:10:24.ms] Timer for IP 13.0.0.11 expired, Detection time: 49.364207
+[21:10:24.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  1451266.334000 ms
+[21:10:24.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.450000 ms
+[21:18:47.ms] ---------------------------------------------------
+[21:18:47.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[21:18:47.ms] ---------------------------------------------------
+[21:21:33.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  669023.995000 ms
+[21:21:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.388000 ms
+[21:21:33.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.025000 ms
+[21:21:33.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.017000 ms
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 63.119557
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.290000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.640000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.248000
+[22:05:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.896000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.380000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.898000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.820000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.952000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.270000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.006000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.522000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.320000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.914000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.442000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.886000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.222000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.498000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.068000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.380000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.704000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.026000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.972000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.844000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.356000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.094000
+[22:05:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.804000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.990000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.906000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.074000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.132000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.290000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.764000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.274000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.100000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.508000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.338000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.622000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.822000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.800000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.964000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.080000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.946000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.182000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.776000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.954000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.204000
+[22:06:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.524000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.796000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.916000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.992000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.246000
+[22:06:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.334000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.216000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.702000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.070000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.010000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.692000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.158000
+[22:06:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.528000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.090000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.178000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.790000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.696000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.600000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.436000
+[22:06:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.384000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.978000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.034000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.894000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.590000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.760000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.038000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.816000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.014000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.826000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.864000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.288000
+[22:06:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.604000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.030000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.204000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.442000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.298000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.644000
+[22:06:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.252000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.968000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.372000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.826000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.004000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.958000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.206000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.076000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.352000
+[22:06:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.066000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.862000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.844000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.236000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.552000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.150000
+[22:06:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.628000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.218000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.472000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.926000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.748000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.412000
+[22:06:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.250000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.058000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.742000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.276000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.716000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.524000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.160000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.880000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.178000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.112000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.124000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:18.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.800000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.860000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.304000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.204000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.074000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.830000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.504000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.202000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.328000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.494000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.420000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.544000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.590000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.656000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.414000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.074000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.986000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:21.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.074000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.500000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.582000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.040000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.118000
+[22:06:22.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.918000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.760000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.786000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.178000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.186000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.198000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:23.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.236000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.638000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.210000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.388000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.994000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.008000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.148000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.416000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.848000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.894000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.358000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.514000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:25.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.700000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.952000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.290000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.582000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.806000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:26.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.198000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.838000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.524000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.466000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.020000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.140000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.124000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.710000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.038000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.552000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.880000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:28.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.692000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.312000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.464000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.314000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.374000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.260000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:29.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.626000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.092000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.846000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.878000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.710000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:30.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.174000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.854000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.414000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.140000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.024000
+[22:06:31.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.806000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.082000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.260000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.988000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.708000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:32.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.002000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.998000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.144000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.348000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:33.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.172000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.722000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.400000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.166000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:34.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.484000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.508000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.900000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.372000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.780000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.216000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.898000
+[22:06:35.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.428000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.280000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.966000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.022000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.504000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:36.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.818000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.176000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.680000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.236000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.966000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.024000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.166000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.150000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.176000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.810000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.338000
+[22:06:38.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.574000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.214000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.236000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.978000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.076000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:39.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.410000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.340000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.306000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.810000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.228000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.832000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.998000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.750000
+[22:06:40.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.750000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.940000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.532000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.474000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.678000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.278000
+[22:06:41.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.284000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.520000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.224000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.616000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.736000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.912000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.780000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.350000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.450000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.456000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.864000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.572000
+[22:06:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.070000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.986000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.890000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.112000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.772000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.750000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.052000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:44.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.588000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.084000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.986000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.780000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.002000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:45.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.566000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.930000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.432000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.800000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.662000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.628000
+[22:06:46.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.494000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.832000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.998000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.792000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.168000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.344000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.032000
+[22:06:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.906000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.906000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.102000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.292000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:48.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.578000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.760000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.354000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.310000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.656000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:49.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.116000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.048000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.752000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.926000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.216000
+[22:06:50.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.420000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.784000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.570000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.296000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.012000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:51.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.282000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.622000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.022000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.300000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.038000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.450000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.338000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.216000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.112000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.468000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.108000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.742000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:53.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.404000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 97.754000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.590000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.074000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.490000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.736000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:54.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.800000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.740000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.654000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.180000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:55.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.990000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.580000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.308000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.282000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.324000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.836000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:56.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.204000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.274000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.736000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.402000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.164000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.088000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.136000
+[22:06:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.160000
+[22:06:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.288000
+[22:06:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.926000
+[22:06:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.268000
+[22:06:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.558000
+[22:06:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.178000
+[22:06:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.978000
+[22:06:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.858000
+[22:06:58.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.482000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.838000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.040000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.820000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.330000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.648000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.196000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:06:59.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.060000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.168000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.182000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.210000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.894000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.340000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.258000
+[22:07:00.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.368000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.632000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.868000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.562000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.562000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.394000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.420000
+[22:07:01.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.206000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.758000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.240000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.784000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.998000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:02.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.886000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.802000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.952000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.824000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.140000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:03.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.944000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.042000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.644000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.594000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.878000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.900000
+[22:07:04.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.890000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.400000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.938000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.074000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.198000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.560000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:05.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.190000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 101.974000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.126000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.582000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.374000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.644000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.936000
+[22:07:06.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.308000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.338000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.454000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.578000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.316000
+[22:07:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.266000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.588000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.326000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.970000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.104000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.202000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.928000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:08.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.960000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.472000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.140000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.280000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.912000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.206000
+[22:07:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.868000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.510000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.058000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.990000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.358000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 98.598000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:10.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.544000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.770000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.514000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.994000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.554000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.324000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.904000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:11.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.858000
+[22:07:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.680000
+[22:07:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.466000
+[22:07:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.966000
+[22:07:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.978000
+[22:07:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.016000
+[22:07:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.950000
+[22:07:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:12.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.036000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.212000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.852000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.930000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.386000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.080000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.422000
+[22:07:13.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.560000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.150000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.620000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.314000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.310000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.302000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.446000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.418000
+[22:07:14.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.540000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.986000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.936000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.598000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.532000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:15.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.410000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.310000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.996000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.488000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.138000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.484000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.810000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:16.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.258000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.490000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.502000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.340000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.900000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.174000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.814000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.000000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 100.500000
+[22:07:17.ms] Timer for IP 13.0.0.10 expired, Detection time: 99.972000
+[22:07:20.ms] -------------------------------------
+[22:07:20.ms] START OF NEW LOG
+[22:07:20.ms] -------------------------------------
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  65618737.393000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.050000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.049000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.015000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  2.785000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.026000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.452000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.021000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.014000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.019000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.048000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.014000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.040000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.019000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.019000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.040000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.019000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.044000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.029000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.036000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.026000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.014000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.071000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.026000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.028000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.074000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.017000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.032000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.038000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.769000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.121000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.019000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.084000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.053000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.014000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.041000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.041000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.11| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.013000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.040000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.028000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.069000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.027000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.012000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.611000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.113000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.044000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.064000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.013000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.010000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.011000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.010000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.011000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  0.056000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.011000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  0.046000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.011000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.010000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.010000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.043000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.028000 ms
+[22:07:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  66.309000 ms
+[22:07:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.043000 ms
+[22:15:42.ms] ---------------------------------------------------
+[22:15:42.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[22:15:42.ms] ---------------------------------------------------
+[22:15:43.ms] ---------------------------------------------------
+[22:15:43.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[22:15:43.ms] ---------------------------------------------------
+[22:17:37.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  616680.297000 ms
+[22:17:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.509000 ms
+[22:34:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  989195.431000 ms
+[22:34:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.173000 ms
+[23:02:28.ms] Timer for IP 13.0.0.11 expired, Detection time: 25.586380
+[23:10:51.ms] ---------------------------------------------------
+[23:10:51.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[23:10:51.ms] ---------------------------------------------------
+[23:11:37.ms] Timer for IP 13.0.0.10 expired, Detection time: 14.231141
+[23:11:37.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  2251392.835000 ms
+[23:11:37.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  6.659000 ms
+[23:18:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  387539.216000 ms
+[23:18:05.ms] | 13.0.0.10| Since last state change:  2.790000 ms
+[23:18:05.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  2.340000 ms
+[23:18:05.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  17.556000 ms
+[23:18:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.038000 ms
+[23:20:00.ms] ---------------------------------------------------
+[23:20:00.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[23:20:00.ms] ---------------------------------------------------
+[00:16:24.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  3499784.036000 ms
+[00:16:24.ms] Timer for IP 13.0.0.10 expired, Detection time: 32.090519
+[00:16:24.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  19.970000 ms
+[00:17:07.ms] Timer for IP 13.0.0.11 expired, Detection time: 18.493432
+[00:17:07.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  42301.567000 ms
+[00:17:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  60.971000 ms
+[00:24:47.ms] ---------------------------------------------------
+[00:24:47.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[00:24:47.ms] ---------------------------------------------------
+[00:25:29.ms] ---------------------------------------------------
+[00:25:29.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[00:25:29.ms] ---------------------------------------------------
+[00:37:18.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  1211191.434000 ms
+[00:37:18.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.066000 ms
+[00:37:38.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  19565.605000 ms
+[00:37:38.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  21.045000 ms
+[01:31:20.ms] Timer for IP 13.0.0.11 expired, Detection time: 41.473273
+[01:34:19.ms] Timer for IP 13.0.0.10 expired, Detection time: 48.950465
+[01:39:43.ms] ---------------------------------------------------
+[01:39:43.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[01:39:43.ms] ---------------------------------------------------
+[01:42:41.ms] ---------------------------------------------------
+[01:42:41.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[01:42:41.ms] ---------------------------------------------------
+[01:45:30.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  4072034.860000 ms
+[01:45:30.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.925000 ms
+[01:56:52.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  682140.812000 ms
+[01:56:52.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  44.993000 ms
+[02:00:31.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  218950.882000 ms
+[02:00:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.946000 ms
+[02:03:48.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  197180.021000 ms
+[02:03:48.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.108000 ms
+[02:48:47.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  2698679.547000 ms
+[02:48:47.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.970000 ms
+[02:48:47.ms] Timer for IP 13.0.0.10 expired, Detection time: 24.267175
+[02:48:55.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  7825.435000 ms
+[02:48:55.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  23.633000 ms
+[02:48:55.ms] Timer for IP 13.0.0.11 expired, Detection time: 28.153735
+[02:57:09.ms] ---------------------------------------------------
+[02:57:09.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[02:57:09.ms] ---------------------------------------------------
+[02:57:17.ms] ---------------------------------------------------
+[02:57:17.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[02:57:17.ms] ---------------------------------------------------
+[03:07:05.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  1090208.405000 ms
+[03:07:05.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  35.922000 ms
+[03:27:57.ms] Timer for IP 13.0.0.10 expired, Detection time: 36.268594
+[03:27:57.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  1252347.633000 ms
+[03:27:57.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.579000 ms
+[03:30:12.ms] Timer for IP 13.0.0.11 expired, Detection time: 41.674107
+[03:30:12.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  135190.899000 ms
+[03:30:12.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.825000 ms
+[03:36:20.ms] ---------------------------------------------------
+[03:36:20.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[03:36:20.ms] ---------------------------------------------------
+[03:38:35.ms] ---------------------------------------------------
+[03:38:35.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[03:38:35.ms] ---------------------------------------------------
+[04:24:54.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  3281654.722000 ms
+[04:24:54.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.041000 ms
+[04:31:34.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  399563.356000 ms
+[04:31:34.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.533000 ms
+[04:45:07.ms] Timer for IP 13.0.0.10 expired, Detection time: 48.102304
+[04:45:07.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  813245.635000 ms
+[04:45:07.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  3.262000 ms
+[04:53:30.ms] ---------------------------------------------------
+[04:53:30.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[04:53:30.ms] ---------------------------------------------------
+[04:53:58.ms] Timer for IP 13.0.0.11 expired, Detection time: 46.985912
+[04:53:58.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  531374.543000 ms
+[04:53:58.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  3.544000 ms
+[05:02:21.ms] ---------------------------------------------------
+[05:02:21.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[05:02:21.ms] ---------------------------------------------------
+[05:35:40.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  2501630.392000 ms
+[05:35:40.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  14.320000 ms
+[06:09:09.ms] Timer for IP 13.0.0.10 expired, Detection time: 49.391892
+[06:09:09.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  2009431.873000 ms
+[06:09:09.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.948000 ms
+[06:17:32.ms] ---------------------------------------------------
+[06:17:32.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[06:17:32.ms] ---------------------------------------------------
+[06:19:26.ms] Timer for IP 13.0.0.11 expired, Detection time: 50.002076
+[06:24:45.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  936096.079000 ms
+[06:24:45.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.605000 ms
+[06:27:49.ms] ---------------------------------------------------
+[06:27:49.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[06:27:49.ms] ---------------------------------------------------
+[06:59:32.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  2086332.020000 ms
+[06:59:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  5.296000 ms
+[07:30:20.ms] Timer for IP 13.0.0.10 expired, Detection time: 47.003543
+[07:30:20.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  1848063.926000 ms
+[07:30:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.611000 ms
+[07:38:42.ms] ---------------------------------------------------
+[07:38:42.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[07:38:42.ms] ---------------------------------------------------
+[07:39:44.ms] Timer for IP 13.0.0.11 expired, Detection time: 48.100274
+[07:48:07.ms] ---------------------------------------------------
+[07:48:07.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[07:48:07.ms] ---------------------------------------------------
+[07:51:06.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  1246686.907000 ms
+[07:51:06.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.889000 ms
+[08:24:04.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  1977828.018000 ms
+[08:24:04.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.799000 ms
+[08:25:31.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  87224.998000 ms
+[08:25:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.369000 ms
+[08:47:27.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  1315336.351000 ms
+[08:47:27.ms] Timer for IP 13.0.0.10 expired, Detection time: 49.399091
+[08:47:27.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.373000 ms
+[08:55:49.ms] ---------------------------------------------------
+[08:55:49.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[08:55:49.ms] ---------------------------------------------------
+[09:00:03.ms] Timer for IP 13.0.0.11 expired, Detection time: 47.050279
+[09:08:26.ms] ---------------------------------------------------
+[09:08:26.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[09:08:26.ms] ---------------------------------------------------
+[09:18:32.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  1865418.342000 ms
+[09:18:32.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.125000 ms
+[09:47:45.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  1752309.945000 ms
+[09:47:45.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.037000 ms
+[09:47:45.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  0.441000 ms
+[09:47:45.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.278000 ms
+[10:12:49.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  1504017.486000 ms
+[10:12:49.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.477000 ms
+[10:19:42.ms] Timer for IP 13.0.0.10 expired, Detection time: 38.836319
+[10:26:38.ms] Timer for IP 13.0.0.11 expired, Detection time: 48.633020
+[10:28:05.ms] ---------------------------------------------------
+[10:28:05.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[10:28:05.ms] ---------------------------------------------------
+[10:35:01.ms] ---------------------------------------------------
+[10:35:01.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[10:35:01.ms] ---------------------------------------------------
+[10:44:14.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  1885110.369000 ms
+[10:44:14.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.886000 ms
+[11:07:39.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  1404806.407000 ms
+[11:07:39.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.177000 ms
+[11:09:29.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  110178.622000 ms
+[11:09:29.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.588000 ms
+[11:36:52.ms] Timer for IP 13.0.0.10 expired, Detection time: 51.889745
+[11:45:15.ms] ---------------------------------------------------
+[11:45:15.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[11:45:15.ms] ---------------------------------------------------
+[11:51:40.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  2531595.479000 ms
+[11:51:40.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  3.354000 ms
+[11:52:12.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  32039.795000 ms
+[11:52:12.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.254000 ms
+[11:55:32.ms] Timer for IP 13.0.0.11 expired, Detection time: 50.502202
+[11:55:43.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  210581.260000 ms
+[11:55:43.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.096000 ms
+[12:03:55.ms] ---------------------------------------------------
+[12:03:55.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[12:03:55.ms] ---------------------------------------------------
+[12:49:43.ms] Timer for IP 13.0.0.10 expired, Detection time: 12.435288
+[12:49:43.ms] | 13.0.0.12| 13.0.0.11| Since last state change:  3240144.965000 ms
+[12:49:43.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  4.906000 ms
+[12:49:51.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  7648.155000 ms
+[12:49:51.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  2.723000 ms
+[12:58:06.ms] ---------------------------------------------------
+[12:58:06.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.10
+[12:58:06.ms] ---------------------------------------------------
+[12:58:31.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  520480.951000 ms
+[12:58:31.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  1.134000 ms
+[12:58:41.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  9222.462000 ms
+[12:58:41.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  23.651000 ms
+[13:18:02.ms] Timer for IP 13.0.0.11 expired, Detection time: 49.906667
+[13:26:24.ms] ---------------------------------------------------
+[13:26:24.ms] DYNAMIC TIMEOUT ALGORITHM WINDOWS FULL FOR IP 13.0.0.11
+[13:26:24.ms] ---------------------------------------------------
+[13:43:26.ms] | 13.0.0.12| 13.0.0.10| Since last state change:  2685603.402000 ms
+[13:43:26.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  0.661000 ms
+[13:50:20.ms] | 13.0.0.11| 13.0.0.10| Since last state change:  413713.859000 ms
+[13:50:20.ms] | 13.0.0.12| 13.0.0.11| 13.0.0.10| Since last state change:  3.542000 ms

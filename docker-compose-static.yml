@@ -1,0 +1,35 @@
+version: '3.5'
+
+networks:
+  skynet:
+    name: skynet_static
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 14.0.0.0/24
+
+services:
+  node_1:
+    container_name: node_1_static
+    image: "node:dockerfile-static"
+    networks:
+      skynet:
+        ipv4_address: 14.0.0.10
+    restart: unless-stopped
+
+  node_2:
+    container_name: node_2_static
+    image: "node:dockerfile-static"
+    networks:
+      skynet:
+        ipv4_address: 14.0.0.11
+    restart: unless-stopped
+
+  node_3:
+    container_name: node_3_static
+    image: "node:dockerfile-static"
+    networks:
+      skynet:
+        ipv4_address: 14.0.0.12
+    restart: unless-stopped
